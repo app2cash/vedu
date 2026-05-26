@@ -9,1556 +9,327 @@
 <meta name="robots" content="index, follow">
 <meta name="author" content="Марат Ярков">
 <link rel="canonical" href="https://ведущийпраздник.рф/">
-
-<!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://ведущийпраздник.рф/">
 <meta property="og:title" content="Ведущий свадеб Марат Ярков — Златоуст, Миасс, Куса, Сатка">
 <meta property="og:description" content="200+ свадеб с 2011 года. Телеведущий ТНТ. DJ + звук. Никаких банальных конкурсов — только живые эмоции. Звоните: +7 905 834-01-88">
 <meta property="og:image" content="https://ведущийпраздник.рф/img/hero.jpg">
 <meta property="og:locale" content="ru_RU">
-
-<!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Ведущий свадеб Марат Ярков — Златоуст">
 <meta name="twitter:description" content="200+ свадеб с 2011 года. DJ + звук в комплекте. Звоните!">
 <meta name="twitter:image" content="https://ведущийпраздник.рф/img/hero.jpg">
-
-<!-- Favicon SVG -->
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231A1714'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-family='Georgia,serif' font-size='38' font-weight='400' fill='%23C9A96E'%3E%26%23x2665%3B%3C/text%3E%3C/svg%3E">
 <meta name="theme-color" content="#1A1714">
-
-<!-- Schema.org -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Ведущий свадеб Марат Ярков",
-  "description": "Профессиональный ведущий свадеб и праздников в Златоусте, Миассе, Кусе, Сатке. 200+ свадеб с 2011 года. Телеведущий ТНТ.",
-  "url": "https://ведущийпраздник.рф",
-  "telephone": "+79058340188",
-  "image": "https://ведущийпраздник.рф/img/hero.jpg",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Златоуст",
-    "addressRegion": "Челябинская область",
-    "addressCountry": "RU"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 55.1741,
-    "longitude": 59.6682
-  },
-  "areaServed": ["Златоуст", "Миасс", "Куса", "Сатка", "Челябинск"],
-  "priceRange": "$$",
-  "sameAs": [
-    "https://vk.com/maratbright",
-    "https://t.me/app2cas"
-  ]
-}
-</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Ведущий свадеб Марат Ярков","description":"Профессиональный ведущий свадеб и праздников в Златоусте, Миассе, Кусе, Сатке. 200+ свадеб с 2011 года. Телеведущий ТНТ.","url":"https://ведущийпраздник.рф","telephone":"+79058340188","image":"https://ведущийпраздник.рф/img/hero.jpg","address":{"@type":"PostalAddress","addressLocality":"Златоуст","addressRegion":"Челябинская область","addressCountry":"RU"},"geo":{"@type":"GeoCoordinates","latitude":55.1741,"longitude":59.6682},"areaServed":["Златоуст","Миасс","Куса","Сатка","Челябинск"],"priceRange":"$$","sameAs":["https://vk.com/maratbright","https://t.me/app2cas"]}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Tenor+Sans&display=swap" rel="stylesheet">
-
 <style>
-  :root {
-    --cream: #FAF6F0;
-    --ivory: #F2EDE4;
-    --gold: #C9A96E;
-    --gold-light: #E8D5B0;
-    --gold-dark: #9B7A3D;
-    --charcoal: #1A1714;
-    --warm-gray: #6B6560;
-    --rose: #D4A5A0;
-    --rose-dark: #A06B65;
-    --text: #2C2825;
-  }
-
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-
-  html { scroll-behavior: smooth; }
-
-  body {
-    font-family: 'Tenor Sans', sans-serif;
-    background: var(--cream);
-    color: var(--text);
-    overflow-x: hidden;
-  }
-
-  /* HERO */
-  .hero {
-    min-height: 100vh;
-    background: var(--charcoal);
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-  }
-
-  .hero-bg {
-    position: absolute;
-    inset: 0;
-    background: 
-      radial-gradient(ellipse 80% 60% at 50% 100%, rgba(201,169,110,0.18) 0%, transparent 60%),
-      radial-gradient(ellipse 40% 40% at 20% 20%, rgba(212,165,160,0.10) 0%, transparent 50%),
-      linear-gradient(160deg, #1A1714 0%, #2C2320 50%, #1A1714 100%);
-  }
-
-  .hero-grain {
-    position: absolute;
-    inset: 0;
-    opacity: 0.03;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
-    background-size: 200px 200px;
-  }
-
-  .hero-ornament {
-    position: absolute;
-    width: 600px;
-    height: 600px;
-    border: 1px solid rgba(201,169,110,0.12);
-    border-radius: 50%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    animation: rotate 40s linear infinite;
-  }
-
-  .hero-ornament::before {
-    content: '';
-    position: absolute;
-    inset: 30px;
-    border: 1px solid rgba(201,169,110,0.08);
-    border-radius: 50%;
-  }
-
-  @keyframes rotate {
-    to { transform: translate(-50%, -50%) rotate(360deg); }
-  }
-
-  .hero-content {
-    position: relative;
-    text-align: center;
-    padding: 2rem;
-    max-width: 900px;
-    animation: fadeUp 1.2s ease both;
-  }
-
-  @keyframes fadeUp {
-    from { opacity: 0; transform: translateY(30px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-
-  .hero-tag {
-    display: inline-block;
-    font-size: 0.7rem;
-    letter-spacing: 0.35em;
-    text-transform: uppercase;
-    color: var(--gold);
-    border: 1px solid rgba(201,169,110,0.4);
-    padding: 0.5rem 1.5rem;
-    margin-bottom: 2.5rem;
-    animation: fadeUp 1.2s 0.2s ease both;
-  }
-
-  .hero-name {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(3.5rem, 9vw, 7.5rem);
-    font-weight: 300;
-    color: var(--cream);
-    line-height: 1;
-    letter-spacing: -0.01em;
-    animation: fadeUp 1.2s 0.3s ease both;
-  }
-
-  .hero-name em {
-    font-style: italic;
-    color: var(--gold);
-  }
-
-  .hero-subtitle {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(1.1rem, 2.5vw, 1.6rem);
-    font-weight: 300;
-    font-style: italic;
-    color: rgba(250,246,240,0.55);
-    margin: 1.5rem 0 3rem;
-    letter-spacing: 0.05em;
-    animation: fadeUp 1.2s 0.4s ease both;
-  }
-
-  .hero-stats {
-    display: flex;
-    gap: 3rem;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 3.5rem;
-    animation: fadeUp 1.2s 0.5s ease both;
-  }
-
-  .stat {
-    text-align: center;
-  }
-
-  .stat-num {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 2.8rem;
-    font-weight: 300;
-    color: var(--gold);
-    line-height: 1;
-    display: block;
-  }
-
-  .stat-label {
-    font-size: 0.65rem;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: rgba(250,246,240,0.4);
-    margin-top: 0.3rem;
-    display: block;
-  }
-
-  .hero-cta {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    flex-wrap: wrap;
-    animation: fadeUp 1.2s 0.6s ease both;
-  }
-
-  .btn-primary {
-    background: var(--gold);
-    color: var(--charcoal);
-    padding: 1rem 2.5rem;
-    font-family: 'Tenor Sans', sans-serif;
-    font-size: 0.75rem;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    text-decoration: none;
-    border: none;
-    cursor: pointer;
-    transition: all 0.3s;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .btn-primary::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: rgba(255,255,255,0.15);
-    transform: translateX(-100%);
-    transition: transform 0.3s;
-  }
-
-  .btn-primary:hover::after { transform: translateX(0); }
-  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(201,169,110,0.35); }
-
-  .btn-outline {
-    background: transparent;
-    color: var(--cream);
-    padding: 1rem 2.5rem;
-    font-family: 'Tenor Sans', sans-serif;
-    font-size: 0.75rem;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    text-decoration: none;
-    border: 1px solid rgba(250,246,240,0.3);
-    cursor: pointer;
-    transition: all 0.3s;
-  }
-
-  .btn-outline:hover { border-color: var(--gold); color: var(--gold); }
-
-  .scroll-hint {
-    position: absolute;
-    bottom: 2.5rem;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-    color: rgba(250,246,240,0.3);
-    font-size: 0.6rem;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    animation: fadeUp 1.2s 1s ease both;
-  }
-
-  .scroll-line {
-    width: 1px;
-    height: 40px;
-    background: linear-gradient(to bottom, rgba(201,169,110,0.6), transparent);
-    animation: scrollPulse 2s ease-in-out infinite;
-  }
-
-  @keyframes scrollPulse {
-    0%, 100% { transform: scaleY(1); opacity: 1; }
-    50% { transform: scaleY(0.7); opacity: 0.5; }
-  }
-
-  /* SECTION COMMONS */
-  section { padding: 7rem 2rem; }
-
-  .container { max-width: 1100px; margin: 0 auto; }
-
-  .section-label {
-    font-size: 0.65rem;
-    letter-spacing: 0.35em;
-    text-transform: uppercase;
-    color: var(--gold);
-    display: block;
-    margin-bottom: 1.2rem;
-  }
-
-  .section-title {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(2.2rem, 5vw, 3.8rem);
-    font-weight: 300;
-    line-height: 1.15;
-    color: var(--charcoal);
-  }
-
-  .section-title em {
-    font-style: italic;
-    color: var(--gold-dark);
-  }
-
-  .divider {
-    width: 60px;
-    height: 1px;
-    background: var(--gold);
-    margin: 2rem 0;
-  }
-
-  /* FEARS SECTION */
-  .fears {
-    background: var(--ivory);
-    position: relative;
-    overflow: hidden;
-  }
-
-  .fears::before {
-    content: '?';
-    position: absolute;
-    right: -2rem;
-    top: 50%;
-    transform: translateY(-50%);
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 35rem;
-    color: rgba(201,169,110,0.04);
-    line-height: 1;
-    pointer-events: none;
-  }
-
-  .fears-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2px;
-    margin-top: 4rem;
-  }
-
-  .fear-card {
-    background: var(--cream);
-    padding: 2.5rem;
-    position: relative;
-    overflow: hidden;
-    transition: transform 0.3s;
-  }
-
-  .fear-card:hover { transform: translateY(-4px); }
-
-  .fear-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 3px;
-    height: 0;
-    background: var(--gold);
-    transition: height 0.4s;
-  }
-
-  .fear-card:hover::before { height: 100%; }
-
-  .fear-num {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 3.5rem;
-    font-weight: 300;
-    color: rgba(201,169,110,0.2);
-    line-height: 1;
-    margin-bottom: 1rem;
-  }
-
-  .fear-title {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.3rem;
-    font-weight: 600;
-    color: var(--charcoal);
-    margin-bottom: 0.8rem;
-  }
-
-  .fear-answer {
-    font-size: 0.85rem;
-    color: var(--warm-gray);
-    line-height: 1.7;
-  }
-
-  .fear-answer strong {
-    color: var(--gold-dark);
-    font-weight: normal;
-  }
-
-  /* ABOUT */
-  .about {
-    background: var(--charcoal);
-    color: var(--cream);
-    position: relative;
-    overflow: hidden;
-  }
-
-  .about-inner {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 6rem;
-    align-items: center;
-  }
-
-  @media (max-width: 768px) {
-    .about-inner { grid-template-columns: 1fr; gap: 3rem; }
-  }
-
-  .about-photo {
-    position: relative;
-  }
-
-  .about-photo-frame {
-    aspect-ratio: 3/4;
-    background: linear-gradient(135deg, rgba(201,169,110,0.15), rgba(212,165,160,0.1));
-    position: relative;
-    overflow: hidden;
-  }
-
-  .about-photo-frame::before {
-    content: '';
-    position: absolute;
-    inset: -1px;
-    border: 1px solid rgba(201,169,110,0.3);
-  }
-
-  .about-photo-placeholder {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .photo-icon {
-    width: 60px;
-    height: 60px;
-    border: 1px solid rgba(201,169,110,0.3);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-  }
-
-  .photo-hint {
-    font-size: 0.7rem;
-    letter-spacing: 0.15em;
-    color: rgba(250,246,240,0.3);
-    text-align: center;
-  }
-
-  .about-badge {
-    position: absolute;
-    bottom: -1.5rem;
-    right: -1.5rem;
-    width: 120px;
-    height: 120px;
-    background: var(--gold);
-    border-radius: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: var(--charcoal);
-  }
-
-  .badge-num {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 2.2rem;
-    font-weight: 300;
-    line-height: 1;
-  }
-
-  .badge-text {
-    font-size: 0.55rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    text-align: center;
-    line-height: 1.3;
-    padding: 0 10px;
-  }
-
-  .about-text .section-title { color: var(--cream); }
-
-  .about-text .divider { background: var(--gold); }
-
-  .about-body {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.2rem;
-    font-style: italic;
-    color: rgba(250,246,240,0.7);
-    line-height: 1.8;
-    margin-bottom: 2rem;
-  }
-
-  .about-facts {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 0.8rem;
-  }
-
-  .about-facts li {
-    display: flex;
-    gap: 1rem;
-    align-items: flex-start;
-    font-size: 0.85rem;
-    color: rgba(250,246,240,0.6);
-    line-height: 1.5;
-  }
-
-  .fact-dot {
-    width: 4px;
-    height: 4px;
-    background: var(--gold);
-    border-radius: 50%;
-    margin-top: 0.45rem;
-    flex-shrink: 0;
-  }
-
-  /* FORMAT SECTION */
-  .format {
-    background: var(--cream);
-  }
-
-  .format-intro {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 6rem;
-    align-items: end;
-    margin-bottom: 5rem;
-  }
-
-  @media (max-width: 768px) {
-    .format-intro { grid-template-columns: 1fr; gap: 2rem; }
-  }
-
-  .format-lead {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.3rem;
-    font-style: italic;
-    color: var(--warm-gray);
-    line-height: 1.8;
-  }
-
-  .events-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-    gap: 1.5px;
-  }
-
-  .event-item {
-    background: var(--ivory);
-    padding: 2.5rem 2rem;
-    transition: background 0.3s;
-    position: relative;
-  }
-
-  .event-item:first-child {
-    grid-column: span 2;
-    background: var(--charcoal);
-    color: var(--cream);
-  }
-
-  @media (max-width: 600px) {
-    .event-item:first-child { grid-column: span 1; }
-  }
-
-  .event-item:hover:not(:first-child) { background: var(--gold-light); }
-
-  .event-icon {
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-  }
-
-  .event-name {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.4rem;
-    font-weight: 400;
-    margin-bottom: 0.5rem;
-  }
-
-  .event-item:first-child .event-name {
-    font-size: 2rem;
-    color: var(--gold);
-  }
-
-  .event-desc {
-    font-size: 0.8rem;
-    color: var(--warm-gray);
-    line-height: 1.6;
-  }
-
-  .event-item:first-child .event-desc {
-    color: rgba(250,246,240,0.5);
-    font-size: 0.85rem;
-  }
-
-  /* PACKAGE SECTION */
-  .packages {
-    background: var(--ivory);
-    position: relative;
-  }
-
-  .packages-header {
-    text-align: center;
-    max-width: 600px;
-    margin: 0 auto 4rem;
-  }
-
-  .packages-header .divider { margin: 2rem auto; }
-
-  .packages-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2px;
-  }
-
-  .package-card {
-    background: var(--cream);
-    padding: 3rem 2.5rem;
-    position: relative;
-    transition: transform 0.3s;
-  }
-
-  .package-card.featured {
-    background: var(--charcoal);
-    color: var(--cream);
-  }
-
-  .package-card:hover { transform: translateY(-6px); }
-
-  .package-tag {
-    font-size: 0.6rem;
-    letter-spacing: 0.3em;
-    text-transform: uppercase;
-    color: var(--gold);
-    margin-bottom: 1.5rem;
-    display: block;
-  }
-
-  .package-name {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 2rem;
-    font-weight: 300;
-    margin-bottom: 0.5rem;
-    color: inherit;
-  }
-
-  .package-card.featured .package-name { color: var(--gold); }
-
-  .package-price {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1rem;
-    font-style: italic;
-    color: var(--warm-gray);
-    margin-bottom: 2rem;
-    display: block;
-  }
-
-  .package-card.featured .package-price { color: rgba(250,246,240,0.5); }
-
-  .package-includes {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 0.7rem;
-    margin-bottom: 2.5rem;
-  }
-
-  .package-includes li {
-    font-size: 0.82rem;
-    color: var(--warm-gray);
-    display: flex;
-    gap: 0.8rem;
-    line-height: 1.5;
-  }
-
-  .package-card.featured .package-includes li { color: rgba(250,246,240,0.6); }
-
-  .package-includes li::before {
-    content: '✓';
-    color: var(--gold);
-    font-size: 0.75rem;
-    margin-top: 0.05rem;
-    flex-shrink: 0;
-  }
-
-  .package-cta {
-    display: block;
-    text-align: center;
-    padding: 0.9rem 2rem;
-    font-size: 0.7rem;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    text-decoration: none;
-    border: 1px solid var(--gold);
-    color: var(--gold);
-    transition: all 0.3s;
-  }
-
-  .package-card.featured .package-cta {
-    background: var(--gold);
-    color: var(--charcoal);
-  }
-
-  .package-cta:hover { background: var(--gold); color: var(--charcoal); }
-
-  .packages-note {
-    text-align: center;
-    margin-top: 2.5rem;
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.1rem;
-    font-style: italic;
-    color: var(--warm-gray);
-  }
-
-  /* GEOGRAPHY */
-  .geography {
-    background: var(--cream);
-    text-align: center;
-  }
-
-  .cities {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1px;
-    margin-top: 4rem;
-  }
-
-  .city {
-    background: var(--ivory);
-    padding: 2rem 3rem;
-    transition: all 0.3s;
-  }
-
-  .city:hover { background: var(--gold); }
-  .city:hover .city-name { color: var(--charcoal); }
-  .city:hover .city-note { color: rgba(26,23,20,0.6); }
-
-  .city-name {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.8rem;
-    font-weight: 300;
-    color: var(--charcoal);
-    display: block;
-    transition: color 0.3s;
-  }
-
-  .city-note {
-    font-size: 0.7rem;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    color: var(--warm-gray);
-    margin-top: 0.3rem;
-    display: block;
-    transition: color 0.3s;
-  }
-
-  /* REVIEWS */
-  .reviews {
-    background: var(--charcoal);
-    color: var(--cream);
-  }
-
-  .reviews-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    flex-wrap: wrap;
-    gap: 2rem;
-    margin-bottom: 4rem;
-  }
-
-  .reviews-header .section-title { color: var(--cream); }
-
-  .reviews-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2px;
-  }
-
-  .review-card {
-    background: rgba(250,246,240,0.04);
-    padding: 2.5rem;
-    border-top: 1px solid rgba(201,169,110,0.2);
-    transition: background 0.3s;
-  }
-
-  .review-card:hover { background: rgba(250,246,240,0.07); }
-
-  .review-quote {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.15rem;
-    font-style: italic;
-    color: rgba(250,246,240,0.75);
-    line-height: 1.8;
-    margin-bottom: 2rem;
-  }
-
-  .review-quote::before {
-    content: '«';
-    color: var(--gold);
-    font-size: 2rem;
-    line-height: 0;
-    vertical-align: -0.4em;
-    margin-right: 0.2rem;
-  }
-
-  .review-author {
-    font-size: 0.75rem;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    color: var(--gold);
-  }
-
-  .review-city {
-    font-size: 0.7rem;
-    color: rgba(250,246,240,0.3);
-    margin-top: 0.3rem;
-  }
-
-  /* OBJECTIONS */
-  .objections {
-    background: var(--ivory);
-  }
-
-  .objections-list {
-    margin-top: 4rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-  }
-
-  .objection {
-    background: var(--cream);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    overflow: hidden;
-    transition: transform 0.3s;
-  }
-
-  .objection:hover { transform: translateX(4px); }
-
-  @media (max-width: 600px) {
-    .objection { grid-template-columns: 1fr; }
-  }
-
-  .obj-q, .obj-a {
-    padding: 2rem 2.5rem;
-  }
-
-  .obj-q {
-    background: rgba(201,169,110,0.07);
-    border-left: 3px solid rgba(201,169,110,0.3);
-  }
-
-  .obj-q-label {
-    font-size: 0.6rem;
-    letter-spacing: 0.25em;
-    text-transform: uppercase;
-    color: var(--warm-gray);
-    margin-bottom: 0.7rem;
-    display: block;
-  }
-
-  .obj-q-text {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.15rem;
-    font-style: italic;
-    color: var(--charcoal);
-    line-height: 1.5;
-  }
-
-  .obj-a-label {
-    font-size: 0.6rem;
-    letter-spacing: 0.25em;
-    text-transform: uppercase;
-    color: var(--gold);
-    margin-bottom: 0.7rem;
-    display: block;
-  }
-
-  .obj-a-text {
-    font-size: 0.85rem;
-    color: var(--warm-gray);
-    line-height: 1.7;
-  }
-
-  .obj-a-text strong { color: var(--charcoal); }
-
-  /* CTA SECTION */
-  .cta-section {
-    background: var(--gold);
-    padding: 7rem 2rem;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .cta-section::before {
-    content: '♥';
-    position: absolute;
-    font-size: 40rem;
-    color: rgba(26,23,20,0.04);
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    pointer-events: none;
-  }
-
-  .cta-title {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(2.5rem, 6vw, 5rem);
-    font-weight: 300;
-    color: var(--charcoal);
-    margin-bottom: 1.5rem;
-    position: relative;
-  }
-
-  .cta-sub {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.3rem;
-    font-style: italic;
-    color: rgba(26,23,20,0.6);
-    margin-bottom: 3rem;
-    position: relative;
-  }
-
-  .cta-contacts {
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 2rem;
-    position: relative;
-  }
-
-  .contact-btn {
-    display: flex;
-    align-items: center;
-    gap: 0.8rem;
-    padding: 1rem 2rem;
-    background: var(--charcoal);
-    color: var(--cream);
-    text-decoration: none;
-    font-size: 0.75rem;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    transition: all 0.3s;
-  }
-
-  .contact-btn:hover { background: rgba(26,23,20,0.8); transform: translateY(-2px); }
-
-  .contact-btn.wh { background: #25D366; color: white; }
-  .contact-btn.wh:hover { background: #1da851; }
-
-  .cta-note {
-    font-size: 0.75rem;
-    color: rgba(26,23,20,0.5);
-    letter-spacing: 0.1em;
-    position: relative;
-  }
-
-  /* CONTACT FORM SECTION */
-  .contact-form-section {
-    background: var(--charcoal);
-    padding: 6rem 2rem;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .contact-form-section::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 50%; transform: translateX(-50%);
-    width: 1px; height: 60px;
-    background: linear-gradient(to bottom, transparent, var(--gold));
-  }
-
-  .contact-form-inner {
-    max-width: 560px;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  .contact-form-label {
-    font-size: 0.65rem;
-    letter-spacing: 0.25em;
-    text-transform: uppercase;
-    color: var(--gold);
-    display: block;
-    margin-bottom: 1.5rem;
-  }
-
-  .contact-form-title {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(2rem, 5vw, 3.2rem);
-    font-weight: 300;
-    color: var(--cream);
-    margin-bottom: 0.8rem;
-    line-height: 1.2;
-  }
-
-  .contact-form-sub {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.05rem;
-    font-style: italic;
-    color: rgba(250,246,240,0.5);
-    margin-bottom: 3rem;
-  }
-
-  .form-group {
-    position: relative;
-    margin-bottom: 1.2rem;
-  }
-
-  .form-group input {
-    width: 100%;
-    background: rgba(250,246,240,0.06);
-    border: 1px solid rgba(201,169,110,0.25);
-    color: var(--cream);
-    font-family: 'Tenor Sans', sans-serif;
-    font-size: 0.85rem;
-    letter-spacing: 0.08em;
-    padding: 1rem 1.4rem;
-    outline: none;
-    transition: border-color 0.3s, background 0.3s;
-    -webkit-appearance: none;
-  }
-
-  .form-group input::placeholder {
-    color: rgba(250,246,240,0.3);
-  }
-
-  .form-group input:focus {
-    border-color: var(--gold);
-    background: rgba(201,169,110,0.06);
-  }
-
-  .phone-input-wrap {
-    position: relative;
-  }
-
-  .phone-input-wrap input {
-    padding-left: 3.5rem;
-  }
-
-  .phone-flag {
-    position: absolute;
-    left: 1.2rem;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 1.1rem;
-    pointer-events: none;
-  }
-
-  .form-submit-btn {
-    width: 100%;
-    background: var(--gold);
-    border: none;
-    color: var(--charcoal);
-    font-family: 'Tenor Sans', sans-serif;
-    font-size: 0.75rem;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    padding: 1.1rem 2rem;
-    cursor: pointer;
-    transition: all 0.3s;
-    margin-top: 0.4rem;
-  }
-
-  .form-submit-btn:hover {
-    background: var(--gold-light);
-    transform: translateY(-2px);
-  }
-
-  .form-submit-btn:disabled {
-    opacity: 0.6;
-    cursor: not-allowed;
-    transform: none;
-  }
-
-  .form-success {
-    display: none;
-    background: rgba(37,211,102,0.12);
-    border: 1px solid rgba(37,211,102,0.3);
-    color: #25D366;
-    padding: 1rem 1.4rem;
-    font-size: 0.8rem;
-    letter-spacing: 0.1em;
-    margin-top: 1rem;
-  }
-
-  .form-divider {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    margin: 2.5rem 0;
-  }
-
-  .form-divider::before,
-  .form-divider::after {
-    content: '';
-    flex: 1;
-    height: 1px;
-    background: rgba(201,169,110,0.2);
-  }
-
-  .form-divider span {
-    font-size: 0.6rem;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: rgba(250,246,240,0.3);
-    white-space: nowrap;
-  }
-
-  .social-btns {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 0.8rem;
-  }
-
-  .social-btn {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 1rem 0.5rem;
-    text-decoration: none;
-    border: 1px solid transparent;
-    transition: all 0.3s;
-    font-size: 0.6rem;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-  }
-
-  .social-btn svg {
-    width: 24px;
-    height: 24px;
-    flex-shrink: 0;
-  }
-
-  .social-btn.wa {
-    background: rgba(37,211,102,0.1);
-    border-color: rgba(37,211,102,0.25);
-    color: #25D366;
-  }
-  .social-btn.wa:hover {
-    background: rgba(37,211,102,0.2);
-    border-color: rgba(37,211,102,0.5);
-    transform: translateY(-3px);
-  }
-
-  .social-btn.tg {
-    background: rgba(40,160,240,0.1);
-    border-color: rgba(40,160,240,0.25);
-    color: #28A0F0;
-  }
-  .social-btn.tg:hover {
-    background: rgba(40,160,240,0.2);
-    border-color: rgba(40,160,240,0.5);
-    transform: translateY(-3px);
-  }
-
-  .social-btn.vk {
-    background: rgba(0,119,255,0.1);
-    border-color: rgba(0,119,255,0.25);
-    color: #4C75A3;
-  }
-  .social-btn.vk:hover {
-    background: rgba(0,119,255,0.2);
-    border-color: rgba(0,119,255,0.5);
-    transform: translateY(-3px);
-  }
-
-  .social-btn.mx {
-    background: rgba(90,70,220,0.12);
-    border-color: rgba(90,70,220,0.3);
-    color: #6B5CE7;
-  }
-  .social-btn.mx:hover {
-    background: rgba(90,70,220,0.22);
-    border-color: rgba(90,70,220,0.6);
-    transform: translateY(-3px);
-  }
-
-  /* MOBILE IMPROVEMENTS */
-  @media (max-width: 768px) {
-    section { padding: 4rem 1.2rem; }
-
-    .hero { min-height: 100svh; }
-    .hero-content { padding: 1.2rem; text-align: left; }
-    .hero-tag { font-size: 0.6rem; letter-spacing: 0.2em; }
-    .hero-stats { gap: 1.5rem; justify-content: flex-start; }
-    .stat-num { font-size: 2.2rem; }
-    .hero-cta { flex-direction: column; align-items: flex-start; gap: 0.8rem; }
-    .btn-primary, .btn-outline { width: 100%; text-align: center; padding: 1.1rem 1.5rem; }
-
-    .fears-grid { grid-template-columns: 1fr; gap: 2px; }
-    .fear-card { padding: 1.8rem 1.5rem; }
-
-    .packages-grid { grid-template-columns: 1fr; }
-    .package-card { padding: 2rem 1.5rem; }
-    .package-card.featured { order: -1; }
-
-    .cities { gap: 2px; }
-    .city { padding: 1.2rem 1.5rem; flex: 1 1 calc(50% - 1px); }
-
-    .reviews-grid { grid-template-columns: 1fr; }
-    .review-card { padding: 1.8rem 1.5rem; }
-
-    .objection { grid-template-columns: 1fr; }
-    .obj-q, .obj-a { padding: 1.2rem 1.5rem; }
-
-    .cta-section { padding: 4rem 1.2rem; }
-    .cta-contacts { flex-direction: column; gap: 0.8rem; align-items: stretch; }
-    .contact-btn { justify-content: center; }
-
-    .contact-form-inner { padding: 0 0.2rem; }
-    .form-group input { font-size: 1rem; padding: 1rem 1.2rem; }
-    .phone-input-wrap input { padding-left: 3.2rem; }
-    .form-submit-btn { font-size: 0.85rem; padding: 1.2rem; }
-
-    .social-btns { grid-template-columns: repeat(2, 1fr); gap: 0.6rem; }
-    .social-btn { padding: 1rem 0.5rem; font-size: 0.6rem; }
-    .social-btn svg { width: 28px; height: 28px; }
-
-    .portfolio-grid { grid-template-columns: repeat(2, 1fr); gap: 0.5rem; }
-    .work-photos { grid-template-columns: 1fr; }
-
-    nav { padding: 1rem 1.2rem; }
-    nav.scrolled { padding: 0.8rem 1.2rem; }
-
-    .about-inner { gap: 2rem; }
-    .about-photo-frame { aspect-ratio: 4/3; }
-    .about-badge { width: 90px; height: 90px; bottom: -1rem; right: -0.5rem; }
-    .badge-num { font-size: 1.6rem; }
-
-    .format-intro { gap: 1.5rem; }
-    .events-grid { grid-template-columns: 1fr; }
-    .event-item:first-child { grid-column: span 1; }
-  }
-
-  @media (max-width: 480px) {
-    .hero-name { font-size: clamp(3rem, 15vw, 4.5rem); }
-    .section-title { font-size: clamp(1.8rem, 7vw, 2.5rem); }
-    .cta-title { font-size: clamp(2rem, 9vw, 3rem); }
-  }
-
-  /* MOBILE FLOATING CTA */
-  .mobile-cta-bar {
-    display: none;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 200;
-    background: var(--charcoal);
-    border-top: 1px solid rgba(201,169,110,0.2);
-    padding: 0.8rem 1rem;
-    gap: 0.6rem;
-    box-shadow: 0 -4px 20px rgba(0,0,0,0.4);
-  }
-
-  @media (max-width: 768px) {
-    .mobile-cta-bar { display: flex; }
-    body { padding-bottom: 70px; }
-  }
-
-  .mobile-cta-btn {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    padding: 0.75rem 0.5rem;
-    text-decoration: none;
-    font-family: 'Tenor Sans', sans-serif;
-    font-size: 0.65rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    border-radius: 2px;
-    transition: all 0.2s;
-  }
-
-  .mobile-cta-btn.call {
-    background: var(--gold);
-    color: var(--charcoal);
-    font-weight: bold;
-  }
-
-  .mobile-cta-btn.write {
-    background: rgba(201,169,110,0.12);
-    border: 1px solid rgba(201,169,110,0.3);
-    color: var(--gold);
-  }
-
-  /* FOOTER */
-  footer {
-    background: var(--charcoal);
-    padding: 3rem 2rem;
-    text-align: center;
-  }
-
-  .footer-logo {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.8rem;
-    font-weight: 300;
-    color: var(--gold);
-    display: block;
-    margin-bottom: 1rem;
-    letter-spacing: 0.05em;
-  }
-
-  .footer-domain {
-    font-size: 0.7rem;
-    letter-spacing: 0.2em;
-    color: rgba(250,246,240,0.25);
-    text-transform: lowercase;
-    margin-bottom: 0.5rem;
-  }
-
-  .footer-copy {
-    font-size: 0.65rem;
-    color: rgba(250,246,240,0.2);
-    letter-spacing: 0.1em;
-  }
-
-  /* HERO PHOTO */
-  .hero-photo-wrap {
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    width: 42%;
-    overflow: hidden;
-    z-index: 0;
-  }
-
-  .hero-photo-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: top center;
-    display: block;
-  }
-
-  .hero-photo-fade {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(to right, var(--charcoal) 0%, rgba(26,23,20,0.5) 40%, transparent 100%),
-                linear-gradient(to top, var(--charcoal) 0%, transparent 30%);
-  }
-
-  .hero-content {
-    position: relative;
-    z-index: 1;
-    max-width: 58%;
-  }
-
-  @media (max-width: 768px) {
-    .hero-photo-wrap { width: 100%; opacity: 0.25; }
-    .hero-content { max-width: 100%; }
-  }
-
-  /* PORTFOLIO GALLERY */
-  .portfolio-section {
-    background: var(--ivory);
-    padding: 6rem 2rem;
-  }
-
-  .portfolio-header {
-    text-align: center;
-    margin-bottom: 3rem;
-  }
-
-  .portfolio-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
-    max-width: 1100px;
-    margin: 0 auto;
-  }
-
-  @media (max-width: 900px) {
-    .portfolio-grid { grid-template-columns: repeat(2, 1fr); }
-  }
-  @media (max-width: 500px) {
-    .portfolio-grid { grid-template-columns: repeat(2, 1fr); gap: 0.5rem; }
-  }
-
-  .portfolio-item {
-    position: relative;
-    overflow: hidden;
-    aspect-ratio: 1;
-    cursor: pointer;
-  }
-
-  .portfolio-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease;
-    display: block;
-  }
-
-  .portfolio-item:hover img { transform: scale(1.05); }
-
-  .portfolio-item-overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(26,23,20,0);
-    transition: background 0.3s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .portfolio-item:hover .portfolio-item-overlay {
-    background: rgba(26,23,20,0.35);
-  }
-
-  /* IN-WORK PHOTOS */
-  .work-photos {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem;
-    margin-top: 2rem;
-  }
-
-  @media (max-width: 600px) {
-    .work-photos { grid-template-columns: 1fr; }
-  }
-
-  .work-photo-item {
-    position: relative;
-    overflow: hidden;
-    border-radius: 2px;
-  }
-
-  .work-photo-item img {
-    width: 100%;
-    height: 260px;
-    object-fit: cover;
-    object-position: top;
-    display: block;
-    transition: transform 0.4s;
-  }
-
-  .work-photo-item:hover img { transform: scale(1.03); }
-
-  /* NAV */
-  nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 100;
-    padding: 1.5rem 2.5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: all 0.4s;
-  }
-
-  nav.scrolled {
-    background: rgba(26,23,20,0.95);
-    backdrop-filter: blur(10px);
-    padding: 1rem 2.5rem;
-    border-bottom: 1px solid rgba(201,169,110,0.1);
-  }
-
-  .nav-logo {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.3rem;
-    font-weight: 300;
-    color: var(--gold);
-    text-decoration: none;
-    letter-spacing: 0.05em;
-  }
-
-  .nav-links {
-    display: flex;
-    gap: 2.5rem;
-    list-style: none;
-  }
-
-  @media (max-width: 600px) {
-    .nav-links { display: none; }
-  }
-
-  .nav-links a {
-    font-size: 0.7rem;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: rgba(250,246,240,0.5);
-    text-decoration: none;
-    transition: color 0.3s;
-  }
-
-  .nav-links a:hover { color: var(--gold); }
-
-  .nav-cta {
-    font-size: 0.7rem;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    color: var(--gold);
-    text-decoration: none;
-    border: 1px solid rgba(201,169,110,0.4);
-    padding: 0.5rem 1.2rem;
-    transition: all 0.3s;
-  }
-
-  .nav-cta:hover { background: var(--gold); color: var(--charcoal); }
-
-  /* REVEAL ANIMATION */
-  .reveal {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.7s ease, transform 0.7s ease;
-  }
-
-  .reveal.visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
+:root{--cream:#FAF6F0;--ivory:#F2EDE4;--gold:#C9A96E;--gold-light:#E8D5B0;--gold-dark:#9B7A3D;--charcoal:#1A1714;--warm-gray:#6B6560;--rose:#D4A5A0;--text:#2C2825}
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+body{font-family:'Tenor Sans',sans-serif;background:var(--cream);color:var(--text);overflow-x:hidden}
+.hero{min-height:100vh;background:var(--charcoal);position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 100%,rgba(201,169,110,.18) 0%,transparent 60%),radial-gradient(ellipse 40% 40% at 20% 20%,rgba(212,165,160,.1) 0%,transparent 50%),linear-gradient(160deg,#1A1714 0%,#2C2320 50%,#1A1714 100%)}
+.hero-grain{position:absolute;inset:0;opacity:.03;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");background-size:200px 200px}
+.hero-ornament{position:absolute;width:600px;height:600px;border:1px solid rgba(201,169,110,.12);border-radius:50%;top:50%;left:50%;transform:translate(-50%,-50%);animation:rotate 40s linear infinite}
+.hero-ornament::before{content:'';position:absolute;inset:30px;border:1px solid rgba(201,169,110,.08);border-radius:50%}
+@keyframes rotate{to{transform:translate(-50%,-50%) rotate(360deg)}}
+.hero-content{position:relative;z-index:1;max-width:58%;padding:2rem;animation:fadeUp 1.2s ease both}
+@keyframes fadeUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+.hero-tag{display:inline-block;font-size:.7rem;letter-spacing:.35em;text-transform:uppercase;color:var(--gold);border:1px solid rgba(201,169,110,.4);padding:.5rem 1.5rem;margin-bottom:2.5rem;animation:fadeUp 1.2s .2s ease both}
+.hero-name{font-family:'Cormorant Garamond',serif;font-size:clamp(3.5rem,9vw,7.5rem);font-weight:300;color:var(--cream);line-height:1;letter-spacing:-.01em;animation:fadeUp 1.2s .3s ease both}
+.hero-name em{font-style:italic;color:var(--gold)}
+.hero-subtitle{font-family:'Cormorant Garamond',serif;font-size:clamp(1.1rem,2.5vw,1.6rem);font-weight:300;font-style:italic;color:rgba(250,246,240,.55);margin:1.5rem 0 3rem;letter-spacing:.05em;animation:fadeUp 1.2s .4s ease both}
+.hero-stats{display:flex;gap:3rem;justify-content:center;flex-wrap:wrap;margin-bottom:3.5rem;animation:fadeUp 1.2s .5s ease both}
+.stat{text-align:center}
+.stat-num{font-family:'Cormorant Garamond',serif;font-size:2.8rem;font-weight:300;color:var(--gold);line-height:1;display:block}
+.stat-label{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(250,246,240,.4);margin-top:.3rem;display:block}
+.hero-cta{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;animation:fadeUp 1.2s .6s ease both}
+.btn-primary{background:var(--gold);color:var(--charcoal);padding:1rem 2.5rem;font-family:'Tenor Sans',sans-serif;font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;text-decoration:none;border:none;cursor:pointer;transition:all .3s;position:relative;overflow:hidden}
+.btn-primary::after{content:'';position:absolute;inset:0;background:rgba(255,255,255,.15);transform:translateX(-100%);transition:transform .3s}
+.btn-primary:hover::after{transform:translateX(0)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(201,169,110,.35)}
+.btn-outline{background:transparent;color:var(--cream);padding:1rem 2.5rem;font-family:'Tenor Sans',sans-serif;font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;text-decoration:none;border:1px solid rgba(250,246,240,.3);cursor:pointer;transition:all .3s}
+.btn-outline:hover{border-color:var(--gold);color:var(--gold)}
+.scroll-hint{position:absolute;bottom:2.5rem;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:.5rem;color:rgba(250,246,240,.3);font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;animation:fadeUp 1.2s 1s ease both}
+.scroll-line{width:1px;height:40px;background:linear-gradient(to bottom,rgba(201,169,110,.6),transparent);animation:scrollPulse 2s ease-in-out infinite}
+@keyframes scrollPulse{0%,100%{transform:scaleY(1);opacity:1}50%{transform:scaleY(.7);opacity:.5}}
+.hero-photo-wrap{position:absolute;right:0;top:0;bottom:0;width:42%;overflow:hidden;z-index:0}
+.hero-photo-img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block}
+.hero-photo-fade{position:absolute;inset:0;background:linear-gradient(to right,var(--charcoal) 0%,rgba(26,23,20,.5) 40%,transparent 100%),linear-gradient(to top,var(--charcoal) 0%,transparent 30%)}
+section{padding:7rem 2rem}
+.container{max-width:1100px;margin:0 auto}
+.section-label{font-size:.65rem;letter-spacing:.35em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:1.2rem}
+.section-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2.2rem,5vw,3.8rem);font-weight:300;line-height:1.15;color:var(--charcoal)}
+.section-title em{font-style:italic;color:var(--gold-dark)}
+.divider{width:60px;height:1px;background:var(--gold);margin:2rem 0}
+.fears{background:var(--ivory);position:relative;overflow:hidden}
+.fears::before{content:'?';position:absolute;right:-2rem;top:50%;transform:translateY(-50%);font-family:'Cormorant Garamond',serif;font-size:35rem;color:rgba(201,169,110,.04);line-height:1;pointer-events:none}
+.fears-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2px;margin-top:4rem}
+.fear-card{background:var(--cream);padding:2.5rem;position:relative;overflow:hidden;transition:transform .3s}
+.fear-card:hover{transform:translateY(-4px)}
+.fear-card::before{content:'';position:absolute;top:0;left:0;width:3px;height:0;background:var(--gold);transition:height .4s}
+.fear-card:hover::before{height:100%}
+.fear-num{font-family:'Cormorant Garamond',serif;font-size:3.5rem;font-weight:300;color:rgba(201,169,110,.2);line-height:1;margin-bottom:1rem}
+.fear-title{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:600;color:var(--charcoal);margin-bottom:.8rem}
+.fear-answer{font-size:.85rem;color:var(--warm-gray);line-height:1.7}
+.fear-answer strong{color:var(--gold-dark);font-weight:normal}
+.about{background:var(--charcoal);color:var(--cream);position:relative;overflow:hidden}
+.about-inner{display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:center}
+.about-photo{position:relative}
+.about-photo-frame{aspect-ratio:3/4;background:linear-gradient(135deg,rgba(201,169,110,.15),rgba(212,165,160,.1));position:relative;overflow:hidden}
+.about-photo-frame::before{content:'';position:absolute;inset:-1px;border:1px solid rgba(201,169,110,.3)}
+.about-badge{position:absolute;bottom:-1.5rem;right:-1.5rem;width:120px;height:120px;background:var(--gold);border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--charcoal)}
+.badge-num{font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:300;line-height:1}
+.badge-text{font-size:.55rem;letter-spacing:.1em;text-transform:uppercase;text-align:center;line-height:1.3;padding:0 10px}
+.about-text .section-title{color:var(--cream)}
+.about-text .divider{background:var(--gold)}
+.about-body{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-style:italic;color:rgba(250,246,240,.7);line-height:1.8;margin-bottom:2rem}
+.about-facts{list-style:none;display:flex;flex-direction:column;gap:.8rem}
+.about-facts li{display:flex;gap:1rem;align-items:flex-start;font-size:.85rem;color:rgba(250,246,240,.6);line-height:1.5}
+.fact-dot{width:4px;height:4px;background:var(--gold);border-radius:50%;margin-top:.45rem;flex-shrink:0}
+.format{background:var(--cream)}
+.format-intro{display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:end;margin-bottom:5rem}
+.format-lead{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-style:italic;color:var(--warm-gray);line-height:1.8}
+.events-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:1.5px}
+.event-item{background:var(--ivory);padding:2.5rem 2rem;transition:background .3s;position:relative}
+.event-item:first-child{grid-column:span 2;background:var(--charcoal);color:var(--cream)}
+.event-item:hover:not(:first-child){background:var(--gold-light)}
+.event-icon{font-size:1.8rem;margin-bottom:1rem}
+.event-name{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:400;margin-bottom:.5rem}
+.event-item:first-child .event-name{font-size:2rem;color:var(--gold)}
+.event-desc{font-size:.8rem;color:var(--warm-gray);line-height:1.6}
+.event-item:first-child .event-desc{color:rgba(250,246,240,.5);font-size:.85rem}
+.packages{background:var(--ivory);position:relative}
+.packages-header{text-align:center;max-width:600px;margin:0 auto 4rem}
+.packages-header .divider{margin:2rem auto}
+.packages-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2px}
+.package-card{background:var(--cream);padding:3rem 2.5rem;position:relative;transition:transform .3s}
+.package-card.featured{background:var(--charcoal);color:var(--cream)}
+.package-card:hover{transform:translateY(-6px)}
+.package-tag{font-size:.6rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-bottom:1.5rem;display:block}
+.package-name{font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:300;margin-bottom:.5rem;color:inherit}
+.package-card.featured .package-name{color:var(--gold)}
+.package-price{font-family:'Cormorant Garamond',serif;font-size:1rem;font-style:italic;color:var(--warm-gray);margin-bottom:2rem;display:block}
+.package-card.featured .package-price{color:rgba(250,246,240,.5)}
+.package-includes{list-style:none;display:flex;flex-direction:column;gap:.7rem;margin-bottom:2.5rem}
+.package-includes li{font-size:.82rem;color:var(--warm-gray);display:flex;gap:.8rem;line-height:1.5}
+.package-card.featured .package-includes li{color:rgba(250,246,240,.6)}
+.package-includes li::before{content:'✓';color:var(--gold);font-size:.75rem;margin-top:.05rem;flex-shrink:0}
+.package-cta{display:block;text-align:center;padding:.9rem 2rem;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;text-decoration:none;border:1px solid var(--gold);color:var(--gold);transition:all .3s}
+.package-card.featured .package-cta{background:var(--gold);color:var(--charcoal)}
+.package-cta:hover{background:var(--gold);color:var(--charcoal)}
+.packages-note{text-align:center;margin-top:2.5rem;font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-style:italic;color:var(--warm-gray)}
+.geography{background:var(--cream);text-align:center}
+.cities{display:flex;justify-content:center;flex-wrap:wrap;gap:1px;margin-top:4rem}
+.city{background:var(--ivory);padding:2rem 3rem;transition:all .3s}
+.city:hover{background:var(--gold)}
+.city:hover .city-name{color:var(--charcoal)}
+.city:hover .city-note{color:rgba(26,23,20,.6)}
+.city-name{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:300;color:var(--charcoal);display:block;transition:color .3s}
+.city-note{font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;color:var(--warm-gray);margin-top:.3rem;display:block;transition:color .3s}
+
+/* REVIEWS - REAL VK */
+.reviews{background:var(--charcoal);color:var(--cream)}
+.reviews-header{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:2rem;margin-bottom:3rem}
+.reviews-header .section-title{color:var(--cream)}
+.reviews-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2px;margin-bottom:3rem}
+.review-card{background:rgba(250,246,240,.04);padding:2.5rem;border-top:1px solid rgba(201,169,110,.2);transition:background .3s}
+.review-card:hover{background:rgba(250,246,240,.07)}
+.review-quote{font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-style:italic;color:rgba(250,246,240,.75);line-height:1.8;margin-bottom:1.5rem}
+.review-quote::before{content:'«';color:var(--gold);font-size:2rem;line-height:0;vertical-align:-.4em;margin-right:.2rem}
+.review-author{font-size:.75rem;letter-spacing:.15em;text-transform:uppercase;color:var(--gold)}
+.review-city{font-size:.7rem;color:rgba(250,246,240,.3);margin-top:.3rem}
+
+/* VK SCREENSHOTS GALLERY */
+.vk-screenshots{padding:0 0 4rem}
+.vk-label{font-size:.65rem;letter-spacing:.25em;text-transform:uppercase;color:var(--gold);display:block;text-align:center;margin-bottom:2rem}
+.vk-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:4px;max-width:1100px;margin:0 auto}
+.vk-item{position:relative;overflow:hidden;cursor:pointer;border:1px solid rgba(201,169,110,.1)}
+.vk-item img{width:100%;height:220px;object-fit:cover;object-position:top;display:block;transition:transform .4s}
+.vk-item:hover img{transform:scale(1.03)}
+.vk-more{display:flex;align-items:center;justify-content:center;background:rgba(250,246,240,.04);border:1px solid rgba(201,169,110,.15)}
+.vk-more a{color:var(--gold);text-decoration:none;font-size:.75rem;letter-spacing:.15em;text-transform:uppercase;text-align:center;padding:1rem}
+
+/* LIGHTBOX */
+.lightbox{display:none;position:fixed;inset:0;background:rgba(0,0,0,.92);z-index:1000;align-items:center;justify-content:center}
+.lightbox.open{display:flex}
+.lightbox img{max-width:90vw;max-height:90vh;object-fit:contain}
+.lightbox-close{position:absolute;top:1.5rem;right:1.5rem;color:var(--gold);font-size:2rem;cursor:pointer;background:none;border:none;line-height:1}
+
+.objections{background:var(--ivory)}
+.objections-list{margin-top:4rem;display:flex;flex-direction:column;gap:2px}
+.objection{background:var(--cream);display:grid;grid-template-columns:1fr 1fr;overflow:hidden;transition:transform .3s}
+.objection:hover{transform:translateX(4px)}
+.obj-q,.obj-a{padding:2rem 2.5rem}
+.obj-q{background:rgba(201,169,110,.07);border-left:3px solid rgba(201,169,110,.3)}
+.obj-q-label{font-size:.6rem;letter-spacing:.25em;text-transform:uppercase;color:var(--warm-gray);margin-bottom:.7rem;display:block}
+.obj-q-text{font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-style:italic;color:var(--charcoal);line-height:1.5}
+.obj-a-label{font-size:.6rem;letter-spacing:.25em;text-transform:uppercase;color:var(--gold);margin-bottom:.7rem;display:block}
+.obj-a-text{font-size:.85rem;color:var(--warm-gray);line-height:1.7}
+.obj-a-text strong{color:var(--charcoal)}
+.cta-section{background:var(--gold);padding:7rem 2rem;text-align:center;position:relative;overflow:hidden}
+.cta-section::before{content:'♥';position:absolute;font-size:40rem;color:rgba(26,23,20,.04);top:50%;left:50%;transform:translate(-50%,-50%);pointer-events:none}
+.cta-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2.5rem,6vw,5rem);font-weight:300;color:var(--charcoal);margin-bottom:1.5rem;position:relative}
+.cta-sub{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-style:italic;color:rgba(26,23,20,.6);margin-bottom:3rem;position:relative}
+.cta-contacts{display:flex;gap:2rem;justify-content:center;flex-wrap:wrap;margin-bottom:2rem;position:relative}
+.contact-btn{display:flex;align-items:center;gap:.8rem;padding:1rem 2rem;background:var(--charcoal);color:var(--cream);text-decoration:none;font-size:.75rem;letter-spacing:.15em;text-transform:uppercase;transition:all .3s}
+.contact-btn:hover{background:rgba(26,23,20,.8);transform:translateY(-2px)}
+.contact-btn.wh{background:#25D366;color:white}
+.contact-btn.wh:hover{background:#1da851}
+.cta-note{font-size:.75rem;color:rgba(26,23,20,.5);letter-spacing:.1em;position:relative}
+
+/* BOOK LEAD MAGNET */
+.book-section{background:var(--charcoal);padding:5rem 2rem;position:relative;overflow:hidden}
+.book-section::before{content:'';position:absolute;top:0;left:50%;transform:translateX(-50%);width:1px;height:60px;background:linear-gradient(to bottom,transparent,var(--gold))}
+.book-inner{max-width:900px;margin:0 auto;display:grid;grid-template-columns:1fr 1.6fr;gap:5rem;align-items:center}
+.book-cover{position:relative}
+.book-cover-frame{background:linear-gradient(135deg,rgba(201,169,110,.2),rgba(201,169,110,.05));border:1px solid rgba(201,169,110,.3);padding:2.5rem;text-align:center;position:relative}
+.book-cover-frame::before{content:'КНИГА';position:absolute;top:-.7rem;left:50%;transform:translateX(-50%);font-size:.55rem;letter-spacing:.3em;color:var(--gold);background:var(--charcoal);padding:0 .8rem}
+.book-title-big{font-family:'Cormorant Garamond',serif;font-size:1.6rem;font-weight:600;color:var(--cream);line-height:1.2;margin-bottom:.5rem}
+.book-author-small{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(250,246,240,.4)}
+.book-badge{position:absolute;top:-1rem;right:-1rem;width:70px;height:70px;background:var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--charcoal);font-size:.6rem;font-weight:bold;text-transform:uppercase;letter-spacing:.05em;text-align:center;line-height:1.2}
+.book-text .section-title{color:var(--cream)}
+.book-text .divider{background:var(--gold)}
+.book-desc{font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-style:italic;color:rgba(250,246,240,.6);line-height:1.8;margin-bottom:2rem}
+.book-form{display:flex;flex-direction:column;gap:.8rem}
+.book-form input{background:rgba(250,246,240,.06);border:1px solid rgba(201,169,110,.25);color:var(--cream);font-family:'Tenor Sans',sans-serif;font-size:.85rem;letter-spacing:.08em;padding:1rem 1.4rem;outline:none;transition:border-color .3s;-webkit-appearance:none}
+.book-form input::placeholder{color:rgba(250,246,240,.3)}
+.book-form input:focus{border-color:var(--gold)}
+.phone-wrap{position:relative}
+.phone-wrap input{padding-left:3.5rem}
+.phone-flag{position:absolute;left:1.2rem;top:50%;transform:translateY(-50%);font-size:1.1rem;pointer-events:none}
+.book-btn{background:var(--gold);border:none;color:var(--charcoal);font-family:'Tenor Sans',sans-serif;font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;padding:1.1rem 2rem;cursor:pointer;transition:all .3s}
+.book-btn:hover{background:var(--gold-light);transform:translateY(-2px)}
+.book-btn:disabled{opacity:.6;cursor:not-allowed;transform:none}
+.book-hint{font-size:.7rem;color:rgba(250,246,240,.3);line-height:1.5;text-align:center}
+.book-success{display:none;background:rgba(37,211,102,.12);border:1px solid rgba(37,211,102,.3);color:#25D366;padding:1rem 1.4rem;font-size:.8rem;letter-spacing:.1em;text-align:center}
+
+.portfolio-section{background:var(--ivory);padding:6rem 2rem}
+.portfolio-header{text-align:center;margin-bottom:3rem}
+.portfolio-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;max-width:1100px;margin:0 auto}
+.portfolio-item{position:relative;overflow:hidden;aspect-ratio:1;cursor:pointer}
+.portfolio-item img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease;display:block}
+.portfolio-item:hover img{transform:scale(1.05)}
+.portfolio-item-overlay{position:absolute;inset:0;background:rgba(26,23,20,0);transition:background .3s}
+.portfolio-item:hover .portfolio-item-overlay{background:rgba(26,23,20,.35)}
+.work-photos{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:2rem}
+.work-photo-item{position:relative;overflow:hidden;border-radius:2px}
+.work-photo-item img{width:100%;height:260px;object-fit:cover;object-position:top;display:block;transition:transform .4s}
+.work-photo-item:hover img{transform:scale(1.03)}
+
+/* CONTACT FORM */
+.contact-form-section{background:var(--charcoal);padding:6rem 2rem;position:relative;overflow:hidden}
+.contact-form-section::before{content:'';position:absolute;top:0;left:50%;transform:translateX(-50%);width:1px;height:60px;background:linear-gradient(to bottom,transparent,var(--gold))}
+.contact-form-inner{max-width:560px;margin:0 auto;text-align:center}
+.contact-form-label{font-size:.65rem;letter-spacing:.25em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:1.5rem}
+.contact-form-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,5vw,3.2rem);font-weight:300;color:var(--cream);margin-bottom:.8rem;line-height:1.2}
+.contact-form-sub{font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-style:italic;color:rgba(250,246,240,.5);margin-bottom:3rem}
+.form-group{position:relative;margin-bottom:1.2rem}
+.form-group input{width:100%;background:rgba(250,246,240,.06);border:1px solid rgba(201,169,110,.25);color:var(--cream);font-family:'Tenor Sans',sans-serif;font-size:.85rem;letter-spacing:.08em;padding:1rem 1.4rem;outline:none;transition:border-color .3s;-webkit-appearance:none}
+.form-group input::placeholder{color:rgba(250,246,240,.3)}
+.form-group input:focus{border-color:var(--gold);background:rgba(201,169,110,.06)}
+.phone-input-wrap{position:relative}
+.phone-input-wrap input{padding-left:3.5rem}
+.phone-flag2{position:absolute;left:1.2rem;top:50%;transform:translateY(-50%);font-size:1.1rem;pointer-events:none}
+.form-submit-btn{width:100%;background:var(--gold);border:none;color:var(--charcoal);font-family:'Tenor Sans',sans-serif;font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;padding:1.1rem 2rem;cursor:pointer;transition:all .3s;margin-top:.4rem}
+.form-submit-btn:hover{background:var(--gold-light);transform:translateY(-2px)}
+.form-submit-btn:disabled{opacity:.6;cursor:not-allowed;transform:none}
+.form-success{display:none;background:rgba(37,211,102,.12);border:1px solid rgba(37,211,102,.3);color:#25D366;padding:1rem 1.4rem;font-size:.8rem;letter-spacing:.1em;margin-top:1rem}
+.form-divider{display:flex;align-items:center;gap:1.5rem;margin:2.5rem 0}
+.form-divider::before,.form-divider::after{content:'';flex:1;height:1px;background:rgba(201,169,110,.2)}
+.form-divider span{font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(250,246,240,.3);white-space:nowrap}
+.social-btns{display:grid;grid-template-columns:repeat(4,1fr);gap:.8rem}
+.social-btn{display:flex;flex-direction:column;align-items:center;gap:.5rem;padding:1rem .5rem;text-decoration:none;border:1px solid transparent;transition:all .3s;font-size:.6rem;letter-spacing:.15em;text-transform:uppercase}
+.social-btn svg{width:24px;height:24px;flex-shrink:0}
+.social-btn.wa{background:rgba(37,211,102,.1);border-color:rgba(37,211,102,.25);color:#25D366}
+.social-btn.wa:hover{background:rgba(37,211,102,.2);border-color:rgba(37,211,102,.5);transform:translateY(-3px)}
+.social-btn.tg{background:rgba(40,160,240,.1);border-color:rgba(40,160,240,.25);color:#28A0F0}
+.social-btn.tg:hover{background:rgba(40,160,240,.2);border-color:rgba(40,160,240,.5);transform:translateY(-3px)}
+.social-btn.vk{background:rgba(0,119,255,.1);border-color:rgba(0,119,255,.25);color:#4C75A3}
+.social-btn.vk:hover{background:rgba(0,119,255,.2);border-color:rgba(0,119,255,.5);transform:translateY(-3px)}
+.social-btn.mx{background:rgba(90,70,220,.12);border-color:rgba(90,70,220,.3);color:#6B5CE7}
+.social-btn.mx:hover{background:rgba(90,70,220,.22);border-color:rgba(90,70,220,.6);transform:translateY(-3px)}
+
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.5rem 2.5rem;display:flex;justify-content:space-between;align-items:center;transition:all .4s}
+nav.scrolled{background:rgba(26,23,20,.95);backdrop-filter:blur(10px);padding:1rem 2.5rem;border-bottom:1px solid rgba(201,169,110,.1)}
+.nav-logo{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:300;color:var(--gold);text-decoration:none;letter-spacing:.05em}
+.nav-links{display:flex;gap:2.5rem;list-style:none}
+.nav-links a{font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(250,246,240,.5);text-decoration:none;transition:color .3s}
+.nav-links a:hover{color:var(--gold)}
+.nav-cta{font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);text-decoration:none;border:1px solid rgba(201,169,110,.4);padding:.5rem 1.2rem;transition:all .3s}
+.nav-cta:hover{background:var(--gold);color:var(--charcoal)}
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .7s ease,transform .7s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+footer{background:var(--charcoal);padding:3rem 2rem;text-align:center}
+.footer-logo{font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:300;color:var(--gold);display:block;margin-bottom:1rem;letter-spacing:.05em}
+.footer-domain{font-size:.7rem;letter-spacing:.2em;color:rgba(250,246,240,.25);text-transform:lowercase;margin-bottom:.5rem}
+.footer-copy{font-size:.65rem;color:rgba(250,246,240,.2);letter-spacing:.1em}
+.mobile-cta-bar{display:none;position:fixed;bottom:0;left:0;right:0;z-index:200;background:var(--charcoal);border-top:1px solid rgba(201,169,110,.2);padding:.8rem 1rem;gap:.6rem;box-shadow:0 -4px 20px rgba(0,0,0,.4)}
+.mobile-cta-btn{flex:1;display:flex;align-items:center;justify-content:center;gap:.5rem;padding:.75rem .5rem;text-decoration:none;font-family:'Tenor Sans',sans-serif;font-size:.65rem;letter-spacing:.1em;text-transform:uppercase;border-radius:2px;transition:all .2s}
+.mobile-cta-btn.call{background:var(--gold);color:var(--charcoal);font-weight:bold}
+.mobile-cta-btn.write{background:rgba(201,169,110,.12);border:1px solid rgba(201,169,110,.3);color:var(--gold)}
+
+@media(max-width:768px){
+  section{padding:4rem 1.2rem}
+  .hero{min-height:100svh}
+  .hero-photo-wrap{width:100%;opacity:.25}
+  .hero-content{max-width:100%;padding:1.2rem;text-align:left}
+  .hero-tag{font-size:.6rem;letter-spacing:.2em}
+  .hero-stats{gap:1.5rem;justify-content:flex-start}
+  .stat-num{font-size:2.2rem}
+  .hero-cta{flex-direction:column;align-items:flex-start;gap:.8rem}
+  .btn-primary,.btn-outline{width:100%;text-align:center;padding:1.1rem 1.5rem}
+  .fears-grid{grid-template-columns:1fr;gap:2px}
+  .fear-card{padding:1.8rem 1.5rem}
+  .about-inner{grid-template-columns:1fr;gap:2rem}
+  .about-photo-frame{aspect-ratio:4/3}
+  .about-photo-frame img{object-position:top center}
+  .about-badge{width:90px;height:90px;bottom:-1rem;right:-.5rem}
+  .badge-num{font-size:1.6rem}
+  .format-intro{grid-template-columns:1fr;gap:1.5rem}
+  .events-grid{grid-template-columns:1fr}
+  .event-item:first-child{grid-column:span 1}
+  .packages-grid{grid-template-columns:1fr}
+  .package-card{padding:2rem 1.5rem}
+  .package-card.featured{order:-1}
+  .cities{gap:2px}
+  .city{padding:1.2rem 1.5rem;flex:1 1 calc(50% - 1px)}
+  .reviews-grid{grid-template-columns:1fr}
+  .review-card{padding:1.8rem 1.5rem}
+  .vk-grid{grid-template-columns:repeat(3,1fr)}
+  .book-inner{grid-template-columns:1fr;gap:2.5rem}
+  .book-cover-frame{max-width:260px;margin:0 auto}
+  .objection{grid-template-columns:1fr}
+  .obj-q,.obj-a{padding:1.2rem 1.5rem}
+  .cta-section{padding:4rem 1.2rem}
+  .cta-contacts{flex-direction:column;gap:.8rem;align-items:stretch}
+  .contact-btn{justify-content:center}
+  .contact-form-inner{padding:0 .2rem}
+  .form-group input{font-size:1rem;padding:1rem 1.2rem}
+  .phone-input-wrap input{padding-left:3.2rem}
+  .form-submit-btn{font-size:.85rem;padding:1.2rem}
+  .social-btns{grid-template-columns:repeat(2,1fr);gap:.6rem}
+  .social-btn svg{width:28px;height:28px}
+  .portfolio-grid{grid-template-columns:repeat(2,1fr);gap:.5rem}
+  .work-photos{grid-template-columns:1fr}
+  nav{padding:1rem 1.2rem}
+  nav.scrolled{padding:.8rem 1.2rem}
+  .nav-links{display:none}
+  .mobile-cta-bar{display:flex}
+  body{padding-bottom:70px}
+}
+@media(max-width:480px){
+  .hero-name{font-size:clamp(3rem,15vw,4.5rem)}
+  .section-title{font-size:clamp(1.8rem,7vw,2.5rem)}
+  .cta-title{font-size:clamp(2rem,9vw,3rem)}
+  .vk-grid{grid-template-columns:repeat(2,1fr)}
+}
 </style>
 </head>
 <body>
 
-<!-- NAV -->
 <nav id="mainNav">
   <a href="#" class="nav-logo">Марат Ярков</a>
   <ul class="nav-links">
@@ -1571,7 +342,6 @@
   <a href="https://wa.me/79058340188" class="nav-cta">Написать</a>
 </nav>
 
-<!-- HERO -->
 <section class="hero" id="home">
   <div class="hero-bg"></div>
   <div class="hero-grain"></div>
@@ -1580,119 +350,59 @@
     <img src="img/hero.jpg" alt="Марат Ярков — ведущий праздников" class="hero-photo-img" loading="eager">
     <div class="hero-photo-fade"></div>
   </div>
-
   <div class="hero-content">
     <span class="hero-tag">Ведущий праздников · с 2011 года</span>
-
-    <h1 class="hero-name">
-      Марат<br><em>Ярков</em>
-    </h1>
-
-    <p class="hero-subtitle">
-      Свадьба, которую вы будете вспоминать&nbsp;всю&nbsp;жизнь
-    </p>
-
+    <h1 class="hero-name">Марат<br><em>Ярков</em></h1>
+    <p class="hero-subtitle">Свадьба, которую вы будете вспоминать&nbsp;всю&nbsp;жизнь</p>
     <div class="hero-stats">
-      <div class="stat">
-        <span class="stat-num">200+</span>
-        <span class="stat-label">свадеб проведено</span>
-      </div>
-      <div class="stat">
-        <span class="stat-num">14</span>
-        <span class="stat-label">лет на сцене</span>
-      </div>
-      <div class="stat">
-        <span class="stat-num">7</span>
-        <span class="stat-label">раз свидетель</span>
-      </div>
-      <div class="stat">
-        <span class="stat-num">ТНТ</span>
-        <span class="stat-label">Свадьба на ТВ</span>
-      </div>
+      <div class="stat"><span class="stat-num">200+</span><span class="stat-label">свадеб проведено</span></div>
+      <div class="stat"><span class="stat-num">14</span><span class="stat-label">лет на сцене</span></div>
+      <div class="stat"><span class="stat-num">7</span><span class="stat-label">раз свидетель</span></div>
+      <div class="stat"><span class="stat-num">ТНТ</span><span class="stat-label">Свадьба на ТВ</span></div>
     </div>
-
     <div class="hero-cta">
-      <a href="#packages" class="btn-primary">Узнать стоимость</a>
+      <a href="#book" class="btn-primary">Получить книгу бесплатно</a>
       <a href="#about" class="btn-outline">Подробнее обо мне</a>
     </div>
   </div>
-
-  <div class="scroll-hint">
-    <div class="scroll-line"></div>
-    <span>Листайте</span>
-  </div>
+  <div class="scroll-hint"><div class="scroll-line"></div><span>Листайте</span></div>
 </section>
 
-<!-- FEARS / БОЛИ -->
 <section class="fears" id="fears">
   <div class="container">
     <span class="section-label reveal">Ваши сомнения</span>
     <h2 class="section-title reveal">Каждая невеста<br><em>боится одного</em></h2>
     <div class="divider reveal"></div>
-
     <div class="fears-grid">
-      <div class="fear-card reveal">
-        <div class="fear-num">01</div>
-        <div class="fear-title">«Гости заскучают»</div>
-        <p class="fear-answer">62 авторских конкурса — ни один не повторяется. Программа строится под вашу аудиторию: молодые, 50+, дети — каждый будет в игре. <strong>Пустых пауз не бывает.</strong></p>
-      </div>
-      <div class="fear-card reveal">
-        <div class="fear-num">02</div>
-        <div class="fear-title">«Ведущий будет формальным»</div>
-        <p class="fear-answer">Я 7 раз сам стоял свидетелем на свадьбах друзей. Я знаю, как это — смотреть изнутри. Никаких шаблонных тостов и заезженных «горько». <strong>Только живые эмоции.</strong></p>
-      </div>
-      <div class="fear-card reveal">
-        <div class="fear-num">03</div>
-        <div class="fear-title">«Вдруг звук подведёт»</div>
-        <p class="fear-answer">Работаю в паре с профессиональным DJ — полный комплект аппаратуры, проверенный на сотнях мероприятий. <strong>Технических сбоев не бывает.</strong></p>
-      </div>
-      <div class="fear-card reveal">
-        <div class="fear-num">04</div>
-        <div class="fear-title">«Не хочу банальный каравай»</div>
-        <p class="fear-answer">У меня 12 альтернатив каравайному ритуалу. Мы придумаем традицию, которая станет вашей личной историей. <strong>Ваша свадьба — только ваша.</strong></p>
-      </div>
-      <div class="fear-card reveal">
-        <div class="fear-num">05</div>
-        <div class="fear-title">«А вдруг не моего формата?»</div>
-        <p class="fear-answer">Провёл свадьбы в Златоусте, Питере, Москве, Сочи, Челябинске, Бали. Камерные и масштабные. Нежные и зажигательные. <strong>Разбираюсь в разных характерах.</strong></p>
-      </div>
-      <div class="fear-card reveal">
-        <div class="fear-num">06</div>
-        <div class="fear-title">«Слишком дорого»</div>
-        <p class="fear-answer">Несколько пакетов под разный бюджет. Созвонимся — подберём формат, который работает именно для вас. <strong>Договоримся.</strong></p>
-      </div>
+      <div class="fear-card reveal"><div class="fear-num">01</div><div class="fear-title">«Гости заскучают»</div><p class="fear-answer">62 авторских конкурса — ни один не повторяется. Программа строится под вашу аудиторию: молодые, 50+, дети — каждый будет в игре. <strong>Пустых пауз не бывает.</strong></p></div>
+      <div class="fear-card reveal"><div class="fear-num">02</div><div class="fear-title">«Ведущий будет формальным»</div><p class="fear-answer">Я 7 раз сам стоял свидетелем на свадьбах друзей. Я знаю, как это — смотреть изнутри. Никаких шаблонных тостов и заезженных «горько». <strong>Только живые эмоции.</strong></p></div>
+      <div class="fear-card reveal"><div class="fear-num">03</div><div class="fear-title">«Вдруг звук подведёт»</div><p class="fear-answer">Работаю в паре с профессиональным DJ — полный комплект аппаратуры, проверенный на сотнях мероприятий. <strong>Технических сбоев не бывает.</strong></p></div>
+      <div class="fear-card reveal"><div class="fear-num">04</div><div class="fear-title">«Не хочу банальный каравай»</div><p class="fear-answer">У меня 12 альтернатив каравайному ритуалу. Мы придумаем традицию, которая станет вашей личной историей. <strong>Ваша свадьба — только ваша.</strong></p></div>
+      <div class="fear-card reveal"><div class="fear-num">05</div><div class="fear-title">«А вдруг не моего формата?»</div><p class="fear-answer">Провёл свадьбы в Златоусте, Питере, Москве, Сочи, Челябинске, Бали. Камерные и масштабные. <strong>Разбираюсь в разных характерах.</strong></p></div>
+      <div class="fear-card reveal"><div class="fear-num">06</div><div class="fear-title">«Слишком дорого»</div><p class="fear-answer">Несколько пакетов под разный бюджет. Созвонимся — подберём формат, который работает именно для вас. <strong>Договоримся.</strong></p></div>
     </div>
   </div>
 </section>
 
-<!-- ABOUT -->
 <section class="about" id="about">
   <div class="container">
     <div class="about-inner">
       <div class="about-photo reveal">
         <div class="about-photo-frame">
-          <img src="img/about-1.jpg" alt="Марат Ярков" style="width:100%;height:100%;object-fit:cover;display:block;">
+          <img src="img/about-1.jpg" alt="Марат Ярков" style="width:100%;height:100%;object-fit:cover;object-position:top center;display:block;">
         </div>
-        <div class="about-badge">
-          <span class="badge-num">♥</span>
-          <span class="badge-text">Карта Таро — Свадьба</span>
-        </div>
+        <div class="about-badge"><span class="badge-num">♥</span><span class="badge-text">Карта Таро — Свадьба</span></div>
       </div>
-
       <div class="about-text">
         <span class="section-label reveal">О ведущем</span>
         <h2 class="section-title reveal">Человек,<br>для которого<br><em>свадьба — призвание</em></h2>
         <div class="divider reveal"></div>
-
-        <p class="about-body reveal">
-          По карте Таро я — десятка червей. В традиции Таро это карта называется «Свадьба». Я не выбирал эту работу — она выбрала меня.
-        </p>
-
+        <p class="about-body reveal">По карте Таро я — десятка червей. В традиции Таро это карта называется «Свадьба». Я не выбирал эту работу — она выбрала меня.</p>
         <ul class="about-facts reveal">
           <li><span class="fact-dot"></span>Веду праздники с 2011 года — более 200 свадеб в Златоусте, Москве, Питере, Сочи, Челябинске, Бали</li>
           <li><span class="fact-dot"></span>Телеведущий реалити-шоу «Свадьба на ТВ» на ТНТ-Златоуст — режиссёр и автор сценария</li>
           <li><span class="fact-dot"></span>Основатель Союза свадебных специалистов LOVEDDING</li>
-          <li><span class="fact-dot"></span>Автор курса «101 лайфхак для невест»</li>
+          <li><span class="fact-dot"></span>Автор книги и курса «Как говорить на людях»</li>
           <li><span class="fact-dot"></span>7 раз — свидетель на свадьбах друзей. Знаю праздник изнутри</li>
           <li><span class="fact-dot"></span>5 лет путешествий, 11 стран — вернулся в Златоуст, чтобы снова создавать лучшие свадьбы Урала</li>
           <li><span class="fact-dot"></span>Работаю только в паре с профессиональным DJ + полный звук</li>
@@ -1702,7 +412,6 @@
   </div>
 </section>
 
-<!-- FORMAT / EVENTS -->
 <section class="format" id="format">
   <div class="container">
     <div class="format-intro">
@@ -1711,140 +420,66 @@
         <h2 class="section-title reveal">Любое событие.<br><em>Фокус — свадьба.</em></h2>
         <div class="divider reveal"></div>
       </div>
-      <p class="format-lead reveal">
-        Свадьба — моя специализация и страсть. Но за 14 лет я провёл сотни других мероприятий. Если у вас есть праздник — я знаю, как его сделать незабываемым.
-      </p>
+      <p class="format-lead reveal">Свадьба — моя специализация и страсть. Но за 14 лет я провёл сотни других мероприятий. Если у вас есть праздник — я знаю, как его сделать незабываемым.</p>
     </div>
-
     <div class="events-grid reveal">
-      <div class="event-item">
-        <div class="event-icon">💍</div>
-        <div class="event-name">Свадьба</div>
-        <p class="event-desc">Полная программа: выкуп, церемония, банкет. 62 конкурса, 12 альтернатив каравая, живые эмоции, профессиональный звук. Свадьба, которую запомнят все.</p>
-      </div>
-      <div class="event-item">
-        <div class="event-icon">🎂</div>
-        <div class="event-name">День рождения</div>
-        <p class="event-desc">Юбилей или вечеринка — создам атмосферу под ваш характер и аудиторию.</p>
-      </div>
-      <div class="event-item">
-        <div class="event-icon">🏢</div>
-        <div class="event-name">Корпоратив</div>
-        <p class="event-desc">Командные игры, профессиональные конкурсы, живой нетворкинг через праздник.</p>
-      </div>
-      <div class="event-item">
-        <div class="event-icon">🎓</div>
-        <div class="event-name">Выпускной</div>
-        <p class="event-desc">Незабываемое завершение школьной эпохи — торжественно и весело одновременно.</p>
-      </div>
-      <div class="event-item">
-        <div class="event-icon">🌸</div>
-        <div class="event-name">Помолвка</div>
-        <p class="event-desc">Романтичная камерная программа для двоих и близких. Красиво, без лишнего шума.</p>
-      </div>
-      <div class="event-item">
-        <div class="event-icon">🎪</div>
-        <div class="event-name">Городское событие</div>
-        <p class="event-desc">Открытия, фестивали, городские праздники — опыт работы с большими аудиториями.</p>
-      </div>
+      <div class="event-item"><div class="event-icon">💍</div><div class="event-name">Свадьба</div><p class="event-desc">Полная программа: выкуп, церемония, банкет. 62 конкурса, 12 альтернатив каравая, живые эмоции, профессиональный звук. Свадьба, которую запомнят все.</p></div>
+      <div class="event-item"><div class="event-icon">🎂</div><div class="event-name">День рождения</div><p class="event-desc">Юбилей или вечеринка — создам атмосферу под ваш характер и аудиторию.</p></div>
+      <div class="event-item"><div class="event-icon">🏢</div><div class="event-name">Корпоратив</div><p class="event-desc">Командные игры, профессиональные конкурсы, живой нетворкинг через праздник.</p></div>
+      <div class="event-item"><div class="event-icon">🎓</div><div class="event-name">Выпускной</div><p class="event-desc">Незабываемое завершение школьной эпохи — торжественно и весело одновременно.</p></div>
+      <div class="event-item"><div class="event-icon">🌸</div><div class="event-name">Помолвка</div><p class="event-desc">Романтичная камерная программа для двоих и близких. Красиво, без лишнего шума.</p></div>
+      <div class="event-item"><div class="event-icon">🎪</div><div class="event-name">Городское событие</div><p class="event-desc">Открытия, фестивали, городские праздники — опыт работы с большими аудиториями.</p></div>
     </div>
   </div>
 </section>
 
-<!-- PACKAGES -->
 <section class="packages" id="packages">
   <div class="container">
     <div class="packages-header">
       <span class="section-label reveal">Стоимость</span>
       <h2 class="section-title reveal">Выберите <em>свой формат</em></h2>
       <div class="divider reveal"></div>
-      <p class="reveal" style="font-size:0.9rem; color:var(--warm-gray); line-height:1.7;">Точная цена зависит от даты, формата и деталей вашей свадьбы. Созвонимся — подберём идеальный пакет.</p>
+      <p class="reveal" style="font-size:.9rem;color:var(--warm-gray);line-height:1.7;">Точная цена зависит от даты, формата и деталей вашей свадьбы. Созвонимся — подберём идеальный пакет.</p>
     </div>
-
     <div class="packages-grid">
       <div class="package-card reveal">
         <span class="package-tag">Пакет Старт</span>
         <div class="package-name">Классика</div>
         <span class="package-price">Цена по запросу</span>
-        <ul class="package-includes">
-          <li>Ведущий на 6 часов</li>
-          <li>Сценарий под вашу пару</li>
-          <li>До 15 конкурсов</li>
-          <li>Авторские тосты</li>
-          <li>Координация вечера</li>
-        </ul>
-        <a href="#callback" class="package-cta">Узнать цену</a>
+        <ul class="package-includes"><li>Ведущий на 6 часов</li><li>Сценарий под вашу пару</li><li>До 15 конкурсов</li><li>Авторские тосты</li><li>Координация вечера</li></ul>
+        <a href="#book" class="package-cta">Узнать цену</a>
       </div>
-
       <div class="package-card featured reveal">
         <span class="package-tag">⭐ Самый популярный</span>
         <div class="package-name">Полный день</div>
         <span class="package-price">Ведущий + DJ + Звук</span>
-        <ul class="package-includes">
-          <li>Ведущий на весь день (8–12 часов)</li>
-          <li>Профессиональный DJ в паре</li>
-          <li>Полный комплект звука и света</li>
-          <li>Выкуп + церемония + банкет</li>
-          <li>До 30 авторских конкурсов</li>
-          <li>12 вариантов альтернативы каравая</li>
-          <li>Индивидуальный сценарий</li>
-          <li>Репетиция и бриф перед свадьбой</li>
-        </ul>
-        <a href="#callback" class="package-cta">Обсудить свадьбу</a>
+        <ul class="package-includes"><li>Ведущий на весь день (8–12 часов)</li><li>Профессиональный DJ в паре</li><li>Полный комплект звука и света</li><li>Выкуп + церемония + банкет</li><li>До 30 авторских конкурсов</li><li>12 вариантов альтернативы каравая</li><li>Индивидуальный сценарий</li><li>Репетиция и бриф перед свадьбой</li></ul>
+        <a href="#book" class="package-cta">Обсудить свадьбу</a>
       </div>
-
       <div class="package-card reveal">
         <span class="package-tag">Пакет Премиум</span>
         <div class="package-name">Эксклюзив</div>
         <span class="package-price">Индивидуальный проект</span>
-        <ul class="package-includes">
-          <li>Полностью авторский сценарий</li>
-          <li>Тематическая или выездная свадьба</li>
-          <li>Режиссура шоу-программы</li>
-          <li>Координация всех подрядчиков</li>
-          <li>Работа в регионе или выезд</li>
-          <li>Любой хронометраж</li>
-        </ul>
-        <a href="#callback" class="package-cta">Обсудить</a>
+        <ul class="package-includes"><li>Полностью авторский сценарий</li><li>Тематическая или выездная свадьба</li><li>Режиссура шоу-программы</li><li>Координация всех подрядчиков</li><li>Работа в регионе или выезд</li><li>Любой хронометраж</li></ul>
+        <a href="#book" class="package-cta">Обсудить</a>
       </div>
     </div>
-
     <p class="packages-note reveal">«Цена — не проблема. Позвоните, и мы найдём формат, который подойдёт именно вам.»</p>
   </div>
 </section>
 
-<!-- GEOGRAPHY -->
 <section class="geography" id="geo">
   <div class="container">
     <span class="section-label reveal">Работаю в городах</span>
     <h2 class="section-title reveal">Ваша свадьба —<br><em>где бы вы ни были</em></h2>
-    <div class="divider reveal" style="margin: 2rem auto;"></div>
-
+    <div class="divider reveal" style="margin:2rem auto;"></div>
     <div class="cities reveal">
-      <div class="city">
-        <span class="city-name">Златоуст</span>
-        <span class="city-note">Домашний город</span>
-      </div>
-      <div class="city">
-        <span class="city-name">Миасс</span>
-        <span class="city-note">30 км · без доп. оплаты</span>
-      </div>
-      <div class="city">
-        <span class="city-name">Куса</span>
-        <span class="city-note">40 км · договорная</span>
-      </div>
-      <div class="city">
-        <span class="city-name">Сатка</span>
-        <span class="city-note">60 км · договорная</span>
-      </div>
-      <div class="city">
-        <span class="city-name">Челябинск</span>
-        <span class="city-note">Регион · возможен выезд</span>
-      </div>
-      <div class="city">
-        <span class="city-name">Любой город</span>
-        <span class="city-note">Бали · Москва · Сочи · Питер</span>
-      </div>
+      <div class="city"><span class="city-name">Златоуст</span><span class="city-note">Домашний город</span></div>
+      <div class="city"><span class="city-name">Миасс</span><span class="city-note">30 км · без доп. оплаты</span></div>
+      <div class="city"><span class="city-name">Куса</span><span class="city-note">40 км · договорная</span></div>
+      <div class="city"><span class="city-name">Сатка</span><span class="city-note">60 км · договорная</span></div>
+      <div class="city"><span class="city-name">Челябинск</span><span class="city-note">Регион · возможен выезд</span></div>
+      <div class="city"><span class="city-name">Любой город</span><span class="city-note">Бали · Москва · Сочи · Питер</span></div>
     </div>
   </div>
 </section>
@@ -1857,137 +492,140 @@
         <span class="section-label reveal">Отзывы</span>
         <h2 class="section-title reveal">Что говорят<br><em>пары</em></h2>
       </div>
-      <div class="reveal" style="font-family: 'Cormorant Garamond', serif; font-size:1.1rem; font-style:italic; color:rgba(250,246,240,0.4); max-width:280px; text-align:right;">
-        200+ счастливых пар с 2011 года
-      </div>
+      <div class="reveal" style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-style:italic;color:rgba(250,246,240,.4);max-width:280px;text-align:right;">200+ счастливых пар с 2011 года</div>
     </div>
 
     <div class="reviews-grid">
       <div class="review-card reveal">
-        <p class="review-quote">Марат сделал нашу свадьбу живой. Ни одного скучного момента — гости танцевали и смеялись до самого конца. Даже папа, который обычно сидит в углу, участвовал во всём!</p>
-        <div class="review-author">Алина и Дмитрий</div>
-        <div class="review-city">Златоуст, 2023</div>
+        <p class="review-quote">Марат — ведущий для тех, кто не хочет ужасных шаблонных конкурсов, хочет весело и приятно провести время. Огромное, огромное спасибо за чудесный праздник! Он получился таким, каким мы себе его представляли.</p>
+        <div class="review-author">Ксения Масленникова</div>
+        <div class="review-city">ВКонтакте · Свадьба</div>
       </div>
       <div class="review-card reveal">
-        <p class="review-quote">Боялась банальных конкурсов с ложками. Марат сделал такую программу, что мы сами не ожидали, как это будет красиво. Вместо каравая — наш личный ритуал. Все плакали от счастья.</p>
-        <div class="review-author">Екатерина и Андрей</div>
-        <div class="review-city">Миасс, 2022</div>
+        <p class="review-quote">Искала добродушного и весёлого ведущего и не прогадала! Марат покорил всех наших гостей! Многие гости с ним даже фотографировались на память. Самобытный, интересный, очень сильно выделяется своей креативностью из толпы остальных ведущих.</p>
+        <div class="review-author">Алина Шмырова</div>
+        <div class="review-city">ВКонтакте · Свадьба</div>
       </div>
       <div class="review-card reveal">
-        <p class="review-quote">Звук был идеальным весь вечер — ни одного сбоя. DJ и Марат работали как единый механизм. Гости до сих пор вспоминают нашу свадьбу как лучшую, на которой были.</p>
-        <div class="review-author">Ольга и Максим</div>
-        <div class="review-city">Сатка, 2022</div>
+        <p class="review-quote">Если бы можно было купить настроение, я бы выбрал Марата! Он педантичен как старый немец, не упустит ни одной мельчайшей детали. Этот человек — тонкий психолог. Свадьба она одна, воспоминания о ней будут вашим лекарством в трудных жизненных ситуациях.</p>
+        <div class="review-author">Гость свадьбы</div>
+        <div class="review-city">ВКонтакте · Свадьба</div>
+      </div>
+      <div class="review-card reveal">
+        <p class="review-quote">Марат, ваше проведение привело всех гостей в восторг! У вас потрясающий голос, и все друзья от вас без ума. Всем буду вас рекомендовать! Вы лучший, так держать!</p>
+        <div class="review-author">Дарина Фирсова</div>
+        <div class="review-city">ВКонтакте · Праздник</div>
+      </div>
+      <div class="review-card reveal">
+        <p class="review-quote">Работала вместе с Маратом как организатор праздника. Очень довольна творческим и деловым подходом! Своевременно и оперативно отвечает на все вопросы, строго соблюдает пожелания клиента. Праздник в исполнении Марата — весел, динамичен и ненавязчив!</p>
+        <div class="review-author">Анастасия Ни (Синицына)</div>
+        <div class="review-city">ВКонтакте · Организатор праздников</div>
+      </div>
+      <div class="review-card reveal">
+        <p class="review-quote">Марат оказался виртуозом своего дела и сумел всю компанию сплотить в одно целое, найдя подход к каждому гостю. Спасибо, Марат, что нашли себя в этом мире и делаете людей счастливыми!</p>
+        <div class="review-author">Алла Семёнова</div>
+        <div class="review-city">ВКонтакте · Свадьба племянницы</div>
+      </div>
+    </div>
+
+    <!-- VK SCREENSHOTS -->
+    <div class="vk-screenshots">
+      <span class="vk-label reveal">Скриншоты реальных отзывов из ВКонтакте</span>
+      <div class="vk-grid reveal" id="vkGrid">
+        <div class="vk-item" onclick="openLightbox('img/2.jpg')"><img src="img/2.jpg" alt="Отзыв ВКонтакте" loading="lazy"></div>
+        <div class="vk-item" onclick="openLightbox('img/3.jpg')"><img src="img/3.jpg" alt="Отзыв ВКонтакте" loading="lazy"></div>
+        <div class="vk-item" onclick="openLightbox('img/5.jpg')"><img src="img/5.jpg" alt="Отзыв ВКонтакте" loading="lazy"></div>
+        <div class="vk-item" onclick="openLightbox('img/7.jpg')"><img src="img/7.jpg" alt="Отзыв ВКонтакте" loading="lazy"></div>
+        <div class="vk-item" onclick="openLightbox('img/9.jpg')"><img src="img/9.jpg" alt="Отзыв ВКонтакте" loading="lazy"></div>
+        <div class="vk-item" onclick="openLightbox('img/11.jpg')"><img src="img/11.jpg" alt="Отзыв ВКонтакте" loading="lazy"></div>
+        <div class="vk-item" onclick="openLightbox('img/13.jpg')"><img src="img/13.jpg" alt="Отзыв ВКонтакте" loading="lazy"></div>
+        <div class="vk-item" onclick="openLightbox('img/15.jpg')"><img src="img/15.jpg" alt="Отзыв ВКонтакте" loading="lazy"></div>
+        <div class="vk-item" onclick="openLightbox('img/17.jpg')"><img src="img/17.jpg" alt="Отзыв ВКонтакте" loading="lazy"></div>
+        <div class="vk-item" onclick="openLightbox('img/19.jpg')"><img src="img/19.jpg" alt="Отзыв ВКонтакте" loading="lazy"></div>
+        <div class="vk-item" onclick="openLightbox('img/21.jpg')"><img src="img/21.jpg" alt="Отзыв ВКонтакте" loading="lazy"></div>
+        <div class="vk-item vk-more"><a href="https://vk.com/topic-32219402_28111193" target="_blank" rel="noopener">Все отзывы<br>во ВКонтакте →</a></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- OBJECTIONS -->
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+  <img id="lightboxImg" src="" alt="Отзыв">
+</div>
+
 <section class="objections" id="objections">
   <div class="container">
     <span class="section-label reveal">Честные ответы</span>
     <h2 class="section-title reveal">Вопросы, которые<br><em>не принято задавать</em></h2>
     <div class="divider reveal"></div>
-
     <div class="objections-list">
-      <div class="objection reveal">
-        <div class="obj-q">
-          <span class="obj-q-label">Вопрос невесты</span>
-          <p class="obj-q-text">«А вдруг вы не вернётесь — вы же только вернулись из путешествий?»</p>
-        </div>
-        <div class="obj-a">
-          <span class="obj-a-label">Марат отвечает</span>
-          <p class="obj-a-text">Я вернулся в Златоуст — осознанно. <strong>5 лет, 11 стран дали опыт, который невозможно получить дома.</strong> Теперь этот опыт — в каждой свадьбе, которую я веду здесь.</p>
-        </div>
-      </div>
-
-      <div class="objection reveal">
-        <div class="obj-q">
-          <span class="obj-q-label">Вопрос невесты</span>
-          <p class="obj-q-text">«Почему вы не показываете конкретную цену?»</p>
-        </div>
-        <div class="obj-a">
-          <span class="obj-a-label">Марат отвечает</span>
-          <p class="obj-a-text">Каждая свадьба уникальна. <strong>Я не хочу называть цену, пока не пойму, что именно нужно именно вам.</strong> Созвон занимает 10 минут — после него у вас будет конкретная цифра.</p>
-        </div>
-      </div>
-
-      <div class="objection reveal">
-        <div class="obj-q">
-          <span class="obj-q-label">Вопрос невесты</span>
-          <p class="obj-q-text">«Мы хотим тихую свадьбу без конкурсов. Это возможно?»</p>
-        </div>
-        <div class="obj-a">
-          <span class="obj-a-label">Марат отвечает</span>
-          <p class="obj-a-text"><strong>Да.</strong> Я веду камерные и нежные свадьбы с атмосферой вместо конкурсов. Разговаривайте со мной — подстроюсь под ваш характер.</p>
-        </div>
-      </div>
-
-      <div class="objection reveal">
-        <div class="obj-q">
-          <span class="obj-q-label">Вопрос невесты</span>
-          <p class="obj-q-text">«У нас есть свой DJ — можете вести без него?»</p>
-        </div>
-        <div class="obj-a">
-          <span class="obj-a-label">Марат отвечает</span>
-          <p class="obj-a-text">Конечно. <strong>Работаю как сольно, так и с любым DJ.</strong> Предложу своего — если хотите единую команду, проверенную на сотнях мероприятий.</p>
-        </div>
-      </div>
+      <div class="objection reveal"><div class="obj-q"><span class="obj-q-label">Вопрос невесты</span><p class="obj-q-text">«А вдруг вы не вернётесь — вы же только вернулись из путешествий?»</p></div><div class="obj-a"><span class="obj-a-label">Марат отвечает</span><p class="obj-a-text">Я вернулся в Златоуст — осознанно. <strong>5 лет, 11 стран дали опыт, который невозможно получить дома.</strong> Теперь этот опыт — в каждой свадьбе, которую я веду здесь.</p></div></div>
+      <div class="objection reveal"><div class="obj-q"><span class="obj-q-label">Вопрос невесты</span><p class="obj-q-text">«Почему вы не показываете конкретную цену?»</p></div><div class="obj-a"><span class="obj-a-label">Марат отвечает</span><p class="obj-a-text">Каждая свадьба уникальна. <strong>Я не хочу называть цену, пока не пойму, что именно нужно именно вам.</strong> Созвон занимает 10 минут — после него у вас будет конкретная цифра.</p></div></div>
+      <div class="objection reveal"><div class="obj-q"><span class="obj-q-label">Вопрос невесты</span><p class="obj-q-text">«Мы хотим тихую свадьбу без конкурсов. Это возможно?»</p></div><div class="obj-a"><span class="obj-a-label">Марат отвечает</span><p class="obj-a-text"><strong>Да.</strong> Я веду камерные и нежные свадьбы с атмосферой вместо конкурсов. Разговаривайте со мной — подстроюсь под ваш характер.</p></div></div>
+      <div class="objection reveal"><div class="obj-q"><span class="obj-q-label">Вопрос невесты</span><p class="obj-q-text">«У нас есть свой DJ — можете вести без него?»</p></div><div class="obj-a"><span class="obj-a-label">Марат отвечает</span><p class="obj-a-text">Конечно. <strong>Работаю как сольно, так и с любым DJ.</strong> Предложу своего — если хотите единую команду, проверенную на сотнях мероприятий.</p></div></div>
     </div>
   </div>
 </section>
 
-<!-- CTA -->
 <section class="cta-section" id="contact">
   <h2 class="cta-title">Ваша свадьба<br>начинается здесь</h2>
   <p class="cta-sub">Напишите прямо сейчас — даты разбираются быстро</p>
-
   <div class="cta-contacts">
-    <a href="#callback" class="contact-btn wh">
-      <span>💬</span> Написать / Позвонить
-    </a>
-    <a href="tel:+79058340188" class="contact-btn">
-      <span>📞</span> +7 905 834-01-88
-    </a>
+    <a href="#book" class="contact-btn wh"><span>🎁</span> Получить книгу + узнать цену</a>
+    <a href="tel:+79058340188" class="contact-btn"><span>📞</span> +7 905 834-01-88</a>
   </div>
-
-  <p class="cta-note">Смелые невесты звонят сразу. Скромные — пишут в WhatsApp 😊</p>
+  <p class="cta-note">Смелые невесты звонят сразу. Скромные — получают книгу и пишут 😊</p>
 </section>
 
-<!-- PORTFOLIO -->
 <section class="portfolio-section" id="portfolio">
   <div class="portfolio-header">
     <span class="section-label reveal">Портфолио</span>
     <h2 class="section-title reveal">Моменты,<br><em>которые остаются навсегда</em></h2>
     <div class="divider reveal"></div>
   </div>
-
   <div class="portfolio-grid">
-    <div class="portfolio-item reveal">
-      <img src="img/portfolio-1.jpg" alt="Свадьба — Марат Ярков ведущий" loading="lazy">
-      <div class="portfolio-item-overlay"></div>
-    </div>
-    <div class="portfolio-item reveal">
-      <img src="img/portfolio-2.jpg" alt="Свадьба — Марат Ярков ведущий" loading="lazy">
-      <div class="portfolio-item-overlay"></div>
-    </div>
-    <div class="portfolio-item reveal">
-      <img src="img/portfolio-3.jpg" alt="Свадьба — Марат Ярков ведущий" loading="lazy">
-      <div class="portfolio-item-overlay"></div>
-    </div>
-    <div class="portfolio-item reveal">
-      <img src="img/portfolio-4.jpg" alt="Свадебная выставка — Марат Ярков" loading="lazy">
-      <div class="portfolio-item-overlay"></div>
-    </div>
+    <div class="portfolio-item reveal"><img src="img/portfolio-1.jpg" alt="Свадьба — Марат Ярков ведущий" loading="lazy"><div class="portfolio-item-overlay"></div></div>
+    <div class="portfolio-item reveal"><img src="img/portfolio-2.jpg" alt="Свадьба — Марат Ярков ведущий" loading="lazy"><div class="portfolio-item-overlay"></div></div>
+    <div class="portfolio-item reveal"><img src="img/portfolio-3.jpg" alt="Свадьба — Марат Ярков ведущий" loading="lazy"><div class="portfolio-item-overlay"></div></div>
+    <div class="portfolio-item reveal"><img src="img/portfolio-4.jpg" alt="Свадебная выставка — Марат Ярков" loading="lazy"><div class="portfolio-item-overlay"></div></div>
   </div>
-
   <div style="max-width:1100px;margin:2rem auto 0;">
     <div class="work-photos">
-      <div class="work-photo-item reveal">
-        <img src="img/work-1.jpg" alt="Марат Ярков ведёт мероприятие" loading="lazy">
+      <div class="work-photo-item reveal"><img src="img/work-1.jpg" alt="Марат Ярков ведёт мероприятие" loading="lazy"></div>
+      <div class="work-photo-item reveal"><img src="img/work-2.jpg" alt="Марат Ярков ведёт гостей" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOK LEAD MAGNET -->
+<section class="book-section" id="book">
+  <div class="book-inner">
+    <div class="book-cover reveal">
+      <div class="book-cover-frame">
+        <div class="book-badge">Бес-<br>плат-<br>но</div>
+        <div class="book-title-big">Как говорить<br>на людях</div>
+        <div style="width:40px;height:1px;background:var(--gold);margin:1rem auto;"></div>
+        <div class="book-author-small">Марат Ярков</div>
+        <div style="margin-top:1.5rem;font-size:.7rem;letter-spacing:.1em;color:rgba(250,246,240,.4);line-height:1.6;">Скачать и открыть<br>в программе для<br>чтения эл. книг<br>(epub / iBooks / ReadEra)</div>
       </div>
-      <div class="work-photo-item reveal">
-        <img src="img/work-2.jpg" alt="Марат Ярков ведёт гостей" loading="lazy">
+    </div>
+    <div class="book-text">
+      <span class="section-label reveal">Подарок от Марата</span>
+      <h2 class="section-title reveal">Получите книгу<br><em>бесплатно</em></h2>
+      <div class="divider reveal"></div>
+      <p class="book-desc reveal">Оставьте имя и номер телефона — я пришлю ссылку на скачивание книги «Как говорить на людях» и свяжусь с вами, чтобы обсудить вашу свадьбу.</p>
+      <div class="book-form reveal" id="bookForm">
+        <input type="text" id="b-name" placeholder="Ваше имя">
+        <div class="phone-wrap">
+          <span class="phone-flag">🇷🇺</span>
+          <input type="tel" id="b-phone" placeholder="+7 (___) ___-__-__" maxlength="18">
+        </div>
+        <input type="text" id="b-date" placeholder="Примерная дата свадьбы (необязательно)">
+        <button class="book-btn" id="bookBtn" onclick="submitBook()">Получить книгу бесплатно 🎁</button>
+        <div class="book-success" id="bookSuccess">✓ Отлично! Ссылка на книгу придёт в WhatsApp. Марат свяжется с вами в ближайшее время.</div>
+        <p class="book-hint">Без спама. Только книга и один звонок от Марата.</p>
       </div>
     </div>
   </div>
@@ -1996,31 +634,20 @@
 <!-- CONTACT FORM -->
 <section class="contact-form-section" id="callback">
   <div class="contact-form-inner">
-    <span class="contact-form-label reveal">Оставить заявку</span>
-    <h2 class="contact-form-title reveal">Оставьте номер —<br><em>я перезвоню</em></h2>
+    <span class="contact-form-label reveal">Просто написать</span>
+    <h2 class="contact-form-title reveal">Или оставьте номер —<br><em>я перезвоню</em></h2>
     <p class="contact-form-sub reveal">Обычно отвечаю в течение часа</p>
-
     <div id="callbackForm">
-      <div class="form-group reveal">
-        <input type="text" id="cb-name" placeholder="Ваше имя" autocomplete="name" />
-      </div>
+      <div class="form-group reveal"><input type="text" id="cb-name" placeholder="Ваше имя" autocomplete="name"></div>
       <div class="form-group phone-input-wrap reveal">
-        <span class="phone-flag">🇷🇺</span>
-        <input type="tel" id="cb-phone" placeholder="+7 (___) ___-__-__" autocomplete="tel" maxlength="18" />
+        <span class="phone-flag2">🇷🇺</span>
+        <input type="tel" id="cb-phone" placeholder="+7 (___) ___-__-__" autocomplete="tel" maxlength="18">
       </div>
-      <div class="form-group reveal">
-        <input type="text" id="cb-date" placeholder="Примерная дата свадьбы (необязательно)" />
-      </div>
-      <button class="form-submit-btn reveal" id="cbSubmitBtn" onclick="submitCallback()">
-        Перезвоните мне
-      </button>
-      <div class="form-success" id="formSuccess">
-        ✓ Спасибо! Марат свяжется с вами в ближайшее время
-      </div>
+      <div class="form-group reveal"><input type="text" id="cb-date" placeholder="Примерная дата свадьбы (необязательно)"></div>
+      <button class="form-submit-btn reveal" id="cbSubmitBtn" onclick="submitCallback()">Перезвоните мне</button>
+      <div class="form-success" id="formSuccess">✓ Спасибо! Марат свяжется с вами в ближайшее время</div>
     </div>
-
     <div class="form-divider reveal"><span>или напишите сами</span></div>
-
     <div class="social-btns reveal">
       <a href="https://wa.me/79058340188?text=Здравствуйте, Марат! Хочу узнать подробнее о ведении свадьбы" class="social-btn wa" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
@@ -2035,119 +662,133 @@
         ВКонтакте
       </a>
       <a href="https://max.ru/+79058340188" class="social-btn mx" target="_blank" rel="noopener">
-        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" width="28" height="28">
-          <defs>
-            <linearGradient id="maxGrad" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
-              <stop offset="0%" stop-color="#4B6FFF"/>
-              <stop offset="100%" stop-color="#8B5CF6"/>
-            </linearGradient>
-          </defs>
-          <rect width="40" height="40" rx="10" fill="url(#maxGrad)"/>
-          <path d="M20 8C13.37 8 8 13.37 8 20C8 23.1 9.15 25.93 11.05 28.08L8.5 32L12.8 30.2C14.8 31.36 17.32 32 20 32C26.63 32 32 26.63 32 20C32 13.37 26.63 8 20 8Z" fill="white" opacity="0.95"/>
-          <path d="M14 17.5L17.5 21L20 18L22.5 21L26 17.5" stroke="url(#maxGrad)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-        </svg>
+        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" width="28" height="28"><defs><linearGradient id="maxGrad" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#4B6FFF"/><stop offset="100%" stop-color="#8B5CF6"/></linearGradient></defs><rect width="40" height="40" rx="10" fill="url(#maxGrad)"/><path d="M20 8C13.37 8 8 13.37 8 20C8 23.1 9.15 25.93 11.05 28.08L8.5 32L12.8 30.2C14.8 31.36 17.32 32 20 32C26.63 32 32 26.63 32 20C32 13.37 26.63 8 20 8Z" fill="white" opacity="0.95"/><path d="M14 17.5L17.5 21L20 18L22.5 21L26 17.5" stroke="url(#maxGrad)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
         Макс
       </a>
     </div>
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
   <span class="footer-logo">Марат Ярков</span>
   <p class="footer-domain">ведущийпраздник.рф</p>
   <p class="footer-copy">Ведущий праздников · Златоуст · Миасс · Куса · Сатка · с 2011 года</p>
 </footer>
 
-<!-- MOBILE FLOATING CTA -->
 <div class="mobile-cta-bar">
-  <a href="tel:+79058340188" class="mobile-cta-btn call">
-    📞 Позвонить
-  </a>
-  <a href="#callback" class="mobile-cta-btn write" onclick="this.closest('.mobile-cta-bar').style.display='none'; setTimeout(()=>this.closest('body').querySelector('.mobile-cta-bar').style.display='flex', 3000)">
-    💬 Написать
-  </a>
+  <a href="tel:+79058340188" class="mobile-cta-btn call">📞 Позвонить</a>
+  <a href="#book" class="mobile-cta-btn write">🎁 Книга бесплатно</a>
 </div>
 
 <script>
-  // Phone mask
-  const phoneInput = document.getElementById('cb-phone');
-  if (phoneInput) {
-    phoneInput.addEventListener('input', function(e) {
-      let val = e.target.value.replace(/\D/g, '');
-      if (val.startsWith('8')) val = '7' + val.slice(1);
-      if (!val.startsWith('7') && val.length > 0) val = '7' + val;
-      let formatted = '';
-      if (val.length > 0) formatted = '+7';
-      if (val.length > 1) formatted += ' (' + val.substring(1, 4);
-      if (val.length >= 4) formatted += ') ' + val.substring(4, 7);
-      if (val.length >= 7) formatted += '-' + val.substring(7, 9);
-      if (val.length >= 9) formatted += '-' + val.substring(9, 11);
-      e.target.value = formatted;
-    });
-    phoneInput.addEventListener('keydown', function(e) {
-      if (e.key === 'Backspace' && this.value === '+7') {
-        e.preventDefault(); this.value = '';
-      }
-    });
-  }
+const BOT_TOKEN='8655545816:AAHGxEHcEmYy3YBbtYUGmfMwXKDv4PBcrB4';
+const CHAT_ID='176811698';
+const BOOK_URL='https://disk.yandex.ru/i/GG6eKsUwdCsxrg';
 
-  function submitCallback() {
-    const name = document.getElementById('cb-name').value.trim();
-    const phone = document.getElementById('cb-phone').value.trim();
-    const date = document.getElementById('cb-date').value.trim();
-    if (!phone || phone.replace(/\D/g,'').length < 11) {
-      phoneInput.style.borderColor = 'var(--rose)';
-      phoneInput.focus();
-      setTimeout(() => phoneInput.style.borderColor = '', 2000);
-      return;
-    }
-    const btn = document.getElementById('cbSubmitBtn');
-    btn.disabled = true;
-    btn.textContent = 'Отправляю...';
-    // Отправка через Telegram Bot (замените токен и chat_id на свои)
-    const BOT_TOKEN = '8655545816:AAHGxEHcEmYy3YBbtYUGmfMwXKDv4PBcrB4';
-    const CHAT_ID = '176811698';
-    const text = `📞 Новая заявка с сайта!\n👤 Имя: ${name || 'не указано'}\n📱 Телефон: ${phone}\n📅 Дата: ${date || 'не указана'}`;
-    fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
-      method: 'POST',
-      headers: {'Content-Type': 'application/json'},
-      body: JSON.stringify({chat_id: CHAT_ID, text})
-    }).then(() => {
-      document.getElementById('formSuccess').style.display = 'block';
-      btn.textContent = '✓ Отправлено';
-      document.getElementById('cb-name').value = '';
-      document.getElementById('cb-phone').value = '';
-      document.getElementById('cb-date').value = '';
-    }).catch(() => {
-      // Fallback — открываем WhatsApp с номером
-      const waText = encodeURIComponent(`Здравствуйте, Марат! Меня зовут ${name || 'клиент'}, мой номер ${phone}. Хочу обсудить свадьбу${date ? ' (' + date + ')' : ''}.`);
-      window.open(`https://wa.me/79058340188?text=${waText}`, '_blank');
-      btn.disabled = false;
-      btn.textContent = 'Перезвоните мне';
-    });
-  }
-
-  // Sticky nav
-  const nav = document.getElementById('mainNav');
-  window.addEventListener('scroll', () => {
-    nav.classList.toggle('scrolled', window.scrollY > 60);
+function maskPhone(input){
+  input.addEventListener('input',function(e){
+    let val=e.target.value.replace(/\D/g,'');
+    if(val.startsWith('8'))val='7'+val.slice(1);
+    if(!val.startsWith('7')&&val.length>0)val='7'+val;
+    let f='';
+    if(val.length>0)f='+7';
+    if(val.length>1)f+=' ('+val.substring(1,4);
+    if(val.length>=4)f+=') '+val.substring(4,7);
+    if(val.length>=7)f+='-'+val.substring(7,9);
+    if(val.length>=9)f+='-'+val.substring(9,11);
+    e.target.value=f;
   });
+  input.addEventListener('keydown',function(e){
+    if(e.key==='Backspace'&&this.value==='+7'){e.preventDefault();this.value=''}
+  });
+}
 
-  // Reveal on scroll
-  const reveals = document.querySelectorAll('.reveal');
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry, i) => {
-      if (entry.isIntersecting) {
-        setTimeout(() => {
-          entry.target.classList.add('visible');
-        }, 80);
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.1 });
+const p1=document.getElementById('b-phone');
+const p2=document.getElementById('cb-phone');
+if(p1)maskPhone(p1);
+if(p2)maskPhone(p2);
 
-  reveals.forEach(el => observer.observe(el));
+async function sendTelegram(text){
+  return fetch('https://api.telegram.org/bot'+BOT_TOKEN+'/sendMessage',{
+    method:'POST',headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({chat_id:CHAT_ID,text})
+  });
+}
+
+function submitBook(){
+  const name=document.getElementById('b-name').value.trim();
+  const phone=document.getElementById('b-phone').value.trim();
+  const date=document.getElementById('b-date').value.trim();
+  if(!phone||phone.replace(/\D/g,'').length<11){
+    p1.style.borderColor='#D4A5A0';p1.focus();
+    setTimeout(()=>p1.style.borderColor='',2000);return;
+  }
+  const btn=document.getElementById('bookBtn');
+  btn.disabled=true;btn.textContent='Отправляю...';
+  const text=`🎁 ЗАЯВКА НА КНИГУ с сайта!\n👤 Имя: ${name||'не указано'}\n📱 Телефон: ${phone}\n📅 Дата: ${date||'не указана'}\n\n📖 Ссылка на книгу для клиента:\n${BOOK_URL}`;
+  sendTelegram(text).then(()=>{
+    document.getElementById('bookSuccess').style.display='block';
+    btn.textContent='✓ Готово!';
+    document.getElementById('b-name').value='';
+    document.getElementById('b-phone').value='';
+    document.getElementById('b-date').value='';
+    const waText=encodeURIComponent('Здравствуйте, '+( name||'')+'! Вот ссылка на книгу «Как говорить на людях»: '+BOOK_URL+'\n\nФайл в формате epub — откройте в приложении iBooks (iPhone), ReadEra или любой программе для чтения электронных книг. Скоро свяжусь с вами! — Марат Ярков');
+    setTimeout(()=>window.open('https://wa.me/'+phone.replace(/\D/g,'')+`?text=${waText}`,'_blank'),1500);
+  }).catch(()=>{
+    const waText=encodeURIComponent('Здравствуйте! Хочу получить книгу «Как говорить на людях» и узнать про ведение свадьбы.');
+    window.open('https://wa.me/79058340188?text='+waText,'_blank');
+    btn.disabled=false;btn.textContent='Получить книгу бесплатно 🎁';
+  });
+}
+
+function submitCallback(){
+  const name=document.getElementById('cb-name').value.trim();
+  const phone=document.getElementById('cb-phone').value.trim();
+  const date=document.getElementById('cb-date').value.trim();
+  if(!phone||phone.replace(/\D/g,'').length<11){
+    p2.style.borderColor='#D4A5A0';p2.focus();
+    setTimeout(()=>p2.style.borderColor='',2000);return;
+  }
+  const btn=document.getElementById('cbSubmitBtn');
+  btn.disabled=true;btn.textContent='Отправляю...';
+  const text=`📞 Новая заявка с сайта!\n👤 Имя: ${name||'не указано'}\n📱 Телефон: ${phone}\n📅 Дата: ${date||'не указана'}`;
+  sendTelegram(text).then(()=>{
+    document.getElementById('formSuccess').style.display='block';
+    btn.textContent='✓ Отправлено';
+    document.getElementById('cb-name').value='';
+    document.getElementById('cb-phone').value='';
+    document.getElementById('cb-date').value='';
+  }).catch(()=>{
+    const waText=encodeURIComponent('Здравствуйте, Марат! Меня зовут '+(name||'клиент')+', мой номер '+phone+'. Хочу обсудить свадьбу'+(date?' ('+date+')':'')+'.');
+    window.open('https://wa.me/79058340188?text='+waText,'_blank');
+    btn.disabled=false;btn.textContent='Перезвоните мне';
+  });
+}
+
+function openLightbox(src){
+  document.getElementById('lightboxImg').src=src;
+  document.getElementById('lightbox').classList.add('open');
+  document.body.style.overflow='hidden';
+}
+function closeLightbox(){
+  document.getElementById('lightbox').classList.remove('open');
+  document.body.style.overflow='';
+}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLightbox()});
+
+const nav=document.getElementById('mainNav');
+window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',window.scrollY>60));
+
+const reveals=document.querySelectorAll('.reveal');
+const observer=new IntersectionObserver((entries)=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      setTimeout(()=>entry.target.classList.add('visible'),80);
+      observer.unobserve(entry.target);
+    }
+  });
+},{threshold:.1});
+reveals.forEach(el=>observer.observe(el));
 </script>
 </body>
 </html>
