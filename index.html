@@ -206,6 +206,16 @@ section{padding:7rem 2rem}
 .book-hint{font-size:.7rem;color:rgba(250,246,240,.3);line-height:1.5;text-align:center}
 .book-success{display:none;background:rgba(37,211,102,.12);border:1px solid rgba(37,211,102,.3);color:#25D366;padding:1rem 1.4rem;font-size:.8rem;letter-spacing:.1em;text-align:center}
 
+/* MESSENGER PICKER for book delivery */
+.book-messenger-label{font-size:.72rem;letter-spacing:.1em;color:rgba(250,246,240,.45);margin:.2rem 0 .2rem}
+.messenger-picker{display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem;margin-bottom:.2rem}
+.messenger-opt{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.4rem;padding:.85rem .4rem;border:1px solid rgba(201,169,110,.25);background:rgba(250,246,240,.04);color:rgba(250,246,240,.6);cursor:pointer;font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;transition:all .25s;-webkit-tap-highlight-color:transparent}
+.messenger-opt svg{width:20px;height:20px;pointer-events:none}
+.messenger-opt.active{border-color:var(--gold);background:rgba(201,169,110,.15);color:var(--gold)}
+.messenger-opt.active.opt-vk{border-color:#4C75A3;background:rgba(76,117,163,.18);color:#7fa3d6}
+.messenger-opt.active.opt-tg{border-color:#28A0F0;background:rgba(40,160,240,.18);color:#28A0F0}
+.messenger-opt.active.opt-mx{border-color:#8B5CF6;background:rgba(139,92,246,.18);color:#b09bf5}
+
 .portfolio-section{background:var(--ivory);padding:6rem 2rem}
 .portfolio-header{text-align:center;margin-bottom:3rem}
 .portfolio-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;max-width:1100px;margin:0 auto}
@@ -636,7 +646,7 @@ _tmr.push({id: "3769475", type: "pageView", start: (new Date()).getTime()});
       <span class="section-label reveal">Подарок от Марата</span>
       <h2 class="section-title reveal">Получите книгу<br><em>бесплатно</em></h2>
       <div class="divider reveal"></div>
-      <p class="book-desc reveal">Оставьте имя и номер телефона — я пришлю ссылку на скачивание книги «Как говорить на людях» и свяжусь с вами, чтобы обсудить вашу свадьбу.</p>
+      <p class="book-desc reveal">Оставьте имя и номер телефона, выберите мессенджер — и я пришлю ссылку на скачивание книги «Как говорить на людях», а после свяжусь с вами, чтобы обсудить вашу свадьбу.</p>
       <div class="book-form reveal" id="bookForm">
         <input type="text" id="b-name" placeholder="Ваше имя">
         <div class="phone-wrap">
@@ -644,8 +654,23 @@ _tmr.push({id: "3769475", type: "pageView", start: (new Date()).getTime()});
           <input type="tel" id="b-phone" placeholder="+7 (___) ___-__-__" maxlength="18">
         </div>
         <input type="text" id="b-date" placeholder="Примерная дата свадьбы (необязательно)">
+        <span class="book-messenger-label">Куда прислать книгу?</span>
+        <div class="messenger-picker" id="bookMessengerPicker">
+          <div class="messenger-opt opt-vk active" data-messenger="vk">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M15.684 0H8.316C1.592 0 0 1.592 0 8.316v7.368C0 22.408 1.592 24 8.316 24h7.368C22.408 24 24 22.408 24 15.684V8.316C24 1.592 22.408 0 15.684 0zm3.692 17.123h-1.744c-.66 0-.864-.525-2.05-1.727-1.033-1-1.49-1.135-1.744-1.135-.356 0-.458.102-.458.593v1.575c0 .424-.135.678-1.253.678-1.846 0-3.896-1.118-5.335-3.202C4.624 10.857 4.03 8.57 4.03 8.096c0-.254.102-.491.593-.491h1.744c.44 0 .61.203.78.677.863 2.49 2.303 4.675 2.896 4.675.22 0 .322-.102.322-.66V9.721c-.068-1.186-.695-1.287-.695-1.71 0-.204.17-.407.44-.407h2.744c.373 0 .508.203.508.643v3.473c0 .372.17.508.271.508.22 0 .407-.136.813-.542 1.253-1.406 2.15-3.574 2.15-3.574.119-.254.322-.491.762-.491h1.744c.525 0 .644.27.525.643-.22 1.017-2.354 4.031-2.354 4.031-.186.305-.254.44 0 .78.186.254.796.779 1.203 1.253.745.847 1.32 1.558 1.473 2.05.17.474-.085.711-.576.711z"/></svg>
+            ВКонтакте
+          </div>
+          <div class="messenger-opt opt-tg" data-messenger="tg">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+            Telegram
+          </div>
+          <div class="messenger-opt opt-mx" data-messenger="max">
+            <svg viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="10" fill="currentColor" opacity=".18"/><path d="M20 8C13.37 8 8 13.37 8 20C8 23.1 9.15 25.93 11.05 28.08L8.5 32L12.8 30.2C14.8 31.36 17.32 32 20 32C26.63 32 32 26.63 32 20C32 13.37 26.63 8 20 8Z" fill="currentColor"/></svg>
+            Макс
+          </div>
+        </div>
         <button class="book-btn" id="bookBtn" onclick="submitBook()">Получить книгу бесплатно 🎁</button>
-        <div class="book-success" id="bookSuccess">✓ Отлично! Ссылка на книгу придёт в WhatsApp. Марат свяжется с вами в ближайшее время.</div>
+        <div class="book-success" id="bookSuccess">✓ Отлично! Ссылка на книгу открывается в выбранном мессенджере. Марат свяжется с вами в ближайшее время.</div>
         <p class="book-hint">Без спама. Только книга и один звонок от Марата.</p>
       </div>
     </div>
@@ -702,9 +727,19 @@ _tmr.push({id: "3769475", type: "pageView", start: (new Date()).getTime()});
 </div>
 
 <script>
-const BOT_TOKEN='8655545816:AAHGxEHcEmYy3YBbtYUGmfMwXKDv4PBcrB4';
+/* ==== ВНИМАНИЕ: токен зашит в клиентском коде — виден любому в "просмотр кода страницы".
+   Это временное решение, чтобы быстро восстановить работу лидбота.
+   В идеале вынести в serverless-функцию (Vercel /api) и хранить токен в Environment Variables. ==== */
+const BOT_TOKEN='8689161123:AAG91Lu_DHMcyQA_kVZxFLbGxgkgLxEHGt8';
 const CHAT_ID='176811698';
 const BOOK_URL='https://disk.yandex.ru/i/GG6eKsUwdCsxrg';
+
+// Контакты Марата в каждом мессенджере — куда открывать чат для отправки книги
+const OWNER_CONTACT = {
+  vk:  { base: 'https://vk.me/maratbright',   label: 'ВКонтакте' },
+  tg:  { base: 'https://t.me/app2cas',         label: 'Telegram' },
+  max: { base: 'https://max.ru/+79058340188',  label: 'Макс' }
+};
 
 function maskPhone(input){
   input.addEventListener('input',function(e){
@@ -729,11 +764,43 @@ const p2=document.getElementById('cb-phone');
 if(p1)maskPhone(p1);
 if(p2)maskPhone(p2);
 
+// Выбор мессенджера для получения книги
+let selectedMessenger = 'vk';
+const messengerPicker = document.getElementById('bookMessengerPicker');
+if(messengerPicker){
+  messengerPicker.querySelectorAll('.messenger-opt').forEach(opt=>{
+    opt.addEventListener('click', ()=>{
+      messengerPicker.querySelectorAll('.messenger-opt').forEach(o=>o.classList.remove('active'));
+      opt.classList.add('active');
+      selectedMessenger = opt.dataset.messenger;
+    });
+  });
+}
+
 async function sendTelegram(text){
   return fetch('https://api.telegram.org/bot'+BOT_TOKEN+'/sendMessage',{
     method:'POST',headers:{'Content-Type':'application/json'},
     body:JSON.stringify({chat_id:CHAT_ID,text})
+  }).then(async r=>{
+    if(!r.ok){
+      const err = await r.text().catch(()=> '');
+      throw new Error('Telegram API error '+r.status+': '+err);
+    }
+    return r;
   });
+}
+
+function openMessengerWithBook(messenger, name){
+  const contact = OWNER_CONTACT[messenger] || OWNER_CONTACT.vk;
+  const text = 'Здравствуйте'+(name?', '+name:'')+'! Хочу получить книгу «Как говорить на людях»: '+BOOK_URL+'\n\nФайл в формате epub — откройте в iBooks (iPhone), ReadEra или другой программе для чтения эл. книг.';
+  let url;
+  if(messenger==='tg' || messenger==='max'){
+    url = contact.base + '?text=' + encodeURIComponent(text);
+  } else {
+    // vk.me поддерживает открытие личного диалога; предзаполнение текста через ссылку у VK для личных страниц ограничено
+    url = contact.base;
+  }
+  window.open(url, '_blank');
 }
 
 function submitBook(){
@@ -746,18 +813,20 @@ function submitBook(){
   }
   const btn=document.getElementById('bookBtn');
   btn.disabled=true;btn.textContent='Отправляю...';
-  const text=`🎁 ЗАЯВКА НА КНИГУ с сайта!\n👤 Имя: ${name||'не указано'}\n📱 Телефон: ${phone}\n📅 Дата: ${date||'не указана'}\n\n📖 Ссылка на книгу для клиента:\n${BOOK_URL}`;
+  const messengerLabel = (OWNER_CONTACT[selectedMessenger]||{}).label || selectedMessenger;
+  const text=`🎁 ЗАЯВКА НА КНИГУ с сайта!\n👤 Имя: ${name||'не указано'}\n📱 Телефон: ${phone}\n📅 Дата: ${date||'не указана'}\n💬 Мессенджер для книги: ${messengerLabel}\n\n📖 Ссылка на книгу для клиента:\n${BOOK_URL}`;
   sendTelegram(text).then(()=>{
     document.getElementById('bookSuccess').style.display='block';
     btn.textContent='✓ Готово!';
     document.getElementById('b-name').value='';
     document.getElementById('b-phone').value='';
     document.getElementById('b-date').value='';
-    const waText=encodeURIComponent('Здравствуйте, '+( name||'')+'! Вот ссылка на книгу «Как говорить на людях»: '+BOOK_URL+'\n\nФайл в формате epub — откройте в приложении iBooks (iPhone), ReadEra или любой программе для чтения электронных книг. Скоро свяжусь с вами! — Марат Ярков');
-    setTimeout(()=>window.open('https://wa.me/'+phone.replace(/\D/g,'')+`?text=${waText}`,'_blank'),1500);
-  }).catch(()=>{
-    const waText=encodeURIComponent('Здравствуйте! Хочу получить книгу «Как говорить на людях» и узнать про ведение свадьбы.');
-    window.open('https://wa.me/79058340188?text='+waText,'_blank');
+    setTimeout(()=>openMessengerWithBook(selectedMessenger, name), 1200);
+    setTimeout(()=>{btn.disabled=false;btn.textContent='Получить книгу бесплатно 🎁';document.getElementById('bookSuccess').style.display='none';}, 6000);
+  }).catch((err)=>{
+    console.error('Lead send failed:', err);
+    // даже если заявка не улетела в Telegram, книгу клиенту всё равно открываем
+    openMessengerWithBook(selectedMessenger, name);
     btn.disabled=false;btn.textContent='Получить книгу бесплатно 🎁';
   });
 }
@@ -779,7 +848,9 @@ function submitCallback(){
     document.getElementById('cb-name').value='';
     document.getElementById('cb-phone').value='';
     document.getElementById('cb-date').value='';
-  }).catch(()=>{
+    setTimeout(()=>{btn.disabled=false;btn.textContent='Перезвоните мне';document.getElementById('formSuccess').style.display='none';}, 6000);
+  }).catch((err)=>{
+    console.error('Lead send failed:', err);
     const waText=encodeURIComponent('Здравствуйте, Марат! Меня зовут '+(name||'клиент')+', мой номер '+phone+'. Хочу обсудить свадьбу'+(date?' ('+date+')':'')+'.');
     window.open('https://wa.me/79058340188?text='+waText,'_blank');
     btn.disabled=false;btn.textContent='Перезвоните мне';
