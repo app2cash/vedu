@@ -31,6 +31,31 @@ Allow: /
 User-agent: OpenAI-SearchBot
 Allow: /
 
+# Китайские нейросети и поисковики (работают в России)
+User-agent: QwenBot
+Allow: /
+
+User-agent: Qwenbot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: Baiduspider-image
+Allow: /
+
+User-agent: Sogouspider
+Allow: /
+
+User-agent: 360Spider
+Allow: /
+
+User-agent: ShenmaSpider
+Allow: /
+
+User-agent: XiaohuaSpider
+Allow: /
+
 # Запретить спам-ботов
 User-agent: MJ12bot
 Allow: /
