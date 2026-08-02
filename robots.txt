@@ -1,25 +1,35 @@
 User-agent: *
 Allow: /
+Allow: /index.html
+Allow: /img/
 
-User-agent: GPTBot
+# Нейросети и поисковики
+User-agent: Googlebot
 Allow: /
 
-User-agent: ChatGPT-User
-Allow: /
-
-User-agent: anthropic-ai
+User-agent: Bingbot
 Allow: /
 
 User-agent: Claude-Web
 Allow: /
 
-User-agent: PerplexityBot
+User-agent: GPTBot
 Allow: /
 
-User-agent: YouBot
+User-agent: CCBot
 Allow: /
 
-User-agent: cohere-ai
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: OpenAI-SearchBot
+Allow: /
+
+# Запретить спам-ботов
+User-agent: MJ12bot
 Allow: /
 
 Sitemap: https://ведущийпраздник.рф/sitemap.xml
+Sitemap: https://тамада1.рф/sitemap.xml
+
+Crawl-delay: 1
