@@ -4,8 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Марат Ярков — Ведущий событий в Златоусте, Миассе, Кусе, Сатке</title>
-<meta name="description" content="Ведущий свадеб Марат Ярков — 200+ свадеб с 2011 года. Работаю с профессиональным DJ и звуком. Zlatoust, Miass, Kusa, Satka. Телеведущий ТНТ. Узнайте цену — звоните!">
+<meta name="description" content="Ведущий свадеб Марат Ярков — 200+ свадеб с 2011 года. Работаю с профессиональным DJ и звуком. Zlatoust, Miass, Kusa, Satka. Телеведущий ТНТ. Напишите — и книга «Как говорить на людях» в подарок!">
 <meta name="keywords" content="ведущий свадьбы Златоуст, тамада Миасс, ведущий праздников Сатка, свадьба Куса, ведущий свадьбы Челябинская область">
+
+<!-- FAVICON -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='16'%20fill='%231A1714'/%3E%3Ccircle%20cx='25'%20cy='36'%20r='13'%20fill='none'%20stroke='%23C9A96E'%20stroke-width='3.4'/%3E%3Ccircle%20cx='39'%20cy='36'%20r='13'%20fill='none'%20stroke='%23E8D5B0'%20stroke-width='3.4'/%3E%3Cpath%20d='M20%2020l3%208m21-8l-3%208'%20stroke='%23C9A96E'%20stroke-width='2.2'%20stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='16'%20fill='%231A1714'/%3E%3Ccircle%20cx='25'%20cy='36'%20r='13'%20fill='none'%20stroke='%23C9A96E'%20stroke-width='3.4'/%3E%3Ccircle%20cx='39'%20cy='36'%20r='13'%20fill='none'%20stroke='%23E8D5B0'%20stroke-width='3.4'/%3E%3C/svg%3E">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Tenor+Sans&display=swap" rel="stylesheet">
@@ -22,6 +27,7 @@
     --rose: #D4A5A0;
     --rose-dark: #A06B65;
     --text: #2C2825;
+    --vk: #0077FF;
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -133,9 +139,24 @@
     font-weight: 300;
     font-style: italic;
     color: rgba(250,246,240,0.55);
-    margin: 1.5rem 0 3rem;
+    margin: 1.5rem 0 2rem;
     letter-spacing: 0.05em;
     animation: fadeUp 1.2s 0.4s ease both;
+  }
+
+  .hero-gift-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    background: rgba(201,169,110,0.1);
+    border: 1px solid rgba(201,169,110,0.35);
+    padding: 0.55rem 1.3rem;
+    border-radius: 999px;
+    font-size: 0.72rem;
+    letter-spacing: 0.05em;
+    color: var(--gold-light);
+    margin-bottom: 2.8rem;
+    animation: fadeUp 1.2s 0.45s ease both;
   }
 
   .hero-stats {
@@ -191,6 +212,7 @@
     transition: all 0.3s;
     position: relative;
     overflow: hidden;
+    display: inline-block;
   }
 
   .btn-primary::after {
@@ -217,9 +239,16 @@
     border: 1px solid rgba(250,246,240,0.3);
     cursor: pointer;
     transition: all 0.3s;
+    display: inline-block;
   }
 
   .btn-outline:hover { border-color: var(--gold); color: var(--gold); }
+
+  .btn-vk {
+    background: var(--vk);
+    color: #fff;
+  }
+  .btn-vk:hover { box-shadow: 0 8px 30px rgba(0,119,255,0.35); }
 
   .scroll-hint {
     position: absolute;
@@ -281,6 +310,81 @@
     height: 1px;
     background: var(--gold);
     margin: 2rem 0;
+  }
+
+  /* MID-SECTION CTA STRIP */
+  .inline-cta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 3.5rem;
+    padding: 2rem 2.2rem;
+    background: var(--charcoal);
+    border: 1px solid rgba(201,169,110,0.25);
+  }
+
+  .inline-cta p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.25rem;
+    font-style: italic;
+    color: var(--cream);
+    max-width: 480px;
+  }
+
+  .inline-cta p strong { color: var(--gold); font-weight: 400; font-style: normal; }
+
+  .btn-small {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--gold);
+    color: var(--charcoal);
+    padding: 0.85rem 1.8rem;
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: all 0.3s;
+  }
+
+  .btn-small:hover { background: var(--gold-light); transform: translateY(-2px); }
+
+  /* GIFT BANNER */
+  .gift-banner {
+    background: linear-gradient(120deg, var(--gold-dark), var(--gold) 55%, var(--gold-light));
+    padding: 1.1rem 2rem;
+    text-align: center;
+  }
+
+  .gift-banner-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.9rem;
+    flex-wrap: wrap;
+    color: var(--charcoal);
+    font-size: 0.82rem;
+    letter-spacing: 0.03em;
+  }
+
+  .gift-banner-inner strong {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 1.05rem;
+    font-weight: 600;
+  }
+
+  .gift-banner a {
+    color: var(--charcoal);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    font-weight: 600;
   }
 
   /* FEARS SECTION */
@@ -398,34 +502,6 @@
     border: 1px solid rgba(201,169,110,0.3);
   }
 
-  .about-photo-placeholder {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .photo-icon {
-    width: 60px;
-    height: 60px;
-    border: 1px solid rgba(201,169,110,0.3);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-  }
-
-  .photo-hint {
-    font-size: 0.7rem;
-    letter-spacing: 0.15em;
-    color: rgba(250,246,240,0.3);
-    text-align: center;
-  }
-
   .about-badge {
     position: absolute;
     bottom: -1.5rem;
@@ -475,6 +551,7 @@
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
+    margin-bottom: 2.2rem;
   }
 
   .about-facts li {
@@ -735,7 +812,7 @@
     transition: color 0.3s;
   }
 
-  /* REVIEWS */
+  /* REVIEWS (TEXT) */
   .reviews {
     background: var(--charcoal);
     color: var(--cream);
@@ -796,6 +873,93 @@
     font-size: 0.7rem;
     color: rgba(250,246,240,0.3);
     margin-top: 0.3rem;
+  }
+
+  .reviews .inline-cta {
+    background: rgba(250,246,240,0.05);
+    border-color: rgba(201,169,110,0.3);
+  }
+
+  /* SCREENSHOT REVIEWS CAROUSEL */
+  .proof {
+    background: var(--ivory);
+  }
+
+  .proof-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .proof-count {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem;
+    font-style: italic;
+    color: var(--warm-gray);
+  }
+
+  .proof-count strong { color: var(--gold-dark); font-weight: 600; }
+
+  .proof-track-wrap {
+    position: relative;
+    margin: 0 -2rem;
+    padding: 0 2rem;
+  }
+
+  .proof-track {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 1.5rem;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: var(--gold) transparent;
+  }
+
+  .proof-track::-webkit-scrollbar { height: 6px; }
+  .proof-track::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 10px; }
+  .proof-track::-webkit-scrollbar-track { background: rgba(201,169,110,0.1); }
+
+  .proof-slide {
+    flex: 0 0 auto;
+    width: 230px;
+    scroll-snap-align: start;
+    background: var(--cream);
+    border: 1px solid rgba(201,169,110,0.2);
+    overflow: hidden;
+    position: relative;
+  }
+
+  .proof-slide img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    background: var(--gold-light);
+  }
+
+  .proof-slide-num {
+    position: absolute;
+    top: 0.6rem;
+    left: 0.6rem;
+    background: rgba(26,23,20,0.65);
+    color: var(--gold-light);
+    font-size: 0.62rem;
+    letter-spacing: 0.1em;
+    padding: 0.25rem 0.55rem;
+  }
+
+  .proof-hint {
+    text-align: center;
+    font-size: 0.68rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--warm-gray);
+    margin-top: 0.5rem;
   }
 
   /* OBJECTIONS */
@@ -901,13 +1065,27 @@
     font-size: 1.3rem;
     font-style: italic;
     color: rgba(26,23,20,0.6);
-    margin-bottom: 3rem;
+    margin-bottom: 1.6rem;
     position: relative;
   }
 
+  .cta-gift {
+    position: relative;
+    display: inline-block;
+    background: rgba(26,23,20,0.9);
+    color: var(--gold-light);
+    font-size: 0.78rem;
+    letter-spacing: 0.03em;
+    padding: 0.7rem 1.4rem;
+    margin-bottom: 2.4rem;
+    border-radius: 999px;
+  }
+
+  .cta-gift strong { color: var(--gold); font-style: italic; font-family: 'Cormorant Garamond', serif; font-size: 0.95rem; }
+
   .cta-contacts {
     display: flex;
-    gap: 2rem;
+    gap: 1.2rem;
     justify-content: center;
     flex-wrap: wrap;
     margin-bottom: 2rem;
@@ -930,8 +1108,8 @@
 
   .contact-btn:hover { background: rgba(26,23,20,0.8); transform: translateY(-2px); }
 
-  .contact-btn.wh { background: #25D366; color: white; }
-  .contact-btn.wh:hover { background: #1da851; }
+  .contact-btn.vk { background: var(--vk); color: white; }
+  .contact-btn.vk:hover { background: #0062d1; }
 
   .cta-note {
     font-size: 0.75rem;
@@ -985,7 +1163,38 @@
     font-size: 1.05rem;
     font-style: italic;
     color: rgba(250,246,240,0.5);
-    margin-bottom: 3rem;
+    margin-bottom: 1.6rem;
+  }
+
+  .gift-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-align: left;
+    background: rgba(201,169,110,0.08);
+    border: 1px solid rgba(201,169,110,0.3);
+    padding: 1.1rem 1.4rem;
+    margin-bottom: 2.4rem;
+  }
+
+  .gift-card-icon {
+    font-size: 1.8rem;
+    flex-shrink: 0;
+  }
+
+  .gift-card p {
+    font-size: 0.82rem;
+    color: rgba(250,246,240,0.7);
+    line-height: 1.5;
+  }
+
+  .gift-card p strong {
+    color: var(--gold-light);
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 0.2rem;
   }
 
   .form-group {
@@ -1063,7 +1272,7 @@
     display: none;
     background: rgba(37,211,102,0.12);
     border: 1px solid rgba(37,211,102,0.3);
-    color: #25D366;
+    color: #6fcf97;
     padding: 1rem 1.4rem;
     font-size: 0.8rem;
     letter-spacing: 0.1em;
@@ -1095,7 +1304,7 @@
 
   .social-btns {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 0.8rem;
   }
 
@@ -1119,17 +1328,6 @@
     flex-shrink: 0;
   }
 
-  .social-btn.wa {
-    background: rgba(37,211,102,0.1);
-    border-color: rgba(37,211,102,0.25);
-    color: #25D366;
-  }
-  .social-btn.wa:hover {
-    background: rgba(37,211,102,0.2);
-    border-color: rgba(37,211,102,0.5);
-    transform: translateY(-3px);
-  }
-
   .social-btn.tg {
     background: rgba(40,160,240,0.1);
     border-color: rgba(40,160,240,0.25);
@@ -1144,7 +1342,7 @@
   .social-btn.vk {
     background: rgba(0,119,255,0.1);
     border-color: rgba(0,119,255,0.25);
-    color: #4C75A3;
+    color: #3a8cff;
   }
   .social-btn.vk:hover {
     background: rgba(0,119,255,0.2);
@@ -1153,8 +1351,38 @@
   }
 
   @media (max-width: 480px) {
-    .social-btns { grid-template-columns: 1fr 1fr 1fr; }
-    .social-btn { padding: 0.8rem 0.3rem; font-size: 0.55rem; }
+    .social-btn { padding: 0.9rem 0.3rem; font-size: 0.58rem; }
+  }
+
+  /* STICKY MOBILE CTA */
+  .sticky-cta {
+    display: none;
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    z-index: 90;
+    background: rgba(26,23,20,0.97);
+    backdrop-filter: blur(8px);
+    border-top: 1px solid rgba(201,169,110,0.25);
+    padding: 0.7rem 1rem;
+    gap: 0.6rem;
+  }
+
+  .sticky-cta a {
+    flex: 1;
+    text-align: center;
+    padding: 0.85rem 0.5rem;
+    font-size: 0.68rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  .sticky-cta .s-vk { background: var(--vk); color: #fff; }
+  .sticky-cta .s-call { background: var(--gold); color: var(--charcoal); }
+
+  @media (max-width: 680px) {
+    .sticky-cta { display: flex; }
+    body { padding-bottom: 62px; }
   }
 
   /* FOOTER */
@@ -1281,33 +1509,6 @@
     background: rgba(26,23,20,0.35);
   }
 
-  /* IN-WORK PHOTOS */
-  .work-photos {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    margin-top: 2rem;
-  }
-
-  @media (max-width: 600px) {
-    .work-photos { grid-template-columns: 1fr; }
-  }
-
-  .work-photo-item {
-    position: relative;
-    overflow: hidden;
-    border-radius: 2px;
-  }
-
-  .work-photo-item img {
-    width: 100%;
-    height: auto;
-    display: block;
-    transition: transform 0.4s;
-  }
-
-  .work-photo-item:hover img { transform: scale(1.03); }
-
   /* NAV */
   nav {
     position: fixed;
@@ -1383,6 +1584,15 @@
     opacity: 1;
     transform: translateY(0);
   }
+
+  @media (prefers-reduced-motion: reduce) {
+    .reveal, .hero-content, .hero-tag, .hero-name, .hero-subtitle, .hero-gift-pill, .hero-stats, .hero-cta, .scroll-hint {
+      animation: none !important;
+      opacity: 1 !important;
+      transform: none !important;
+    }
+    .hero-ornament, .scroll-line { animation: none !important; }
+  }
 </style>
 </head>
 <body>
@@ -1393,11 +1603,11 @@
   <ul class="nav-links">
     <li><a href="#about">О себе</a></li>
     <li><a href="#format">Форматы</a></li>
-    <li><a href="#portfolio">Портфолио</a></li>
+    <li><a href="#proof">Отзывы</a></li>
     <li><a href="#packages">Пакеты</a></li>
-    <li><a href="#reviews">Отзывы</a></li>
+    <li><a href="#callback">Контакты</a></li>
   </ul>
-  <a href="https://wa.me/79058340188" class="nav-cta">Написать</a>
+  <a href="https://vk.ru/maratyarkov" target="_blank" rel="noopener" class="nav-cta">Написать</a>
 </nav>
 
 <!-- HERO -->
@@ -1416,6 +1626,8 @@
     <p class="hero-subtitle">
       Свадьба, которую вы будете вспоминать&nbsp;всю&nbsp;жизнь
     </p>
+
+    <div class="hero-gift-pill">🎁 Напишите мне в сообщения — и книга «Как говорить на людях» ваша в подарок</div>
 
     <div class="hero-stats">
       <div class="stat">
@@ -1438,7 +1650,7 @@
 
     <div class="hero-cta">
       <a href="#packages" class="btn-primary">Узнать стоимость</a>
-      <a href="#about" class="btn-outline">Подробнее обо мне</a>
+      <a href="https://vk.ru/maratyarkov" target="_blank" rel="noopener" class="btn-outline">Написать ВКонтакте</a>
     </div>
   </div>
 
@@ -1447,6 +1659,15 @@
     <span>Листайте</span>
   </div>
 </section>
+
+<!-- GIFT BANNER -->
+<div class="gift-banner">
+  <div class="gift-banner-inner">
+    <span>🎁</span>
+    <span>Каждому, кто напишет мне в мессенджер — <strong>книга «Как говорить на людях»</strong> в подарок</span>
+    <a href="#callback">Написать и получить →</a>
+  </div>
+</div>
 
 <!-- FEARS / БОЛИ -->
 <section class="fears" id="fears">
@@ -1487,6 +1708,11 @@
         <p class="fear-answer">Несколько пакетов под разный бюджет. Созвонимся — подберём формат, который работает именно для вас. <strong>Договоримся.</strong></p>
       </div>
     </div>
+
+    <div class="inline-cta reveal">
+      <p>Остались сомнения? <strong>Задайте вопрос лично</strong> — отвечу в течение часа и подарю книгу «Как говорить на людях».</p>
+      <a href="#callback" class="btn-small">💬 Написать Марату</a>
+    </div>
   </div>
 </section>
 
@@ -1510,18 +1736,20 @@
         <div class="divider reveal"></div>
 
         <p class="about-body reveal">
-          По карте Таро я — десятка червей. В традиции Таро это карта называется «Свадьба». Я не выбирал эту работу — она выбрала меня.
+          По карте Таро я — десятка червей. В традиции Таро эта карта называется «Свадьба». Я не выбирал эту работу — она выбрала меня.
         </p>
 
         <ul class="about-facts reveal">
           <li><span class="fact-dot"></span>Веду праздники с 2011 года — более 200 свадеб в Златоусте, Москве, Питере, Сочи, Челябинске, Бали</li>
           <li><span class="fact-dot"></span>Телеведущий реалити-шоу «Свадьба на ТВ» на ТНТ-Златоуст — режиссёр и автор сценария</li>
           <li><span class="fact-dot"></span>Основатель Союза свадебных специалистов LOVEDDING</li>
-          <li><span class="fact-dot"></span>Автор курса «101 лайфхак для невест»</li>
+          <li><span class="fact-dot"></span>Автор курса «101 лайфхак для невест» и книги «Как говорить на людях»</li>
           <li><span class="fact-dot"></span>7 раз — свидетель на свадьбах друзей. Знаю праздник изнутри</li>
           <li><span class="fact-dot"></span>5 лет путешествий, 11 стран — вернулся в Златоуст, чтобы снова создавать лучшие свадьбы Урала</li>
           <li><span class="fact-dot"></span>Работаю только в паре с профессиональным DJ + полный звук</li>
         </ul>
+
+        <a href="https://vk.ru/maratyarkov" target="_blank" rel="noopener" class="btn-outline reveal">Написать мне лично</a>
       </div>
     </div>
   </div>
@@ -1573,6 +1801,11 @@
         <p class="event-desc">Открытия, фестивали, городские праздники — опыт работы с большими аудиториями.</p>
       </div>
     </div>
+
+    <div class="inline-cta reveal">
+      <p>Не нашли своё событие в списке? <strong>Опишите — предложу формат</strong> под него.</p>
+      <a href="#callback" class="btn-small">💬 Обсудить событие</a>
+    </div>
   </div>
 </section>
 
@@ -1583,7 +1816,7 @@
       <span class="section-label reveal">Стоимость</span>
       <h2 class="section-title reveal">Выберите <em>свой формат</em></h2>
       <div class="divider reveal"></div>
-      <p class="reveal" style="font-size:0.9rem; color:var(--warm-gray); line-height:1.7;">Точная цена зависит от даты, формата и деталей вашей свадьбы. Созвонимся — подберём идеальный пакет.</p>
+      <p class="reveal" style="font-size:0.9rem; color:var(--warm-gray); line-height:1.7;">Точная цена зависит от даты, формата и деталей вашей свадьбы. Напишите — подберём идеальный пакет и подарим книгу «Как говорить на людях».</p>
     </div>
 
     <div class="packages-grid">
@@ -1598,7 +1831,7 @@
           <li>Авторские тосты</li>
           <li>Координация вечера</li>
         </ul>
-        <a href="https://wa.me/79058340188?text=Здравствуйте! Интересует пакет Классика" class="package-cta">Узнать цену</a>
+        <a href="https://vk.ru/maratyarkov" target="_blank" rel="noopener" class="package-cta">Узнать цену</a>
       </div>
 
       <div class="package-card featured reveal">
@@ -1615,7 +1848,7 @@
           <li>Индивидуальный сценарий</li>
           <li>Репетиция и бриф перед свадьбой</li>
         </ul>
-        <a href="https://wa.me/79058340188?text=Здравствуйте! Хочу полный пакет на свадьбу" class="package-cta">Обсудить свадьбу</a>
+        <a href="https://vk.ru/maratyarkov" target="_blank" rel="noopener" class="package-cta">Обсудить свадьбу</a>
       </div>
 
       <div class="package-card reveal">
@@ -1630,11 +1863,11 @@
           <li>Работа в регионе или выезд</li>
           <li>Любой хронометраж</li>
         </ul>
-        <a href="https://wa.me/79058340188?text=Хочу обсудить эксклюзивный формат" class="package-cta">Обсудить</a>
+        <a href="https://vk.ru/maratyarkov" target="_blank" rel="noopener" class="package-cta">Обсудить</a>
       </div>
     </div>
 
-    <p class="packages-note reveal">«Цена — не проблема. Позвоните, и мы найдём формат, который подойдёт именно вам.»</p>
+    <p class="packages-note reveal">«Цена — не проблема. Напишите, и мы найдём формат, который подойдёт именно вам.»</p>
   </div>
 </section>
 
@@ -1674,7 +1907,7 @@
   </div>
 </section>
 
-<!-- REVIEWS -->
+<!-- REVIEWS (TEXT) -->
 <section class="reviews" id="reviews">
   <div class="container">
     <div class="reviews-header">
@@ -1703,6 +1936,34 @@
         <div class="review-author">Ольга и Максим</div>
         <div class="review-city">Сатка, 2022</div>
       </div>
+    </div>
+
+    <div class="inline-cta reveal">
+      <p>Хотите такую же свадьбу? <strong>Напишите Марату</strong> — и получите книгу «Как говорить на людях» в подарок.</p>
+      <a href="#callback" class="btn-small">💬 Написать</a>
+    </div>
+  </div>
+</section>
+
+<!-- SCREENSHOT REVIEWS / PROOF -->
+<section class="proof" id="proof">
+  <div class="container">
+    <div class="proof-header">
+      <div>
+        <span class="section-label reveal">Переписки с молодожёнами</span>
+        <h2 class="section-title reveal">22 отзыва —<br><em>без купюр</em></h2>
+      </div>
+      <p class="proof-count reveal">Скриншоты реальных сообщений · <strong>22 из 200+</strong></p>
+    </div>
+
+    <div class="proof-track-wrap reveal">
+      <div class="proof-track" id="proofTrack"></div>
+    </div>
+    <p class="proof-hint">← Листайте, чтобы увидеть все 22 отзыва →</p>
+
+    <div class="inline-cta reveal" style="margin-top:3rem;">
+      <p>Хотите так же? <strong>Напишите мне первым</strong> — отвечаю в течение часа.</p>
+      <a href="#callback" class="btn-small">💬 Написать Марату</a>
     </div>
   </div>
 </section>
@@ -1733,7 +1994,7 @@
         </div>
         <div class="obj-a">
           <span class="obj-a-label">Марат отвечает</span>
-          <p class="obj-a-text">Каждая свадьба уникальна. <strong>Я не хочу называть цену, пока не пойму, что именно нужно именно вам.</strong> Созвон занимает 10 минут — после него у вас будет конкретная цифра.</p>
+          <p class="obj-a-text">Каждая свадьба уникальна. <strong>Я не хочу называть цену, пока не пойму, что именно нужно именно вам.</strong> Сообщение занимает пару минут — после ответа у вас будет конкретная цифра.</p>
         </div>
       </div>
 
@@ -1766,17 +2027,18 @@
 <section class="cta-section" id="contact">
   <h2 class="cta-title">Ваша свадьба<br>начинается здесь</h2>
   <p class="cta-sub">Напишите прямо сейчас — даты разбираются быстро</p>
+  <div class="cta-gift">🎁 Первому сообщению — книга <strong>«Как говорить на людях»</strong> в подарок</div>
 
   <div class="cta-contacts">
-    <a href="https://wa.me/79058340188?text=Здравствуйте, Марат! Хочу обсудить ведение свадьбы" class="contact-btn wh">
-      <span>💬</span> WhatsApp
+    <a href="https://vk.ru/maratyarkov" target="_blank" rel="noopener" class="contact-btn vk">
+      <span>💬</span> ВКонтакте
     </a>
     <a href="tel:+79058340188" class="contact-btn">
       <span>📞</span> +7 905 834-01-88
     </a>
   </div>
 
-  <p class="cta-note">Смелые невесты звонят сразу. Скромные — пишут в WhatsApp 😊</p>
+  <p class="cta-note">Смелые невесты звонят сразу. Скромные — пишут ВКонтакте 😊</p>
 </section>
 
 <!-- PORTFOLIO / ГАЛЕРЕЯ -->
@@ -1809,6 +2071,11 @@
       <div class="portfolio-item-overlay"></div>
     </div>
   </div>
+
+  <div class="inline-cta reveal" style="max-width:1200px; margin-left:auto; margin-right:auto;">
+    <p>Понравился стиль? <strong>Забронируйте дату</strong> — и получите книгу «Как говорить на людях» в подарок.</p>
+    <a href="#callback" class="btn-small">💬 Написать Марату</a>
+  </div>
 </section>
 
 <!-- CONTACT FORM -->
@@ -1817,6 +2084,11 @@
     <span class="contact-form-label reveal">Оставить заявку</span>
     <h2 class="contact-form-title reveal">Оставьте номер —<br><em>я перезвоню</em></h2>
     <p class="contact-form-sub reveal">Обычно отвечаю в течение часа</p>
+
+    <div class="gift-card reveal">
+      <span class="gift-card-icon">📖</span>
+      <p><strong>Подарок за сообщение</strong>Напишите мне в любой мессенджер — и получите книгу «Как говорить на людях» бесплатно, вне зависимости от того, забронируете вы дату или нет.</p>
+    </div>
 
     <div id="callbackForm">
       <div class="form-group reveal">
@@ -1840,17 +2112,13 @@
     <div class="form-divider reveal"><span>или напишите сами</span></div>
 
     <div class="social-btns reveal">
-      <a href="https://wa.me/79058340188?text=Здравствуйте, Марат! Хочу узнать подробнее о ведении свадьбы" class="social-btn wa" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-        WhatsApp
+      <a href="https://vk.ru/maratyarkov" class="social-btn vk" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M15.684 0H8.316C1.592 0 0 1.592 0 8.316v7.368C0 22.408 1.592 24 8.316 24h7.368C22.408 24 24 22.408 24 15.684V8.316C24 1.592 22.408 0 15.684 0zm3.692 17.123h-1.744c-.66 0-.864-.525-2.05-1.727-1.033-1-1.49-1.135-1.744-1.135-.356 0-.458.102-.458.593v1.575c0 .424-.135.678-1.253.678-1.846 0-3.896-1.118-5.335-3.202C4.624 10.857 4.03 8.57 4.03 8.096c0-.254.102-.491.593-.491h1.744c.44 0 .61.203.78.677.863 2.49 2.303 4.675 2.896 4.675.22 0 .322-.102.322-.66V9.721c-.068-1.186-.695-1.287-.695-1.71 0-.204.17-.407.44-.407h2.744c.373 0 .508.203.508.643v3.473c0 .372.17.508.271.508.22 0 .407-.136.813-.542 1.253-1.406 2.15-3.574 2.15-3.574.119-.254.322-.491.762-.491h1.744c.525 0 .644.27.525.643-.22 1.017-2.354 4.031-2.354 4.031-.186.305-.254.44 0 .78.186.254.796.779 1.203 1.253.745.847 1.32 1.558 1.473 2.05.17.474-.085.711-.576.711z"/></svg>
+        ВКонтакте
       </a>
       <a href="https://t.me/korolstola" class="social-btn tg" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
         Telegram
-      </a>
-      <a href="https://vk.com/marayarkov" class="social-btn vk" target="_blank" rel="noopener">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M15.684 0H8.316C1.592 0 0 1.592 0 8.316v7.368C0 22.408 1.592 24 8.316 24h7.368C22.408 24 24 22.408 24 15.684V8.316C24 1.592 22.408 0 15.684 0zm3.692 17.123h-1.744c-.66 0-.864-.525-2.05-1.727-1.033-1-1.49-1.135-1.744-1.135-.356 0-.458.102-.458.593v1.575c0 .424-.135.678-1.253.678-1.846 0-3.896-1.118-5.335-3.202C4.624 10.857 4.03 8.57 4.03 8.096c0-.254.102-.491.593-.491h1.744c.44 0 .61.203.78.677.863 2.49 2.303 4.675 2.896 4.675.22 0 .322-.102.322-.66V9.721c-.068-1.186-.695-1.287-.695-1.71 0-.204.17-.407.44-.407h2.744c.373 0 .508.203.508.643v3.473c0 .372.17.508.271.508.22 0 .407-.136.813-.542 1.253-1.406 2.15-3.574 2.15-3.574.119-.254.322-.491.762-.491h1.744c.525 0 .644.27.525.643-.22 1.017-2.354 4.031-2.354 4.031-.186.305-.254.44 0 .78.186.254.796.779 1.203 1.253.745.847 1.32 1.558 1.473 2.05.17.474-.085.711-.576.711z"/></svg>
-        ВКонтакте
       </a>
     </div>
   </div>
@@ -1863,7 +2131,37 @@
   <p class="footer-copy">Ведущий праздников · Златоуст · Миасс · Куса · Сатка · с 2011 года</p>
 </footer>
 
+<!-- STICKY MOBILE CTA -->
+<div class="sticky-cta">
+  <a href="https://vk.ru/maratyarkov" target="_blank" rel="noopener" class="s-vk">💬 ВКонтакте</a>
+  <a href="tel:+79058340188" class="s-call">📞 Позвонить</a>
+</div>
+
 <script>
+  // Build the 22-slide review-screenshot carousel.
+  // NOTE: assumed filenames img/otzyv1.jpg ... img/otzyv22.jpg in the repo — a slide
+  // simply hides itself if the corresponding file isn't found, so nothing breaks visually.
+  (function buildProof() {
+    const track = document.getElementById('proofTrack');
+    if (!track) return;
+    const BASE = 'https://raw.githubusercontent.com/app2cash/vedu/main/img/';
+    for (let i = 1; i <= 22; i++) {
+      const slide = document.createElement('div');
+      slide.className = 'proof-slide';
+      const num = document.createElement('span');
+      num.className = 'proof-slide-num';
+      num.textContent = '№' + i;
+      const img = document.createElement('img');
+      img.src = BASE + 'otzyv' + i + '.jpg';
+      img.alt = 'Отзыв №' + i;
+      img.loading = 'lazy';
+      img.onerror = function () { slide.style.display = 'none'; };
+      slide.appendChild(img);
+      slide.appendChild(num);
+      track.appendChild(slide);
+    }
+  })();
+
   // Phone mask
   const phoneInput = document.getElementById('cb-phone');
   if (phoneInput) {
@@ -1914,9 +2212,8 @@
       document.getElementById('cb-phone').value = '';
       document.getElementById('cb-date').value = '';
     }).catch(() => {
-      // Fallback — открываем WhatsApp с номером
-      const waText = encodeURIComponent(`Здравствуйте, Марат! Меня зовут ${name || 'клиент'}, мой номер ${phone}. Хочу обсудить свадьбу${date ? ' (' + date + ')' : ''}.`);
-      window.open(`https://wa.me/79058340188?text=${waText}`, '_blank');
+      // Fallback — открываем ВКонтакте
+      window.open('https://vk.ru/maratyarkov', '_blank');
       btn.disabled = false;
       btn.textContent = 'Перезвоните мне';
     });
