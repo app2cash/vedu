@@ -976,26 +976,31 @@
 
   .objection {
     background: var(--cream);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     overflow: hidden;
-    transition: transform 0.3s;
+    border-left: 3px solid rgba(201,169,110,0.3);
+    transition: border-color 0.3s;
   }
 
-  .objection:hover { transform: translateX(4px); }
-
-  @media (max-width: 600px) {
-    .objection { grid-template-columns: 1fr; }
-  }
-
-  .obj-q, .obj-a {
-    padding: 2rem 2.5rem;
-  }
+  .objection.open { border-left-color: var(--gold); }
 
   .obj-q {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: 1.8rem 2.5rem;
     background: rgba(201,169,110,0.07);
-    border-left: 3px solid rgba(201,169,110,0.3);
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    font-family: inherit;
+    transition: background 0.3s;
   }
+
+  .obj-q:hover { background: rgba(201,169,110,0.13); }
+
+  .obj-q-inner { flex: 1; }
 
   .obj-q-label {
     font-size: 0.6rem;
@@ -1012,6 +1017,41 @@
     font-style: italic;
     color: var(--charcoal);
     line-height: 1.5;
+  }
+
+  .obj-toggle {
+    flex-shrink: 0;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 1px solid rgba(201,169,110,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--gold-dark);
+    font-size: 1.1rem;
+    line-height: 1;
+    transition: transform 0.35s, background 0.3s;
+  }
+
+  .objection.open .obj-toggle {
+    transform: rotate(45deg);
+    background: var(--gold);
+    color: var(--charcoal);
+  }
+
+  .obj-a-wrap {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+  }
+
+  .objection.open .obj-a-wrap {
+    max-height: 260px;
+  }
+
+  .obj-a {
+    padding: 0.4rem 2.5rem 2rem;
   }
 
   .obj-a-label {
@@ -1169,17 +1209,22 @@
   .gift-card {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 1.3rem;
     text-align: left;
     background: rgba(201,169,110,0.08);
     border: 1px solid rgba(201,169,110,0.3);
-    padding: 1.1rem 1.4rem;
+    padding: 1.2rem 1.4rem;
     margin-bottom: 2.4rem;
   }
 
-  .gift-card-icon {
-    font-size: 1.8rem;
+  .gift-card-cover {
     flex-shrink: 0;
+    width: 84px;
+    height: auto;
+    max-height: 120px;
+    object-fit: contain;
+    background: rgba(250,246,240,0.05);
+    border: 1px solid rgba(201,169,110,0.25);
   }
 
   .gift-card p {
@@ -1195,6 +1240,44 @@
     font-size: 1rem;
     display: block;
     margin-bottom: 0.2rem;
+  }
+
+  /* BOOK SHOWCASE */
+  .book-strip {
+    background: var(--ivory);
+    padding: 4.5rem 2rem;
+  }
+
+  .book-strip-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+  }
+
+  .book-cover-img {
+    width: 190px;
+    height: auto;
+    max-height: 280px;
+    object-fit: contain;
+    flex-shrink: 0;
+    box-shadow: 0 20px 45px rgba(26,23,20,0.18);
+  }
+
+  .book-strip-text { flex: 1; min-width: 260px; }
+
+  .book-strip-text .section-title { margin-bottom: 1rem; }
+
+  .book-strip-text p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem;
+    font-style: italic;
+    color: var(--warm-gray);
+    line-height: 1.7;
+    margin-bottom: 1.8rem;
+    max-width: 520px;
   }
 
   .form-group {
@@ -1977,48 +2060,81 @@
 
     <div class="objections-list">
       <div class="objection reveal">
-        <div class="obj-q">
-          <span class="obj-q-label">Вопрос невесты</span>
-          <p class="obj-q-text">«А вдруг вы не вернётесь — вы же только вернулись из путешествий?»</p>
-        </div>
-        <div class="obj-a">
-          <span class="obj-a-label">Марат отвечает</span>
-          <p class="obj-a-text">Я вернулся в Златоуст — осознанно. <strong>5 лет, 11 стран дали опыт, который невозможно получить дома.</strong> Теперь этот опыт — в каждой свадьбе, которую я веду здесь.</p>
-        </div>
-      </div>
-
-      <div class="objection reveal">
-        <div class="obj-q">
-          <span class="obj-q-label">Вопрос невесты</span>
-          <p class="obj-q-text">«Почему вы не показываете конкретную цену?»</p>
-        </div>
-        <div class="obj-a">
-          <span class="obj-a-label">Марат отвечает</span>
-          <p class="obj-a-text">Каждая свадьба уникальна. <strong>Я не хочу называть цену, пока не пойму, что именно нужно именно вам.</strong> Сообщение занимает пару минут — после ответа у вас будет конкретная цифра.</p>
+        <button class="obj-q" onclick="toggleObjection(this)">
+          <span class="obj-q-inner">
+            <span class="obj-q-label">Вопрос невесты</span>
+            <span class="obj-q-text">«А вдруг вы не вернётесь — вы же только вернулись из путешествий?»</span>
+          </span>
+          <span class="obj-toggle">+</span>
+        </button>
+        <div class="obj-a-wrap">
+          <div class="obj-a">
+            <span class="obj-a-label">Марат отвечает</span>
+            <p class="obj-a-text">Я вернулся в Златоуст — осознанно. <strong>5 лет, 11 стран дали опыт, который невозможно получить дома.</strong> Теперь этот опыт — в каждой свадьбе, которую я веду здесь.</p>
+          </div>
         </div>
       </div>
 
       <div class="objection reveal">
-        <div class="obj-q">
-          <span class="obj-q-label">Вопрос невесты</span>
-          <p class="obj-q-text">«Мы хотим тихую свадьбу без конкурсов. Это возможно?»</p>
-        </div>
-        <div class="obj-a">
-          <span class="obj-a-label">Марат отвечает</span>
-          <p class="obj-a-text"><strong>Да.</strong> Я веду камерные и нежные свадьбы с атмосферой вместо конкурсов. Разговаривайте со мной — подстроюсь под ваш характер.</p>
+        <button class="obj-q" onclick="toggleObjection(this)">
+          <span class="obj-q-inner">
+            <span class="obj-q-label">Вопрос невесты</span>
+            <span class="obj-q-text">«Почему вы не показываете конкретную цену?»</span>
+          </span>
+          <span class="obj-toggle">+</span>
+        </button>
+        <div class="obj-a-wrap">
+          <div class="obj-a">
+            <span class="obj-a-label">Марат отвечает</span>
+            <p class="obj-a-text">Каждая свадьба уникальна. <strong>Я не хочу называть цену, пока не пойму, что именно нужно именно вам.</strong> Сообщение занимает пару минут — после ответа у вас будет конкретная цифра.</p>
+          </div>
         </div>
       </div>
 
       <div class="objection reveal">
-        <div class="obj-q">
-          <span class="obj-q-label">Вопрос невесты</span>
-          <p class="obj-q-text">«У нас есть свой DJ — можете вести без него?»</p>
-        </div>
-        <div class="obj-a">
-          <span class="obj-a-label">Марат отвечает</span>
-          <p class="obj-a-text">Конечно. <strong>Работаю как сольно, так и с любым DJ.</strong> Предложу своего — если хотите единую команду, проверенную на сотнях мероприятий.</p>
+        <button class="obj-q" onclick="toggleObjection(this)">
+          <span class="obj-q-inner">
+            <span class="obj-q-label">Вопрос невесты</span>
+            <span class="obj-q-text">«Мы хотим тихую свадьбу без конкурсов. Это возможно?»</span>
+          </span>
+          <span class="obj-toggle">+</span>
+        </button>
+        <div class="obj-a-wrap">
+          <div class="obj-a">
+            <span class="obj-a-label">Марат отвечает</span>
+            <p class="obj-a-text"><strong>Да.</strong> Я веду камерные и нежные свадьбы с атмосферой вместо конкурсов. Разговаривайте со мной — подстроюсь под ваш характер.</p>
+          </div>
         </div>
       </div>
+
+      <div class="objection reveal">
+        <button class="obj-q" onclick="toggleObjection(this)">
+          <span class="obj-q-inner">
+            <span class="obj-q-label">Вопрос невесты</span>
+            <span class="obj-q-text">«У нас есть свой DJ — можете вести без него?»</span>
+          </span>
+          <span class="obj-toggle">+</span>
+        </button>
+        <div class="obj-a-wrap">
+          <div class="obj-a">
+            <span class="obj-a-label">Марат отвечает</span>
+            <p class="obj-a-text">Конечно. <strong>Работаю как сольно, так и с любым DJ.</strong> Предложу своего — если хотите единую команду, проверенную на сотнях мероприятий.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOK SHOWCASE -->
+<section class="book-strip">
+  <div class="book-strip-inner">
+    <img class="book-cover-img reveal" src="https://raw.githubusercontent.com/app2cash/vedu/main/img/как%20говорить%20на%20людях%20литрес.png" alt="Обложка книги Марата Яркова «Как говорить на людях»" loading="lazy">
+    <div class="book-strip-text">
+      <span class="section-label reveal">Подарок от Марата</span>
+      <h2 class="section-title reveal">Книга <em>«Как говорить на людях»</em></h2>
+      <p class="reveal">О том, как справиться с волнением на сцене, держать внимание зала и говорить так, чтобы вас слушали — от человека, который выходит к микрофону сотни раз в год. Напишите мне в любой мессенджер — и книга ваша, бесплатно.</p>
+      <a href="#callback" class="btn-primary reveal" style="background:var(--charcoal); color:var(--gold);">Получить книгу</a>
     </div>
   </div>
 </section>
@@ -2086,7 +2202,7 @@
     <p class="contact-form-sub reveal">Обычно отвечаю в течение часа</p>
 
     <div class="gift-card reveal">
-      <span class="gift-card-icon">📖</span>
+      <img class="gift-card-cover" src="https://raw.githubusercontent.com/app2cash/vedu/main/img/как%20говорить%20на%20людях%20литрес.png" alt="Книга «Как говорить на людях»" loading="lazy">
       <p><strong>Подарок за сообщение</strong>Напишите мне в любой мессенджер — и получите книгу «Как говорить на людях» бесплатно, вне зависимости от того, забронируете вы дату или нет.</p>
     </div>
 
@@ -2138,9 +2254,7 @@
 </div>
 
 <script>
-  // Build the 22-slide review-screenshot carousel.
-  // NOTE: assumed filenames img/otzyv1.jpg ... img/otzyv22.jpg in the repo — a slide
-  // simply hides itself if the corresponding file isn't found, so nothing breaks visually.
+  // Build the 22-slide review-screenshot carousel: img/1.jpg ... img/22.jpg
   (function buildProof() {
     const track = document.getElementById('proofTrack');
     if (!track) return;
@@ -2152,7 +2266,7 @@
       num.className = 'proof-slide-num';
       num.textContent = '№' + i;
       const img = document.createElement('img');
-      img.src = BASE + 'otzyv' + i + '.jpg';
+      img.src = BASE + i + '.jpg';
       img.alt = 'Отзыв №' + i;
       img.loading = 'lazy';
       img.onerror = function () { slide.style.display = 'none'; };
@@ -2161,6 +2275,14 @@
       track.appendChild(slide);
     }
   })();
+
+  // FAQ accordion
+  function toggleObjection(btn) {
+    const item = btn.closest('.objection');
+    const wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.objection.open').forEach(el => el.classList.remove('open'));
+    if (!wasOpen) item.classList.add('open');
+  }
 
   // Phone mask
   const phoneInput = document.getElementById('cb-phone');
