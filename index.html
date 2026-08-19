@@ -1238,35 +1238,34 @@
 
   .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
-    max-width: 1100px;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 1200px;
     margin: 0 auto;
   }
 
   @media (max-width: 900px) {
-    .portfolio-grid { grid-template-columns: repeat(2, 1fr); }
+    .portfolio-grid { grid-template-columns: 1fr; gap: 1.5rem; }
   }
   @media (max-width: 500px) {
-    .portfolio-grid { grid-template-columns: repeat(2, 1fr); gap: 0.5rem; }
+    .portfolio-grid { grid-template-columns: 1fr; gap: 1rem; }
   }
 
   .portfolio-item {
     position: relative;
     overflow: hidden;
-    aspect-ratio: 1;
     cursor: pointer;
+    width: 100%;
   }
 
   .portfolio-item img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease;
+    height: auto;
     display: block;
+    transition: transform 0.5s ease;
   }
 
-  .portfolio-item:hover img { transform: scale(1.05); }
+  .portfolio-item:hover img { transform: scale(1.02); }
 
   .portfolio-item-overlay {
     position: absolute;
@@ -1285,7 +1284,7 @@
   /* IN-WORK PHOTOS */
   .work-photos {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 1rem;
     margin-top: 2rem;
   }
@@ -1302,9 +1301,7 @@
 
   .work-photo-item img {
     width: 100%;
-    height: 260px;
-    object-fit: cover;
-    object-position: top;
+    height: auto;
     display: block;
     transition: transform 0.4s;
   }
@@ -1408,10 +1405,6 @@
   <div class="hero-bg"></div>
   <div class="hero-grain"></div>
   <div class="hero-ornament"></div>
-  <div class="hero-photo-wrap">
-    <img src="img/hero.jpg" alt="Марат Ярков — ведущий праздников" class="hero-photo-img" loading="eager">
-    <div class="hero-photo-fade"></div>
-  </div>
 
   <div class="hero-content">
     <span class="hero-tag">Ведущий праздников · с 2011 года</span>
@@ -1786,7 +1779,7 @@
   <p class="cta-note">Смелые невесты звонят сразу. Скромные — пишут в WhatsApp 😊</p>
 </section>
 
-<!-- PORTFOLIO -->
+<!-- PORTFOLIO / ГАЛЕРЕЯ -->
 <section class="portfolio-section" id="portfolio">
   <div class="portfolio-header">
     <span class="section-label reveal">Портфолио</span>
@@ -1796,31 +1789,24 @@
 
   <div class="portfolio-grid">
     <div class="portfolio-item reveal">
-      <img src="img/portfolio-1.jpg" alt="Свадьба — Марат Ярков ведущий" loading="lazy">
+      <img src="https://raw.githubusercontent.com/app2cash/vedu/main/img/IMG_4979.PNG" alt="Коллаж фото со свадеб №1" loading="lazy">
       <div class="portfolio-item-overlay"></div>
     </div>
     <div class="portfolio-item reveal">
-      <img src="img/portfolio-2.jpg" alt="Свадьба — Марат Ярков ведущий" loading="lazy">
+      <img src="https://raw.githubusercontent.com/app2cash/vedu/main/img/IMG_4980.PNG" alt="Коллаж фото со свадеб №2" loading="lazy">
       <div class="portfolio-item-overlay"></div>
     </div>
     <div class="portfolio-item reveal">
-      <img src="img/portfolio-3.jpg" alt="Свадьба — Марат Ярков ведущий" loading="lazy">
+      <img src="https://raw.githubusercontent.com/app2cash/vedu/main/img/IMG_4981.PNG" alt="Коллаж фото со свадеб №3" loading="lazy">
       <div class="portfolio-item-overlay"></div>
     </div>
     <div class="portfolio-item reveal">
-      <img src="img/portfolio-4.jpg" alt="Свадебная выставка — Марат Ярков" loading="lazy">
+      <img src="https://raw.githubusercontent.com/app2cash/vedu/main/img/IMG_4982.PNG" alt="Коллаж фото со свадеб №4" loading="lazy">
       <div class="portfolio-item-overlay"></div>
     </div>
-  </div>
-
-  <div style="max-width:1100px;margin:2rem auto 0;">
-    <div class="work-photos">
-      <div class="work-photo-item reveal">
-        <img src="img/work-1.jpg" alt="Марат Ярков ведёт мероприятие" loading="lazy">
-      </div>
-      <div class="work-photo-item reveal">
-        <img src="img/work-2.jpg" alt="Марат Ярков ведёт гостей" loading="lazy">
-      </div>
+    <div class="portfolio-item reveal">
+      <img src="https://raw.githubusercontent.com/app2cash/vedu/main/img/IMG_4983.PNG" alt="Коллаж фото со свадеб №5" loading="lazy">
+      <div class="portfolio-item-overlay"></div>
     </div>
   </div>
 </section>
