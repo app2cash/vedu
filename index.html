@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Марат Ярков — Ведущий событий в Златоусте, Миассе, Кусе, Сатке</title>
-<meta name="description" content="Ведущий свадеб Марат Ярков — 200+ свадеб с 2011 года. Работаю с профессиональным DJ и звуком. Zlatoust, Miass, Kusa, Satka. Телеведущий ТНТ. Напишите — и книга «Как говорить на людях» в подарок!">
-<meta name="keywords" content="ведущий свадьбы Златоуст, тамада Миасс, ведущий праздников Сатка, свадьба Куса, ведущий свадьбы Челябинская область">
+<title>Марат Ярков — Ведущий мероприятий: свадьбы, корпоративы, юбилеи в Златоусте, Миассе, Кусе, Сатке</title>
+<meta name="description" content="Ведущий Марат Ярков — свадьбы, корпоративы, юбилеи и любые события с 2011 года. 200+ проведённых мероприятий. Профессиональный DJ и звук. Zlatoust, Miass, Kusa, Satka. Телеведущий ТНТ. Напишите — и книга «Как говорить на людях» в подарок!">
+<meta name="keywords" content="ведущий мероприятий Златоуст, ведущий корпоративов Миасс, ведущий юбилеев Сатка, ведущий свадьбы Куса, тамада Челябинская область">
 
 <!-- FAVICON -->
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='16'%20fill='%231A1714'/%3E%3Ccircle%20cx='25'%20cy='36'%20r='13'%20fill='none'%20stroke='%23C9A96E'%20stroke-width='3.4'/%3E%3Ccircle%20cx='39'%20cy='36'%20r='13'%20fill='none'%20stroke='%23E8D5B0'%20stroke-width='3.4'/%3E%3Cpath%20d='M20%2020l3%208m21-8l-3%208'%20stroke='%23C9A96E'%20stroke-width='2.2'%20stroke-linecap='round'/%3E%3C/svg%3E">
@@ -812,77 +812,10 @@
     transition: color 0.3s;
   }
 
-  /* REVIEWS (TEXT) */
-  .reviews {
-    background: var(--charcoal);
-    color: var(--cream);
-  }
-
-  .reviews-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    flex-wrap: wrap;
-    gap: 2rem;
-    margin-bottom: 4rem;
-  }
-
-  .reviews-header .section-title { color: var(--cream); }
-
-  .reviews-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2px;
-  }
-
-  .review-card {
-    background: rgba(250,246,240,0.04);
-    padding: 2.5rem;
-    border-top: 1px solid rgba(201,169,110,0.2);
-    transition: background 0.3s;
-  }
-
-  .review-card:hover { background: rgba(250,246,240,0.07); }
-
-  .review-quote {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.15rem;
-    font-style: italic;
-    color: rgba(250,246,240,0.75);
-    line-height: 1.8;
-    margin-bottom: 2rem;
-  }
-
-  .review-quote::before {
-    content: '«';
-    color: var(--gold);
-    font-size: 2rem;
-    line-height: 0;
-    vertical-align: -0.4em;
-    margin-right: 0.2rem;
-  }
-
-  .review-author {
-    font-size: 0.75rem;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    color: var(--gold);
-  }
-
-  .review-city {
-    font-size: 0.7rem;
-    color: rgba(250,246,240,0.3);
-    margin-top: 0.3rem;
-  }
-
-  .reviews .inline-cta {
-    background: rgba(250,246,240,0.05);
-    border-color: rgba(201,169,110,0.3);
-  }
-
   /* SCREENSHOT REVIEWS CAROUSEL */
   .proof {
-    background: var(--ivory);
+    background: var(--charcoal);
+    color: var(--cream);
   }
 
   .proof-header {
@@ -894,14 +827,29 @@
     margin-bottom: 3rem;
   }
 
+  .proof-header .section-title { color: var(--cream); }
+
   .proof-count {
     font-family: 'Cormorant Garamond', serif;
     font-size: 1.1rem;
     font-style: italic;
-    color: var(--warm-gray);
+    color: rgba(250,246,240,0.5);
   }
 
-  .proof-count strong { color: var(--gold-dark); font-weight: 600; }
+  .proof-count strong { color: var(--gold); font-weight: 600; }
+
+  .proof-all-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.6rem;
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--gold);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
 
   .proof-track-wrap {
     position: relative;
@@ -928,10 +876,11 @@
     flex: 0 0 auto;
     width: 230px;
     scroll-snap-align: start;
-    background: var(--cream);
+    background: rgba(250,246,240,0.04);
     border: 1px solid rgba(201,169,110,0.2);
     overflow: hidden;
     position: relative;
+    cursor: pointer;
   }
 
   .proof-slide img {
@@ -939,7 +888,7 @@
     height: 300px;
     object-fit: cover;
     display: block;
-    background: var(--gold-light);
+    background: rgba(201,169,110,0.1);
   }
 
   .proof-slide-num {
@@ -953,13 +902,113 @@
     padding: 0.25rem 0.55rem;
   }
 
+  .proof-slide-zoom {
+    position: absolute;
+    bottom: 0.6rem;
+    right: 0.6rem;
+    background: rgba(26,23,20,0.65);
+    color: var(--gold-light);
+    font-size: 0.9rem;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .proof-hint {
     text-align: center;
     font-size: 0.68rem;
     letter-spacing: 0.15em;
     text-transform: uppercase;
-    color: var(--warm-gray);
+    color: rgba(250,246,240,0.4);
     margin-top: 0.5rem;
+  }
+
+  /* LIGHTBOX */
+  .lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+    background: rgba(10,9,8,0.94);
+    align-items: center;
+    justify-content: center;
+  }
+
+  .lightbox.open { display: flex; }
+
+  .lightbox-img-wrap {
+    max-width: 90vw;
+    max-height: 82vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .lightbox img {
+    max-width: 90vw;
+    max-height: 82vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+  }
+
+  .lightbox-close {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(250,246,240,0.1);
+    border: 1px solid rgba(201,169,110,0.4);
+    color: var(--cream);
+    font-size: 1.3rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .lightbox-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(250,246,240,0.1);
+    border: 1px solid rgba(201,169,110,0.4);
+    color: var(--cream);
+    font-size: 1.4rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .lightbox-prev { left: 1.5rem; }
+  .lightbox-next { right: 1.5rem; }
+
+  .lightbox-counter {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.72rem;
+    letter-spacing: 0.15em;
+    color: rgba(250,246,240,0.6);
+    text-transform: uppercase;
+  }
+
+  @media (max-width: 600px) {
+    .lightbox-nav { width: 42px; height: 42px; font-size: 1.1rem; }
+    .lightbox-prev { left: 0.5rem; }
+    .lightbox-next { right: 0.5rem; }
+    .lightbox-close { top: 0.8rem; right: 0.8rem; }
   }
 
   /* OBJECTIONS */
@@ -1700,14 +1749,14 @@
   <div class="hero-ornament"></div>
 
   <div class="hero-content">
-    <span class="hero-tag">Ведущий праздников · с 2011 года</span>
+    <span class="hero-tag">Ведущий мероприятий · с 2011 года</span>
 
     <h1 class="hero-name">
       Марат<br><em>Ярков</em>
     </h1>
 
     <p class="hero-subtitle">
-      Свадьба, которую вы будете вспоминать&nbsp;всю&nbsp;жизнь
+      Праздник, который будут вспоминать&nbsp;ещё&nbsp;долго
     </p>
 
     <div class="hero-gift-pill">🎁 Напишите мне в сообщения — и книга «Как говорить на людях» ваша в подарок</div>
@@ -1722,8 +1771,8 @@
         <span class="stat-label">лет на сцене</span>
       </div>
       <div class="stat">
-        <span class="stat-num">7</span>
-        <span class="stat-label">раз свидетель</span>
+        <span class="stat-num">500+</span>
+        <span class="stat-label">мероприятий всего</span>
       </div>
       <div class="stat">
         <span class="stat-num">ТНТ</span>
@@ -1756,19 +1805,19 @@
 <section class="fears" id="fears">
   <div class="container">
     <span class="section-label reveal">Ваши сомнения</span>
-    <h2 class="section-title reveal">Каждая невеста<br><em>боится одного</em></h2>
+    <h2 class="section-title reveal">Организаторы<br><em>боятся одного и того же</em></h2>
     <div class="divider reveal"></div>
 
     <div class="fears-grid">
       <div class="fear-card reveal">
         <div class="fear-num">01</div>
         <div class="fear-title">«Гости заскучают»</div>
-        <p class="fear-answer">62 авторских конкурса — ни один не повторяется. Программа строится под вашу аудиторию: молодые, 50+, дети — каждый будет в игре. <strong>Пустых пауз не бывает.</strong></p>
+        <p class="fear-answer">62 авторских конкурса и активности — ни одна не повторяется. Программа строится под вашу аудиторию: коллеги, семья, друзья, дети — каждый будет вовлечён. <strong>Пустых пауз не бывает.</strong></p>
       </div>
       <div class="fear-card reveal">
         <div class="fear-num">02</div>
         <div class="fear-title">«Ведущий будет формальным»</div>
-        <p class="fear-answer">Я 7 раз сам стоял свидетелем на свадьбах друзей. Я знаю, как это — смотреть изнутри. Никаких шаблонных тостов и заезженных «горько». <strong>Только живые эмоции.</strong></p>
+        <p class="fear-answer">14 лет на сцене — я знаю, как оживить любой формат: от свадьбы до строгого корпоратива. Никаких шаблонных тостов и заезженных фраз. <strong>Только живые эмоции.</strong></p>
       </div>
       <div class="fear-card reveal">
         <div class="fear-num">03</div>
@@ -1777,18 +1826,18 @@
       </div>
       <div class="fear-card reveal">
         <div class="fear-num">04</div>
-        <div class="fear-title">«Не хочу банальный каравай»</div>
-        <p class="fear-answer">У меня 12 альтернатив каравайному ритуалу. Мы придумаем традицию, которая станет вашей личной историей. <strong>Ваша свадьба — только ваша.</strong></p>
+        <div class="fear-title">«Не хочу банальный сценарий»</div>
+        <p class="fear-answer">Никаких шаблонов «под копирку». Сценарий и активности собираются под ваше событие, аудиторию и настроение. <strong>Ваш праздник — только ваш.</strong></p>
       </div>
       <div class="fear-card reveal">
         <div class="fear-num">05</div>
         <div class="fear-title">«А вдруг не моего формата?»</div>
-        <p class="fear-answer">Провёл свадьбы в Златоусте, Питере, Москве, Сочи, Челябинске, Бали. Камерные и масштабные. Нежные и зажигательные. <strong>Разбираюсь в разных характерах.</strong></p>
+        <p class="fear-answer">Провёл свадьбы, корпоративы и юбилеи в Златоусте, Питере, Москве, Сочи, Челябинске, Бали. Камерные и масштабные. Нежные и зажигательные. <strong>Разбираюсь в разных характерах.</strong></p>
       </div>
       <div class="fear-card reveal">
         <div class="fear-num">06</div>
         <div class="fear-title">«Слишком дорого»</div>
-        <p class="fear-answer">Несколько пакетов под разный бюджет. Созвонимся — подберём формат, который работает именно для вас. <strong>Договоримся.</strong></p>
+        <p class="fear-answer">Несколько пакетов под разный бюджет и формат события. Напишите — подберём вариант, который работает именно для вас. <strong>Договоримся.</strong></p>
       </div>
     </div>
 
@@ -1815,20 +1864,20 @@
 
       <div class="about-text">
         <span class="section-label reveal">О ведущем</span>
-        <h2 class="section-title reveal">Человек,<br>для которого<br><em>свадьба — призвание</em></h2>
+        <h2 class="section-title reveal">Человек,<br>для которого<br><em>праздник — призвание</em></h2>
         <div class="divider reveal"></div>
 
         <p class="about-body reveal">
-          По карте Таро я — десятка червей. В традиции Таро эта карта называется «Свадьба». Я не выбирал эту работу — она выбрала меня.
+          По карте Таро я — десятка червей. В традиции Таро эта карта называется «Свадьба». Свадьба и осталась моей главной страстью — но за эти годы к ней добавились сотни корпоративов, юбилеев и других событий.
         </p>
 
         <ul class="about-facts reveal">
-          <li><span class="fact-dot"></span>Веду праздники с 2011 года — более 200 свадеб в Златоусте, Москве, Питере, Сочи, Челябинске, Бали</li>
+          <li><span class="fact-dot"></span>Веду мероприятия с 2011 года — более 200 свадеб и сотни корпоративов, юбилеев и праздников в Златоусте, Москве, Питере, Сочи, Челябинске, Бали</li>
           <li><span class="fact-dot"></span>Телеведущий реалити-шоу «Свадьба на ТВ» на ТНТ-Златоуст — режиссёр и автор сценария</li>
           <li><span class="fact-dot"></span>Основатель Союза свадебных специалистов LOVEDDING</li>
           <li><span class="fact-dot"></span>Автор курса «101 лайфхак для невест» и книги «Как говорить на людях»</li>
           <li><span class="fact-dot"></span>7 раз — свидетель на свадьбах друзей. Знаю праздник изнутри</li>
-          <li><span class="fact-dot"></span>5 лет путешествий, 11 стран — вернулся в Златоуст, чтобы снова создавать лучшие свадьбы Урала</li>
+          <li><span class="fact-dot"></span>5 лет путешествий, 11 стран — вернулся в Златоуст, чтобы снова создавать лучшие события Урала</li>
           <li><span class="fact-dot"></span>Работаю только в паре с профессиональным DJ + полный звук</li>
         </ul>
 
@@ -1844,11 +1893,11 @@
     <div class="format-intro">
       <div>
         <span class="section-label reveal">Что я веду</span>
-        <h2 class="section-title reveal">Любое событие.<br><em>Фокус — свадьба.</em></h2>
+        <h2 class="section-title reveal">Свадьбы, корпоративы,<br><em>юбилеи — и всё, что придумаете</em></h2>
         <div class="divider reveal"></div>
       </div>
       <p class="format-lead reveal">
-        Свадьба — моя специализация и страсть. Но за 14 лет я провёл сотни других мероприятий. Если у вас есть праздник — я знаю, как его сделать незабываемым.
+        За 14 лет я провёл больше 500 мероприятий самых разных форматов. Если у вас есть праздник — я знаю, как его сделать незабываемым.
       </p>
     </div>
 
@@ -1899,7 +1948,7 @@
       <span class="section-label reveal">Стоимость</span>
       <h2 class="section-title reveal">Выберите <em>свой формат</em></h2>
       <div class="divider reveal"></div>
-      <p class="reveal" style="font-size:0.9rem; color:var(--warm-gray); line-height:1.7;">Точная цена зависит от даты, формата и деталей вашей свадьбы. Напишите — подберём идеальный пакет и подарим книгу «Как говорить на людях».</p>
+      <p class="reveal" style="font-size:0.9rem; color:var(--warm-gray); line-height:1.7;">Точная цена зависит от даты, формата и деталей вашего события. Напишите — подберём идеальный пакет и подарим книгу «Как говорить на людях».</p>
     </div>
 
     <div class="packages-grid">
@@ -1908,11 +1957,11 @@
         <div class="package-name">Классика</div>
         <span class="package-price">Цена по запросу</span>
         <ul class="package-includes">
-          <li>Ведущий на 6 часов</li>
-          <li>Сценарий под вашу пару</li>
-          <li>До 15 конкурсов</li>
-          <li>Авторские тосты</li>
-          <li>Координация вечера</li>
+          <li>Ведущий на 4–6 часов</li>
+          <li>Сценарий под ваше событие</li>
+          <li>До 15 активностей и конкурсов</li>
+          <li>Авторские тосты и подводки</li>
+          <li>Координация мероприятия</li>
         </ul>
         <a href="https://vk.ru/maratyarkov" target="_blank" rel="noopener" class="package-cta">Узнать цену</a>
       </div>
@@ -1925,13 +1974,13 @@
           <li>Ведущий на весь день (8–12 часов)</li>
           <li>Профессиональный DJ в паре</li>
           <li>Полный комплект звука и света</li>
-          <li>Выкуп + церемония + банкет</li>
-          <li>До 30 авторских конкурсов</li>
-          <li>12 вариантов альтернативы каравая</li>
+          <li>Полная программа от начала до финала</li>
+          <li>До 30 авторских активностей и конкурсов</li>
+          <li>Уникальные ритуалы и фишки под ваш формат</li>
           <li>Индивидуальный сценарий</li>
-          <li>Репетиция и бриф перед свадьбой</li>
+          <li>Репетиция и бриф перед мероприятием</li>
         </ul>
-        <a href="https://vk.ru/maratyarkov" target="_blank" rel="noopener" class="package-cta">Обсудить свадьбу</a>
+        <a href="https://vk.ru/maratyarkov" target="_blank" rel="noopener" class="package-cta">Обсудить событие</a>
       </div>
 
       <div class="package-card reveal">
@@ -1940,7 +1989,7 @@
         <span class="package-price">Индивидуальный проект</span>
         <ul class="package-includes">
           <li>Полностью авторский сценарий</li>
-          <li>Тематическая или выездная свадьба</li>
+          <li>Тематическое или выездное мероприятие</li>
           <li>Режиссура шоу-программы</li>
           <li>Координация всех подрядчиков</li>
           <li>Работа в регионе или выезд</li>
@@ -1958,7 +2007,7 @@
 <section class="geography" id="geo">
   <div class="container">
     <span class="section-label reveal">Работаю в городах</span>
-    <h2 class="section-title reveal">Ваша свадьба —<br><em>где бы вы ни были</em></h2>
+    <h2 class="section-title reveal">Ваш праздник —<br><em>где бы вы ни были</em></h2>
     <div class="divider reveal" style="margin: 2rem auto;"></div>
 
     <div class="cities reveal">
@@ -1990,59 +2039,24 @@
   </div>
 </section>
 
-<!-- REVIEWS (TEXT) -->
-<section class="reviews" id="reviews">
-  <div class="container">
-    <div class="reviews-header">
-      <div>
-        <span class="section-label reveal">Отзывы</span>
-        <h2 class="section-title reveal">Что говорят<br><em>пары</em></h2>
-      </div>
-      <div class="reveal" style="font-family: 'Cormorant Garamond', serif; font-size:1.1rem; font-style:italic; color:rgba(250,246,240,0.4); max-width:280px; text-align:right;">
-        200+ счастливых пар с 2011 года
-      </div>
-    </div>
-
-    <div class="reviews-grid">
-      <div class="review-card reveal">
-        <p class="review-quote">Марат сделал нашу свадьбу живой. Ни одного скучного момента — гости танцевали и смеялись до самого конца. Даже папа, который обычно сидит в углу, участвовал во всём!</p>
-        <div class="review-author">Алина и Дмитрий</div>
-        <div class="review-city">Златоуст, 2023</div>
-      </div>
-      <div class="review-card reveal">
-        <p class="review-quote">Боялась банальных конкурсов с ложками. Марат сделал такую программу, что мы сами не ожидали, как это будет красиво. Вместо каравая — наш личный ритуал. Все плакали от счастья.</p>
-        <div class="review-author">Екатерина и Андрей</div>
-        <div class="review-city">Миасс, 2022</div>
-      </div>
-      <div class="review-card reveal">
-        <p class="review-quote">Звук был идеальным весь вечер — ни одного сбоя. DJ и Марат работали как единый механизм. Гости до сих пор вспоминают нашу свадьбу как лучшую, на которой были.</p>
-        <div class="review-author">Ольга и Максим</div>
-        <div class="review-city">Сатка, 2022</div>
-      </div>
-    </div>
-
-    <div class="inline-cta reveal">
-      <p>Хотите такую же свадьбу? <strong>Напишите Марату</strong> — и получите книгу «Как говорить на людях» в подарок.</p>
-      <a href="#callback" class="btn-small">💬 Написать</a>
-    </div>
-  </div>
-</section>
-
 <!-- SCREENSHOT REVIEWS / PROOF -->
 <section class="proof" id="proof">
   <div class="container">
     <div class="proof-header">
       <div>
-        <span class="section-label reveal">Переписки с молодожёнами</span>
+        <span class="section-label reveal">Переписки с клиентами</span>
         <h2 class="section-title reveal">22 отзыва —<br><em>без купюр</em></h2>
       </div>
-      <p class="proof-count reveal">Скриншоты реальных сообщений · <strong>22 из 200+</strong></p>
+      <div class="reveal" style="text-align:right;">
+        <p class="proof-count">Скриншоты реальных сообщений · <strong>22 из 200+</strong></p>
+        <a href="https://vk.ru/topic-32219402_28111193" target="_blank" rel="noopener" class="proof-all-link">Все отзывы с 2013 года →</a>
+      </div>
     </div>
 
     <div class="proof-track-wrap reveal">
       <div class="proof-track" id="proofTrack"></div>
     </div>
-    <p class="proof-hint">← Листайте, чтобы увидеть все 22 отзыва →</p>
+    <p class="proof-hint">← Листайте и нажмите на скриншот, чтобы открыть его целиком →</p>
 
     <div class="inline-cta reveal" style="margin-top:3rem;">
       <p>Хотите так же? <strong>Напишите мне первым</strong> — отвечаю в течение часа.</p>
@@ -2062,15 +2076,15 @@
       <div class="objection reveal">
         <button class="obj-q" onclick="toggleObjection(this)">
           <span class="obj-q-inner">
-            <span class="obj-q-label">Вопрос невесты</span>
-            <span class="obj-q-text">«А вдруг вы не вернётесь — вы же только вернулись из путешествий?»</span>
+            <span class="obj-q-label">Частый вопрос</span>
+            <span class="obj-q-text">«Вы же только вернулись из путешествий — а вдруг снова уедете?»</span>
           </span>
           <span class="obj-toggle">+</span>
         </button>
         <div class="obj-a-wrap">
           <div class="obj-a">
             <span class="obj-a-label">Марат отвечает</span>
-            <p class="obj-a-text">Я вернулся в Златоуст — осознанно. <strong>5 лет, 11 стран дали опыт, который невозможно получить дома.</strong> Теперь этот опыт — в каждой свадьбе, которую я веду здесь.</p>
+            <p class="obj-a-text">Я вернулся в Златоуст — осознанно. <strong>5 лет, 11 стран дали опыт, который невозможно получить дома.</strong> Теперь этот опыт — в каждом мероприятии, которое я веду здесь.</p>
           </div>
         </div>
       </div>
@@ -2078,7 +2092,7 @@
       <div class="objection reveal">
         <button class="obj-q" onclick="toggleObjection(this)">
           <span class="obj-q-inner">
-            <span class="obj-q-label">Вопрос невесты</span>
+            <span class="obj-q-label">Частый вопрос</span>
             <span class="obj-q-text">«Почему вы не показываете конкретную цену?»</span>
           </span>
           <span class="obj-toggle">+</span>
@@ -2086,7 +2100,7 @@
         <div class="obj-a-wrap">
           <div class="obj-a">
             <span class="obj-a-label">Марат отвечает</span>
-            <p class="obj-a-text">Каждая свадьба уникальна. <strong>Я не хочу называть цену, пока не пойму, что именно нужно именно вам.</strong> Сообщение занимает пару минут — после ответа у вас будет конкретная цифра.</p>
+            <p class="obj-a-text">Каждое событие уникальное. <strong>Я не хочу называть цену, пока не пойму, что именно нужно именно вам.</strong> Сообщение занимает пару минут — после ответа у вас будет конкретная цифра.</p>
           </div>
         </div>
       </div>
@@ -2094,15 +2108,15 @@
       <div class="objection reveal">
         <button class="obj-q" onclick="toggleObjection(this)">
           <span class="obj-q-inner">
-            <span class="obj-q-label">Вопрос невесты</span>
-            <span class="obj-q-text">«Мы хотим тихую свадьбу без конкурсов. Это возможно?»</span>
+            <span class="obj-q-label">Частый вопрос</span>
+            <span class="obj-q-text">«Мы хотим спокойное событие без конкурсов. Это возможно?»</span>
           </span>
           <span class="obj-toggle">+</span>
         </button>
         <div class="obj-a-wrap">
           <div class="obj-a">
             <span class="obj-a-label">Марат отвечает</span>
-            <p class="obj-a-text"><strong>Да.</strong> Я веду камерные и нежные свадьбы с атмосферой вместо конкурсов. Разговаривайте со мной — подстроюсь под ваш характер.</p>
+            <p class="obj-a-text"><strong>Да.</strong> Я веду и камерные, атмосферные мероприятия без активной программы. Разговаривайте со мной — подстроюсь под ваш формат.</p>
           </div>
         </div>
       </div>
@@ -2110,7 +2124,7 @@
       <div class="objection reveal">
         <button class="obj-q" onclick="toggleObjection(this)">
           <span class="obj-q-inner">
-            <span class="obj-q-label">Вопрос невесты</span>
+            <span class="obj-q-label">Частый вопрос</span>
             <span class="obj-q-text">«У нас есть свой DJ — можете вести без него?»</span>
           </span>
           <span class="obj-toggle">+</span>
@@ -2141,7 +2155,7 @@
 
 <!-- CTA -->
 <section class="cta-section" id="contact">
-  <h2 class="cta-title">Ваша свадьба<br>начинается здесь</h2>
+  <h2 class="cta-title">Ваш праздник<br>начинается здесь</h2>
   <p class="cta-sub">Напишите прямо сейчас — даты разбираются быстро</p>
   <div class="cta-gift">🎁 Первому сообщению — книга <strong>«Как говорить на людях»</strong> в подарок</div>
 
@@ -2154,7 +2168,7 @@
     </a>
   </div>
 
-  <p class="cta-note">Смелые невесты звонят сразу. Скромные — пишут ВКонтакте 😊</p>
+  <p class="cta-note">Уверенные звонят сразу. Остальные — пишут ВКонтакте 😊</p>
 </section>
 
 <!-- PORTFOLIO / ГАЛЕРЕЯ -->
@@ -2167,23 +2181,23 @@
 
   <div class="portfolio-grid">
     <div class="portfolio-item reveal">
-      <img src="https://raw.githubusercontent.com/app2cash/vedu/main/img/IMG_4979.PNG" alt="Коллаж фото со свадеб №1" loading="lazy">
+      <img src="https://raw.githubusercontent.com/app2cash/vedu/main/img/IMG_4979.PNG" alt="Коллаж фото с мероприятий №1" loading="lazy">
       <div class="portfolio-item-overlay"></div>
     </div>
     <div class="portfolio-item reveal">
-      <img src="https://raw.githubusercontent.com/app2cash/vedu/main/img/IMG_4980.PNG" alt="Коллаж фото со свадеб №2" loading="lazy">
+      <img src="https://raw.githubusercontent.com/app2cash/vedu/main/img/IMG_4980.PNG" alt="Коллаж фото с мероприятий №2" loading="lazy">
       <div class="portfolio-item-overlay"></div>
     </div>
     <div class="portfolio-item reveal">
-      <img src="https://raw.githubusercontent.com/app2cash/vedu/main/img/IMG_4981.PNG" alt="Коллаж фото со свадеб №3" loading="lazy">
+      <img src="https://raw.githubusercontent.com/app2cash/vedu/main/img/IMG_4981.PNG" alt="Коллаж фото с мероприятий №3" loading="lazy">
       <div class="portfolio-item-overlay"></div>
     </div>
     <div class="portfolio-item reveal">
-      <img src="https://raw.githubusercontent.com/app2cash/vedu/main/img/IMG_4982.PNG" alt="Коллаж фото со свадеб №4" loading="lazy">
+      <img src="https://raw.githubusercontent.com/app2cash/vedu/main/img/IMG_4982.PNG" alt="Коллаж фото с мероприятий №4" loading="lazy">
       <div class="portfolio-item-overlay"></div>
     </div>
     <div class="portfolio-item reveal">
-      <img src="https://raw.githubusercontent.com/app2cash/vedu/main/img/IMG_4983.PNG" alt="Коллаж фото со свадеб №5" loading="lazy">
+      <img src="https://raw.githubusercontent.com/app2cash/vedu/main/img/IMG_4983.PNG" alt="Коллаж фото с мероприятий №5" loading="lazy">
       <div class="portfolio-item-overlay"></div>
     </div>
   </div>
@@ -2215,7 +2229,7 @@
         <input type="tel" id="cb-phone" placeholder="+7 (___) ___-__-__" autocomplete="tel" maxlength="18" />
       </div>
       <div class="form-group reveal">
-        <input type="text" id="cb-date" placeholder="Примерная дата свадьбы (необязательно)" />
+        <input type="text" id="cb-date" placeholder="Дата и тип события (необязательно)" />
       </div>
       <button class="form-submit-btn reveal" id="cbSubmitBtn" onclick="submitCallback()">
         Перезвоните мне
@@ -2247,6 +2261,17 @@
   <p class="footer-copy">Ведущий праздников · Златоуст · Миасс · Куса · Сатка · с 2011 года</p>
 </footer>
 
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+  <button class="lightbox-nav lightbox-prev" onclick="navLightbox(-1)">‹</button>
+  <div class="lightbox-img-wrap">
+    <img id="lightboxImg" src="" alt="Отзыв">
+  </div>
+  <button class="lightbox-nav lightbox-next" onclick="navLightbox(1)">›</button>
+  <div class="lightbox-counter" id="lightboxCounter"></div>
+</div>
+
 <!-- STICKY MOBILE CTA -->
 <div class="sticky-cta">
   <a href="https://vk.ru/maratyarkov" target="_blank" rel="noopener" class="s-vk">💬 ВКонтакте</a>
@@ -2255,25 +2280,83 @@
 
 <script>
   // Build the 22-slide review-screenshot carousel: img/1.jpg ... img/22.jpg
+  const PROOF_BASE = 'https://raw.githubusercontent.com/app2cash/vedu/main/img/';
+  const proofUrls = [];
+  let lightboxIndex = 0;
+
   (function buildProof() {
     const track = document.getElementById('proofTrack');
     if (!track) return;
-    const BASE = 'https://raw.githubusercontent.com/app2cash/vedu/main/img/';
     for (let i = 1; i <= 22; i++) {
+      const url = PROOF_BASE + i + '.jpg';
       const slide = document.createElement('div');
       slide.className = 'proof-slide';
       const num = document.createElement('span');
       num.className = 'proof-slide-num';
       num.textContent = '№' + i;
+      const zoom = document.createElement('span');
+      zoom.className = 'proof-slide-zoom';
+      zoom.textContent = '⤢';
       const img = document.createElement('img');
-      img.src = BASE + i + '.jpg';
+      img.src = url;
       img.alt = 'Отзыв №' + i;
       img.loading = 'lazy';
+      const slotIndex = proofUrls.length;
+      proofUrls.push(url);
       img.onerror = function () { slide.style.display = 'none'; };
       slide.appendChild(img);
       slide.appendChild(num);
+      slide.appendChild(zoom);
+      slide.addEventListener('click', () => openLightbox(slotIndex));
       track.appendChild(slide);
     }
+  })();
+
+  // Lightbox: full-size, swipeable/navigable viewer for review screenshots
+  function openLightbox(index) {
+    lightboxIndex = index;
+    updateLightbox();
+    document.getElementById('lightbox').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLightbox() {
+    document.getElementById('lightbox').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  function navLightbox(dir) {
+    lightboxIndex = (lightboxIndex + dir + proofUrls.length) % proofUrls.length;
+    updateLightbox();
+  }
+
+  function updateLightbox() {
+    document.getElementById('lightboxImg').src = proofUrls[lightboxIndex];
+    document.getElementById('lightboxCounter').textContent = (lightboxIndex + 1) + ' / ' + proofUrls.length;
+  }
+
+  document.getElementById('lightbox').addEventListener('click', (e) => {
+    if (e.target.id === 'lightbox') closeLightbox();
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (!document.getElementById('lightbox').classList.contains('open')) return;
+    if (e.key === 'Escape') closeLightbox();
+    if (e.key === 'ArrowLeft') navLightbox(-1);
+    if (e.key === 'ArrowRight') navLightbox(1);
+  });
+
+  // Basic swipe support on mobile
+  (function () {
+    let touchStartX = null;
+    const lb = document.getElementById('lightbox');
+    lb.addEventListener('touchstart', (e) => { touchStartX = e.changedTouches[0].clientX; });
+    lb.addEventListener('touchend', (e) => {
+      if (touchStartX === null) return;
+      const dx = e.changedTouches[0].clientX - touchStartX;
+      if (Math.abs(dx) > 40) navLightbox(dx > 0 ? -1 : 1);
+      touchStartX = null;
+    });
   })();
 
   // FAQ accordion
