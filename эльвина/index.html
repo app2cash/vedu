@@ -1676,70 +1676,6 @@
     background: rgba(26,23,20,0.35);
   }
 
-  /* NAV */
-  nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 100;
-    padding: 1.5rem 2.5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: all 0.4s;
-  }
-
-  nav.scrolled {
-    background: rgba(26,23,20,0.95);
-    backdrop-filter: blur(10px);
-    padding: 1rem 2.5rem;
-    border-bottom: 1px solid rgba(201,169,110,0.1);
-  }
-
-  .nav-logo {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 1.3rem;
-    font-weight: 300;
-    color: var(--gold);
-    text-decoration: none;
-    letter-spacing: 0.05em;
-  }
-
-  .nav-links {
-    display: flex;
-    gap: 2.5rem;
-    list-style: none;
-  }
-
-  @media (max-width: 600px) {
-    .nav-links { display: none; }
-  }
-
-  .nav-links a {
-    font-size: 0.7rem;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: rgba(250,246,240,0.5);
-    text-decoration: none;
-    transition: color 0.3s;
-  }
-
-  .nav-links a:hover { color: var(--gold); }
-
-  .nav-cta {
-    font-size: 0.7rem;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    color: var(--gold);
-    text-decoration: none;
-    border: 1px solid rgba(201,169,110,0.4);
-    padding: 0.5rem 1.2rem;
-    transition: all 0.3s;
-  }
-
-  .nav-cta:hover { background: var(--gold); color: var(--charcoal); }
-
   /* REVEAL ANIMATION */
   .reveal {
     opacity: 0;
@@ -1763,19 +1699,6 @@
 </style>
 </head>
 <body>
-
-<!-- NAV -->
-<nav id="mainNav">
-  <a href="#" class="nav-logo">Марат Ярков</a>
-  <ul class="nav-links">
-    <li><a href="#about">О себе</a></li>
-    <li><a href="#format">Форматы</a></li>
-    <li><a href="#proof">Отзывы</a></li>
-    <li><a href="#packages">Пакеты</a></li>
-    <li><a href="#callback">Контакты</a></li>
-  </ul>
-  <a href="https://vk.ru/uncharacteristically0000" target="_blank" rel="noopener" class="nav-cta">Написать</a>
-</nav>
 
 <!-- HERO -->
 <section class="hero" id="home">
@@ -1825,7 +1748,7 @@
       <a href="https://vk.ru/uncharacteristically0000" target="_blank" rel="noopener" class="btn-outline">Написать ВКонтакте</a>
     </div>
 
-    <p style="margin-top:1.2rem; font-size:0.68rem; letter-spacing:0.08em; color:rgba(250,246,240,0.35);">Заявки принимает Эльвина Ямалова — концертный директор</p>
+    <p style="margin-top:1.2rem; font-size:0.68rem; letter-spacing:0.08em; color:rgba(250,246,240,0.35);">Заявки принимает Эвелина Ямалова — концертный директор</p>
   </div>
 
   <div class="scroll-hint">
@@ -1921,7 +1844,7 @@
           <li><span class="fact-dot"></span>7 раз — свидетель на свадьбах друзей. Знаю праздник изнутри</li>
           <li><span class="fact-dot"></span>5 лет путешествий, 11 стран — вернулся в Златоуст, чтобы снова создавать лучшие события Урала</li>
           <li><span class="fact-dot"></span>Работаю только в паре с профессиональным DJ + полный звук</li>
-          <li><span class="fact-dot"></span>Заявки на выступления принимает мой концертный директор — Эльвина Ямалова</li>
+          <li><span class="fact-dot"></span>Заявки на выступления принимает мой концертный директор — Эвелина Ямалова</li>
         </ul>
 
         <a href="https://vk.ru/uncharacteristically0000" target="_blank" rel="noopener" class="btn-outline reveal">Написать концертному директору</a>
@@ -2200,18 +2123,18 @@
 <section class="cta-section" id="contact">
   <h2 class="cta-title">Ваш праздник<br>начинается здесь</h2>
   <p class="cta-sub">Напишите прямо сейчас — даты разбираются быстро</p>
-  <div class="cta-gift">🎁 Первому сообщению — книга <strong>«Как говорить на людях»</strong> в подарок</div>
+  <div class="cta-gift">🎁 Каждому обратившемуся — книга <strong>«Как говорить на людях»</strong> в подарок</div>
 
   <div class="cta-contacts">
     <a href="https://vk.ru/uncharacteristically0000" target="_blank" rel="noopener" class="contact-btn vk">
       <span>💬</span> ВКонтакте
     </a>
-    <a href="https://t.me/meeeeeeeeooooowwwwww" target="_blank" rel="noopener" class="contact-btn">
+    <a href="https://t.me/meeeeeeeeoooooowwwwww" target="_blank" rel="noopener" class="contact-btn">
       <span>✈️</span> Telegram
     </a>
   </div>
 
-  <p class="cta-note">Уверенные звонят сразу. Остальные — пишут ВКонтакте 😊</p>
+  <p class="cta-note">Пишите в удобный мессенджер — ответим быстро 😊</p>
 </section>
 
 <!-- PORTFOLIO / ГАЛЕРЕЯ -->
@@ -2254,50 +2177,29 @@
 <!-- CONTACT FORM -->
 <section class="contact-form-section" id="callback">
   <div class="contact-form-inner">
-    <span class="contact-form-label reveal">Оставить заявку</span>
-    <h2 class="contact-form-title reveal">Оставьте номер —<br><em>мы перезвоним</em></h2>
-    <p class="contact-form-sub reveal">Заявки принимает Эльвина Ямалова — концертный директор Марата Яркова. Обычно отвечает в течение часа</p>
+    <span class="contact-form-label reveal">Связаться</span>
+    <h2 class="contact-form-title reveal">Напишите нам —<br><em>ответим быстро</em></h2>
+    <p class="contact-form-sub reveal">Заявки принимает Эвелина Ямалова — концертный директор Марата Яркова. Обычно отвечает в течение часа</p>
 
     <div class="manager-card reveal">
-      <img class="manager-card-photo" src="https://raw.githubusercontent.com/app2cash/vedu/main/img/%D0%AD%D0%B2%D0%B5%D0%BB%D0%B8%D0%BD%D0%B0.jpg" alt="Эльвина Ямалова" loading="lazy">
+      <img class="manager-card-photo" src="https://raw.githubusercontent.com/app2cash/vedu/main/img/%D0%AD%D0%B2%D0%B5%D0%BB%D0%B8%D0%BD%D0%B0.jpg" alt="Эвелина Ямалова" loading="lazy">
       <div>
-        <span class="manager-card-name">Эльвина Ямалова</span>
+        <span class="manager-card-name">Эвелина Ямалова</span>
         <span class="manager-card-role">Концертный директор Марата Яркова — принимает заказы на услуги ведущего</span>
       </div>
     </div>
 
     <div class="gift-card reveal">
       <img class="gift-card-cover" src="https://raw.githubusercontent.com/app2cash/vedu/main/img/как%20говорить%20на%20людях%20литрес.png" alt="Книга «Как говорить на людях»" loading="lazy">
-      <p><strong>Подарок за сообщение</strong>Напишите в любой мессенджер — и получите книгу «Как говорить на людях» бесплатно, вне зависимости от того, забронируете вы дату или нет.</p>
+      <p><strong>Подарок за сообщение</strong>Каждый, кто напишет нам в любой мессенджер, получает книгу «Как говорить на людях» бесплатно — вне зависимости от того, забронируете вы дату или нет.</p>
     </div>
-
-    <div id="callbackForm">
-      <div class="form-group reveal">
-        <input type="text" id="cb-name" placeholder="Ваше имя" autocomplete="name" />
-      </div>
-      <div class="form-group phone-input-wrap reveal">
-        <span class="phone-flag">🇷🇺</span>
-        <input type="tel" id="cb-phone" placeholder="+7 (___) ___-__-__" autocomplete="tel" maxlength="18" />
-      </div>
-      <div class="form-group reveal">
-        <input type="text" id="cb-date" placeholder="Дата и тип события (необязательно)" />
-      </div>
-      <button class="form-submit-btn reveal" id="cbSubmitBtn" onclick="submitCallback()">
-        Перезвоните мне
-      </button>
-      <div class="form-success" id="formSuccess">
-        ✓ Спасибо! Эльвина свяжется с вами в ближайшее время
-      </div>
-    </div>
-
-    <div class="form-divider reveal"><span>или напишите сами</span></div>
 
     <div class="social-btns reveal">
       <a href="https://vk.ru/uncharacteristically0000" class="social-btn vk" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M15.684 0H8.316C1.592 0 0 1.592 0 8.316v7.368C0 22.408 1.592 24 8.316 24h7.368C22.408 24 24 22.408 24 15.684V8.316C24 1.592 22.408 0 15.684 0zm3.692 17.123h-1.744c-.66 0-.864-.525-2.05-1.727-1.033-1-1.49-1.135-1.744-1.135-.356 0-.458.102-.458.593v1.575c0 .424-.135.678-1.253.678-1.846 0-3.896-1.118-5.335-3.202C4.624 10.857 4.03 8.57 4.03 8.096c0-.254.102-.491.593-.491h1.744c.44 0 .61.203.78.677.863 2.49 2.303 4.675 2.896 4.675.22 0 .322-.102.322-.66V9.721c-.068-1.186-.695-1.287-.695-1.71 0-.204.17-.407.44-.407h2.744c.373 0 .508.203.508.643v3.473c0 .372.17.508.271.508.22 0 .407-.136.813-.542 1.253-1.406 2.15-3.574 2.15-3.574.119-.254.322-.491.762-.491h1.744c.525 0 .644.27.525.643-.22 1.017-2.354 4.031-2.354 4.031-.186.305-.254.44 0 .78.186.254.796.779 1.203 1.253.745.847 1.32 1.558 1.473 2.05.17.474-.085.711-.576.711z"/></svg>
         ВКонтакте
       </a>
-      <a href="https://t.me/meeeeeeeeooooowwwwww" class="social-btn tg" target="_blank" rel="noopener">
+      <a href="https://t.me/meeeeeeeeoooooowwwwww" class="social-btn tg" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
         Telegram
       </a>
@@ -2326,11 +2228,11 @@
 <!-- STICKY MOBILE CTA -->
 <div class="sticky-cta">
   <a href="https://vk.ru/uncharacteristically0000" target="_blank" rel="noopener" class="s-vk">💬 ВКонтакте</a>
-  <a href="https://t.me/meeeeeeeeooooowwwwww" target="_blank" rel="noopener" class="s-call">✈️ Telegram</a>
+  <a href="https://t.me/meeeeeeeeoooooowwwwww" target="_blank" rel="noopener" class="s-call">✈️ Telegram</a>
 </div>
 
 <script>
-  // Build the 22-slide review-screenshot carousel: img/1.jpg ... img/22.jpg
+  // Build the review-screenshot carousel: img/1.jpg ... img/22.jpg
   const PROOF_BASE = 'https://raw.githubusercontent.com/app2cash/vedu/main/img/';
   const proofUrls = [];
   let lightboxIndex = 0;
@@ -2417,69 +2319,6 @@
     document.querySelectorAll('.objection.open').forEach(el => el.classList.remove('open'));
     if (!wasOpen) item.classList.add('open');
   }
-
-  // Phone mask
-  const phoneInput = document.getElementById('cb-phone');
-  if (phoneInput) {
-    phoneInput.addEventListener('input', function(e) {
-      let val = e.target.value.replace(/\D/g, '');
-      if (val.startsWith('8')) val = '7' + val.slice(1);
-      if (!val.startsWith('7') && val.length > 0) val = '7' + val;
-      let formatted = '';
-      if (val.length > 0) formatted = '+7';
-      if (val.length > 1) formatted += ' (' + val.substring(1, 4);
-      if (val.length >= 4) formatted += ') ' + val.substring(4, 7);
-      if (val.length >= 7) formatted += '-' + val.substring(7, 9);
-      if (val.length >= 9) formatted += '-' + val.substring(9, 11);
-      e.target.value = formatted;
-    });
-    phoneInput.addEventListener('keydown', function(e) {
-      if (e.key === 'Backspace' && this.value === '+7') {
-        e.preventDefault(); this.value = '';
-      }
-    });
-  }
-
-  function submitCallback() {
-    const name = document.getElementById('cb-name').value.trim();
-    const phone = document.getElementById('cb-phone').value.trim();
-    const date = document.getElementById('cb-date').value.trim();
-    if (!phone || phone.replace(/\D/g,'').length < 11) {
-      phoneInput.style.borderColor = 'var(--rose)';
-      phoneInput.focus();
-      setTimeout(() => phoneInput.style.borderColor = '', 2000);
-      return;
-    }
-    const btn = document.getElementById('cbSubmitBtn');
-    btn.disabled = true;
-    btn.textContent = 'Отправляю...';
-    // Отправка через Telegram Bot (замените токен и chat_id на свои)
-    const BOT_TOKEN = '8892008043:AAEXdILuD7O5YdhsHSB5k9qg1wBKEP3E75g';
-    const CHAT_ID = '176811698';
-    const text = `📞 Новая заявка с сайта!\n👤 Имя: ${name || 'не указано'}\n📱 Телефон: ${phone}\n📅 Дата: ${date || 'не указана'}`;
-    fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
-      method: 'POST',
-      headers: {'Content-Type': 'application/json'},
-      body: JSON.stringify({chat_id: CHAT_ID, text})
-    }).then(() => {
-      document.getElementById('formSuccess').style.display = 'block';
-      btn.textContent = '✓ Отправлено';
-      document.getElementById('cb-name').value = '';
-      document.getElementById('cb-phone').value = '';
-      document.getElementById('cb-date').value = '';
-    }).catch(() => {
-      // Fallback — открываем ВКонтакте
-      window.open('https://vk.ru/uncharacteristically0000', '_blank');
-      btn.disabled = false;
-      btn.textContent = 'Перезвоните мне';
-    });
-  }
-
-  // Sticky nav
-  const nav = document.getElementById('mainNav');
-  window.addEventListener('scroll', () => {
-    nav.classList.toggle('scrolled', window.scrollY > 60);
-  });
 
   // Reveal on scroll
   const reveals = document.querySelectorAll('.reveal');
